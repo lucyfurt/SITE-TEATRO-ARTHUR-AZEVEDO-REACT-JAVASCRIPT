@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu } from 'antd';
 import { useState } from 'react';
 import './Menu.css'
+import logo from '../../assets/logo.png'
 const items = [
 
   {
@@ -128,7 +129,7 @@ const App = () => {
   };
   return (
     <div className="app-header">
-      
+      <a href='/index'><img src={logo} alt="Logo" className="app-logo" /></a>
       <Menu selectedKeys={[current]} mode="horizontal" items={items} />
     </div>
   )
