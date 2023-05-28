@@ -1,55 +1,77 @@
-.app-menu {
-  display: flex;
-  height: 130px;
-  width: 100%;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .app-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background-color: #6d0202;
+  color:black;
 }
 
 .app-logo {
   height: 100px;
 }
 
-.ant-menu-overflow-item {
-  color: #fff;
-  background: #6d0202 !important;
-}
-.ant-menu-light {
-  background: #6d0202 !important;
+.app-menu {
+  display: none;
 }
 
-.ant-menu-submenu-title:hover {
-  background: #6d0202 !important;
+.menu-burger-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.ant-menu .ant-menu-item a {
-  text-decoration: none;
+.menu-burger {
+  margin-right: 20px;
 }
 
-@media (max-width: 768px) {
-  .app-header {
-    flex-direction: column;
+@media (max-width: 350px) {
+  .menu-wrapper {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
-
+  
   .app-logo {
-    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 16px;
   }
-
-  .ant-menu {
+  
+  .app-menu {
+    display: none;
+  }
+  
+  .submenu-wrapper {
+    display: none;
+  }
+  
+  .ant-menu-submenu-vertical > .ant-menu {
     width: 100%;
-    text-align: center;
   }
-
-  .ant-menu-submenu {
-    display: inline-block;
+  
+  .ant-menu-submenu .ant-menu {
+    display: block;
+    position: static;
+    width: auto;
+    margin-top: 8px;
+  }
+  
+  .ant-menu-submenu .ant-menu-item {
+    width: 100%;
+    padding-left: 32px;
+  }
+  
+  .ant-menu-submenu .ant-menu-item-group-list .ant-menu-item {
+    padding-left: 40px;
+  }
+  
+  .ant-menu-submenu .ant-menu-item a {
+    display: block;
+    width: 100%;
+  }
+  
+  .submenu-open {
+    display: block !important;
   }
 }
+
+
