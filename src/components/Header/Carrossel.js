@@ -11,12 +11,12 @@ function Carrossel() {
     <Carousel autoplay>
       <div style={contentStyle}>
 
-        <img src='' />
+        <img src='https://i.ibb.co/w0CdjFv/taa-banner-2.png' />
 
       </div>
       <div style={contentStyle} >
 
-        <img src='' />
+        <img src='https://i.ibb.co/w0CdjFv/taa-banner-2.png' />
 
       </div>
 
