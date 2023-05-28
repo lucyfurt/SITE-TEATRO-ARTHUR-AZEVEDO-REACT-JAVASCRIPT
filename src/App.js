@@ -11,8 +11,6 @@ import FooterComponent from './components/Footer/FooterComponent.js';
 
 const { Header, Footer, Content } = Layout;
 
-//const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9322008938943!2d-44.3050561259277!3d-2.529032438245369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68ee5fb3ba277%3A0x3f66c06359ed1621!2sTeatro%20Arthur%20Azevedo!5e0!3m2!1spt-BR!2sbr!4v1684798082286!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-
 const contentStyle = {
   minHeight: 'calc(100vh - 160px)',
   display: 'flex',
@@ -28,13 +26,15 @@ const footerStyle = {
   backgroundColor: '#6d0202',
 };
 
-
+const headerStyle = {
+ backgroundColor: '#6d0202'
+};
 
 
 function App() {
   return (
     <Layout>
-      <Header>
+      <Header style={headerStyle}>
         <Menu />
       </Header>
       <Carrossel />

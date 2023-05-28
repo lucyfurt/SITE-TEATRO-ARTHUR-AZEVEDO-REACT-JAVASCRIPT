@@ -1,15 +1,12 @@
 .app-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
   background-color: #6d0202;
   color: black;
 }
-
 .app-logo {
-  height: 100px;
-}
+  height: 60px;
+} 
 
 .menu-wrapper {
   display: flex;
@@ -18,6 +15,8 @@
 
 .app-menu {
   display: block;
+  align-items: center;
+
 }
 
 .menu-burger {
@@ -27,11 +26,6 @@
 @media (max-width: 768px) {
   .menu-wrapper {
     justify-content: flex-end;
-  }
-
-  .app-logo {
-    margin-right: auto;
-    margin-left: 16px;
   }
 
   .app-menu {
