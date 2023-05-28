@@ -1,4 +1,5 @@
 import { Divider, Layout } from 'antd';
+import Menu from './components/Header/Menu'
 import './App.css';
 const { Header, Footer, Content } = Layout;
 const headerStyle = {
@@ -30,7 +31,7 @@ function App() {
       <Layout>
         <Header style={headerStyle}>
           <div>
-           
+           <Menu/>
           </div>          
         </Header>
         
