@@ -1,5 +1,5 @@
 import { Divider, Layout } from 'antd';
-import Menu from './components/Header/Menu'
+import Menu from './components/Header/Menu.js'
 import './App.css';
 const { Header, Footer, Content } = Layout;
 const headerStyle = {
