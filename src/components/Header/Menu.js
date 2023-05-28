@@ -130,7 +130,7 @@ const App = () => {
   return (
     <div className="app-header">
       <a href='/index'><img src={logo} alt="Logo" className="app-logo" /></a>
-      <Menu selectedKeys={[current]} mode="horizontal" items={items} />
+      <Menu selectedKeys={[current]} mode="horizontal" items={items} className="app-menu" />
     </div>
   )
 

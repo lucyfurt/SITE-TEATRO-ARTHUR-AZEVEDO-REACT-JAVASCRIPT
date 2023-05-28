@@ -1,46 +1,55 @@
+.app-menu {
+  display: flex;
+  height: 130px;
+  width: 100%;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .app-header {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #6d0202;
+}
+
+.app-logo {
+  height: 100px;
+}
+
+.ant-menu-overflow-item {
+  color: #fff;
+  background: #6d0202 !important;
+}
+.ant-menu-light {
+  background: #6d0202 !important;
+}
+
+.ant-menu-submenu-title:hover {
+  background: #6d0202 !important;
+}
+
+.ant-menu .ant-menu-item a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-    background-color: #6d0202;
   }
-  
+
   .app-logo {
-    height: 100px;
-    margin-right: 50px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    padding: 5px;
-    padding-bottom: 10px;
-  
+    margin-bottom: 20px;
   }
-  
-  .app-menu {
-    margin-right: 0;
-    border-bottom: none;
-   
-  
+
+  .ant-menu {
+    width: 100%;
+    text-align: center;
   }
-  
-  .ant-menu-overflow-item {
-    color: #fff;
-    background-color: #6d0202;
-  
+
+  .ant-menu-submenu {
+    display: inline-block;
   }
-  
-  .ant-menu-submenu-title:hover {
-    background: #6d0202 !important;
-  }
-  
-  
-  .ant-menu .ant-menu-item a {
-    text-decoration: none;
-  }
-  
-  
-  .ant-menu-submenu-title .ant-menu-submenu-arrow  :hover {
-    background: #fff !important;
-    color: #fff;
-  }
-  
+}
