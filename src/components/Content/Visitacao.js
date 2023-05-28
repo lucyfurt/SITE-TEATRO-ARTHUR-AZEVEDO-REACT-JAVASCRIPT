@@ -15,15 +15,15 @@ function Visitacao() {
   return (
     <>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '50px' }}>
-        <Row>
-          <Col span={12}>
+        <Row gutter={[16, 16]}>
+          <Col xs={24} sm={12} md={12} lg={12}>
             <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><EnvironmentTwoTone />Turística</h1>
             <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><strong>Terça das 14h às 17h</strong></p>
-            < p style={{ justifyContent: 'justify', alignItems: 'justify', padding: '20px' }}>Não é necessário agendamento,
+            <p style={{ display: 'flex', justifyContent: 'justify', alignItems: 'justify', padding: '20px' }}>Não é necessário agendamento,
               basta chegar à bilheteria e receber as instruções. Dependendo da quantidade de visitantes, a visita poderá ser dividida
               em grupos para melhor aproveitamento e segurança de todos.</p>
           </Col>
-          <Col span={12}>
+          <Col xs={24} sm={12} md={12} lg={12}>
             <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><BankTwoTone />Instituições</h1>
             <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><strong>Terça das 14h às 17h</strong></p>
             <p style={{ display: 'flex', justifyContent: 'justify', alignItems: 'center', padding: '20px' }}>Agendamento por meio de ofício
@@ -32,17 +32,15 @@ function Visitacao() {
             <p>.</p>
           </Col>
         </Row>
-
       </div>
 
-      <Button className="button text-center" type="primary" shape="primary"
-        size={size} onClick={() => setModal2Open(true)}>
+      <Button className="button text-center" type="primary" shape="primary" size={size} onClick={() => setModal2Open(true)}>
         Mais informações
       </Button>
       <Modal
         title="Protocolos"
         centered
-        open={modal2Open}
+        visible={modal2Open}
         onOk={() => setModal2Open(false)}
         onCancel={() => setModal2Open(false)}
       >
