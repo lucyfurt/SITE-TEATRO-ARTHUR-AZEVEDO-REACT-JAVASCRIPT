@@ -28,7 +28,6 @@ const FooterComponent = () => {
                 href='/pauta'
                 tooltip={<div>Pautas e locações</div>}
             />
-
         </footer>
     );
 };
