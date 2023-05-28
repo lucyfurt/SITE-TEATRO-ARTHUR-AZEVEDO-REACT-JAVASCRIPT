@@ -23,7 +23,7 @@ const FooterComponent = () => {
         icon={<FileTextOutlined />}
         shape="circle"
         style={{
-          right: 100
+          right: 10
         }}
         href="/pauta"
         tooltip={<div>Pautas e locações</div>}
