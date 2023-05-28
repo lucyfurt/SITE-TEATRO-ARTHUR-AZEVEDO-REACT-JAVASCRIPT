@@ -3,6 +3,7 @@ import Menu from './components/Header/Menu.js'
 import Carrossel from './components/Header/Carrossel.js'
 import './App.css';
 import CardNews from './components/Content/CardNews.js';
+import FullEvento from './components/Content/FullEvento.js';
 const { Header, Footer, Content } = Layout;
 const headerStyle = {
   textAlign: 'center',
@@ -56,7 +57,7 @@ function App() {
           }}
           orientation="center"
           ><h1 style={{color: '#fff'}}>Eventos</h1></Divider>
-
+          <FullEvento/>
           <Divider
            style={{
             background: 'rgb(242,174,48)',
