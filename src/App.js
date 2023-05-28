@@ -1,5 +1,6 @@
 import { Divider, Layout } from 'antd';
 import Menu from './components/Header/Menu.js'
+import Carrossel from './components/Header/Carrossel.js'
 import './App.css';
 const { Header, Footer, Content } = Layout;
 const headerStyle = {
@@ -32,6 +33,7 @@ function App() {
         <Header style={headerStyle}>
           <div>
            <Menu/>
+           <Carrossel/>
           </div>          
         </Header>
         
