@@ -76,9 +76,6 @@ function App() {
             orientation="center"
           ><h1 style={{ color: '#fff' }}>Bilheteria</h1></Divider>
           <Bilheteria />
-
-
-
         </Content>
         <Footer style={footerStyle} >
 
