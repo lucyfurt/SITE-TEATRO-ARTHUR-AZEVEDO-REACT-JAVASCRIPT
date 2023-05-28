@@ -34,7 +34,7 @@ function Visitacao() {
         </Row>
       </div>
 
-      <Button className="button text-center" type="primary" shape="primary" size={size} onClick={() => setModal2Open(true)}>
+      <Button style={{ backgroundColor: '#ffcc80',  }} className="button text-center" type="primary" shape="primary" size={size} onClick={() => setModal2Open(true)}>
         Mais informações
       </Button>
       <Modal
@@ -43,6 +43,8 @@ function Visitacao() {
         visible={modal2Open}
         onOk={() => setModal2Open(false)}
         onCancel={() => setModal2Open(false)}
+        style={{ backgroundColor: '#ffcc80',  }}
+        className="button text-center" type="primary" shape="primary"
       >
         <p><CheckCircleTwoTone />Proibido fotos em câmera profissional sem uma autorização prévia.</p>
         <p><CheckCircleTwoTone />É permanentemente proibido entrada nas dependências internas do Teatro com alimentos e bebidas.</p>
