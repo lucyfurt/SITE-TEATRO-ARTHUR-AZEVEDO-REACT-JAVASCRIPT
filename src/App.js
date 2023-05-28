@@ -19,7 +19,7 @@ const headerStyle = {
 };
 
 const contentStyle = {
-  minHeight: 'calc(550vh - 160px)',
+  minHeight: 'calc(600vh - 160px)',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -42,10 +42,9 @@ function App() {
         <Header style={headerStyle}>
           <div>
             <Menu />
-            <Carrossel />
           </div>
         </Header>
-
+        <Carrossel />
         <Content style={contentStyle}>
           <Divider
             style={{
@@ -54,7 +53,6 @@ function App() {
             }}
             orientation="center"
           >
-
             <h1 style={{ color: '#fff' }} >Notícias</h1></Divider>
           <CardNews />
           <Divider

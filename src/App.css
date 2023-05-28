@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+}
+
