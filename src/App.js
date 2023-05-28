@@ -4,6 +4,7 @@ import Carrossel from './components/Header/Carrossel.js'
 import './App.css';
 import CardNews from './components/Content/CardNews.js';
 import FullEvento from './components/Content/FullEvento.js';
+import Visitacao from './components/Content/Visitacao.js';
 const { Header, Footer, Content } = Layout;
 const headerStyle = {
   textAlign: 'center',
@@ -20,7 +21,7 @@ const contentStyle = {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  
+
 };
 
 const footerStyle = {
@@ -34,52 +35,52 @@ function App() {
       <Layout>
         <Header style={headerStyle}>
           <div>
-           <Menu/>
-           <Carrossel/>
-          </div>          
+            <Menu />
+            <Carrossel />
+          </div>
         </Header>
-        
-        <Content style={contentStyle}>
-          <Divider 
-           style={{
-            background: 'rgb(242,174,48)',
-            borderWidth: 2,
-          }}
-          orientation="center"
-          >
-     
-       <h1 style={{color: '#fff'}} >Notícias</h1></Divider>
-          <CardNews/>
-          <Divider
-           style={{
-            background: 'rgb(242,174,48)',
-            borderWidth: 2,
-          }}
-          orientation="center"
-          ><h1 style={{color: '#fff'}}>Eventos</h1></Divider>
-          <FullEvento/>
-          <Divider
-           style={{
-            background: 'rgb(242,174,48)',
-            borderWidth: 2,
-          }}
-          orientation="center"
-          ><h1 style={{color: '#fff'}}>Visitação</h1></Divider>
-         
-          <Divider
-           style={{
-            background: 'rgb(242,174,48)',
-            borderWidth: 2,
-          }}
-          orientation="center"
-          ><h1 style={{color: '#fff'}}>Bilheteria</h1></Divider>
-          
 
-          
-        
+        <Content style={contentStyle}>
+          <Divider
+            style={{
+              background: 'rgb(242,174,48)',
+              borderWidth: 2,
+            }}
+            orientation="center"
+          >
+
+            <h1 style={{ color: '#fff' }} >Notícias</h1></Divider>
+          <CardNews />
+          <Divider
+            style={{
+              background: 'rgb(242,174,48)',
+              borderWidth: 2,
+            }}
+            orientation="center"
+          ><h1 style={{ color: '#fff' }}>Eventos</h1></Divider>
+          <FullEvento />
+          <Divider
+            style={{
+              background: 'rgb(242,174,48)',
+              borderWidth: 2,
+            }}
+            orientation="center"
+          ><h1 style={{ color: '#fff' }}>Visitação</h1></Divider>
+          <Visitacao />
+          <Divider
+            style={{
+              background: 'rgb(242,174,48)',
+              borderWidth: 2,
+            }}
+            orientation="center"
+          ><h1 style={{ color: '#fff' }}>Bilheteria</h1></Divider>
+
+
+
+
         </Content>
         <Footer style={footerStyle} >
-        
+
         </Footer>
       </Layout>
     </>
