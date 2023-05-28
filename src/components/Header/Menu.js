@@ -117,8 +117,8 @@ const App = () => {
             return <Menu.Item key={item.key}>{item.label}</Menu.Item>;
           })}
         </Menu>
-        <div className="menu-burger-wrapper">
-          <Button className="menu-burger" onClick={showDrawer}>
+        <div className="menu-burger">
+          <Button onClick={showDrawer}>
             <MenuOutlined />
           </Button>
         </div>

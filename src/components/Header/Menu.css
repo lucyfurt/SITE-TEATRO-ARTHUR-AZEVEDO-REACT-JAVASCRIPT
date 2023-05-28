@@ -4,74 +4,41 @@
   align-items: center;
   padding: 20px;
   background-color: #6d0202;
-  color:black;
+  color: black;
 }
 
 .app-logo {
   height: 100px;
 }
 
-.app-menu {
-  display: none;
-}
-
-.menu-burger-wrapper {
+.menu-wrapper {
   display: flex;
   align-items: center;
 }
 
-.menu-burger {
-  margin-right: 20px;
+.app-menu {
+  display: block;
 }
 
-@media (max-width: 350px) {
+.menu-burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .menu-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
   }
-  
+
   .app-logo {
     margin-right: auto;
     margin-left: 16px;
   }
-  
+
   .app-menu {
     display: none;
   }
-  
-  .submenu-wrapper {
-    display: none;
-  }
-  
-  .ant-menu-submenu-vertical > .ant-menu {
-    width: 100%;
-  }
-  
-  .ant-menu-submenu .ant-menu {
+
+  .menu-burger {
     display: block;
-    position: static;
-    width: auto;
-    margin-top: 8px;
-  }
-  
-  .ant-menu-submenu .ant-menu-item {
-    width: 100%;
-    padding-left: 32px;
-  }
-  
-  .ant-menu-submenu .ant-menu-item-group-list .ant-menu-item {
-    padding-left: 40px;
-  }
-  
-  .ant-menu-submenu .ant-menu-item a {
-    display: block;
-    width: 100%;
-  }
-  
-  .submenu-open {
-    display: block !important;
   }
 }
-
-
