@@ -1,75 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, Drawer, Button } from 'antd';
-import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import { MenuOutlined } from '@ant-design/icons';
 import './Menu.css';
 import logo from '../../assets/logo.png';
 
-const items = [
+const menuItems = [
   {
     label: 'O Teatro',
     key: 'SubMenu',
-    children: [
+    items: [
       {
-        type: 'group',
-        children: [
-          {
-            label: <a href='/institucional'>Institucional</a>,
-            key: 'setting:1',
-          },
-          {
-            label: <a href='/historia'>História</a>,
-            key: 'setting:2',
-          },
-          {
-            label: <a href='/info'>Informações técnicas</a>,
-            key: 'setting:2',
-          },
-        ],
+        label: 'Institucional',
+        key: 'setting:1',
+        link: '/institucional',
+      },
+      {
+        label: 'História',
+        key: 'setting:2',
+        link: '/historia',
+      },
+      {
+        label: 'Informações técnicas',
+        key: 'setting:3',
+        link: '/info',
       },
     ],
   },
   {
     label: 'Shows/Espetáculos',
     key: 'shows',
-    children: [
+    items: [
       {
-        type: 'group',
-        children: [
-          {
-            label: <a href='/eventos'>Mensal</a>,
-            key: 'setting:7',
-          },
-        ],
+        label: 'Mensal',
+        key: 'setting:4',
+        link: '/eventos',
       },
     ],
   },
   {
     label: 'Pautas',
     key: 'pauta',
-    children: [
+    items: [
       {
-        type: 'group',
-        children: [
-          {
-            label: <a href='/pauta'>Reserva de pautas</a>,
-            key: 'setting:7',
-          },
-        ],
+        label: 'Reserva de pautas',
+        key: 'setting:5',
+        link: '/pauta',
       },
     ],
   },
   {
     label: 'Núcleo de Memória e Pesquisa',
     key: 'nmp',
-    children: [
+    items: [
       {
-        type: 'group',
-        children: [
-          {
-            label: <a href='/biblioteca'>Biblioteca Arão Paranaguá</a>,
-            key: 'setting:8',
-          },
-        ],
+        label: 'Biblioteca Arão Paranaguá',
+        key: 'setting:6',
+        link: '/biblioteca',
       },
     ],
   },
@@ -105,23 +91,38 @@ const App = () => {
     setDrawerVisible(false);
   };
 
+  const renderMenuItems = (items) => {
+    return items.map((item) => {
+      if (item.items) {
+        return (
+          <Menu.SubMenu key={item.key} title={item.label}>
+            {renderMenuItems(item.items)}
+          </Menu.SubMenu>
+        );
+      }
+      return (
+        <Menu.Item key={item.key}>
+          <a href={item.link}>{item.label}</a>
+        </Menu.Item>
+      );
+    });
+  };
+
   return (
     <div className="app-header">
       <a href="/index">
         <img src={logo} alt="Logo" className="app-logo" />
       </a>
       <div className="menu-wrapper">
-        {!isMobile && (
-          <Menu
-            mode="horizontal"
-            selectedKeys={[current]}
-            onClick={handleClick}
-            theme="light"
-            className="app-menu"
-          >
-            {/* Seu código de renderização do menu */}
-          </Menu>
-        )}
+        <Menu
+          mode={isMobile ? 'vertical' : 'horizontal'}
+          selectedKeys={[current]}
+          onClick={handleClick}
+          theme="light"
+          className="app-menu"
+        >
+          {renderMenuItems(menuItems)}
+        </Menu>
         {isMobile && (
           <div className="menu-burger">
             <Button onClick={showDrawer}>
@@ -135,31 +136,17 @@ const App = () => {
         placement="right"
         onClose={closeDrawer}
         visible={drawerVisible}
-        className="menu-drawer"
-        closeIcon={<CloseOutlined />}
       >
-         <Menu
+        <Menu
           mode="vertical"
           selectedKeys={[current]}
           onClick={handleClick}
           theme="light"
         >
-          {items.map((item) => {
-            if (item.children) {
-              return (
-                <Menu.SubMenu key={item.key} title={item.label}>
-                  {item.children[0].children.map((child) => (
-                    <Menu.Item key={child.key}>{child.label}</Menu.Item>
-                  ))}
-                </Menu.SubMenu>
-              );
-            }
-            return <Menu.Item key={item.key}>{item.label}</Menu.Item>;
-          })}
+          {renderMenuItems(menuItems)}
         </Menu>
       </Drawer>
     </div>
-
   );
 };
 

@@ -4,19 +4,30 @@
   background-color: #6d0202;
   color: black;
 }
+
 .app-logo {
   height: 60px;
-} 
+}
 
 .menu-wrapper {
   display: flex;
   align-items: center;
+  background: #6d0202;
+}
+.ant-menu-overflow-item {
+  background: #6d0202 !important;
+}
+.ant-menu-title-content{
+color: #fff;
 }
 
-.app-menu {
-  display: block;
-  align-items: center;
+.ant-menu-title-content a {
+  color: black !important
+  }
 
+.app-menu {
+  display: flex;
+  align-items: center;
 }
 
 .menu-burger {
@@ -35,4 +46,8 @@
   .menu-burger {
     display: block;
   }
+
+  .ant-menu-title-content{
+    color: black;
+    }
 }
