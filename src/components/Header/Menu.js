@@ -110,25 +110,37 @@ const App = () => {
 
   return (
     <div className="app-header">
-      <a href="/index">
-        <img src={logo} alt="Logo" className="app-logo" />
-      </a>
       <div className="menu-wrapper">
-        <Menu
-          mode={isMobile ? 'vertical' : 'horizontal'}
-          selectedKeys={[current]}
-          onClick={handleClick}
-          theme="light"
-          className="app-menu"
-        >
-          {renderMenuItems(menuItems)}
-        </Menu>
-        {isMobile && (
-          <div className="menu-burger">
-            <Button onClick={showDrawer}>
-              <MenuOutlined />
-            </Button>
-          </div>
+        <a href="/index">
+          <img src={logo} alt="Logo" className="app-logo" />
+        </a>
+        {isMobile ? (
+          <React.Fragment>
+            <Menu
+              mode="vertical"
+              selectedKeys={[current]}
+              onClick={handleClick}
+              theme="light"
+              className="app-menu"
+            >
+              {renderMenuItems(menuItems)}
+            </Menu>
+            <div className="menu-burger">
+              <Button onClick={showDrawer}>
+                <MenuOutlined />
+              </Button>
+            </div>
+          </React.Fragment>
+        ) : (
+          <Menu
+            mode="horizontal"
+            selectedKeys={[current]}
+            onClick={handleClick}
+            theme="light"
+            className="app-menu"
+          >
+            {renderMenuItems(menuItems)}
+          </Menu>
         )}
       </div>
       <Drawer

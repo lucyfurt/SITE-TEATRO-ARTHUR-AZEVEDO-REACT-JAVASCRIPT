@@ -1,34 +1,38 @@
 .app-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #6d0202;
-  color: black;
+  align-items: center;
 }
-
-.app-logo {
-  height: 60px;
-}
-
 .menu-wrapper {
-  display: flex;
+  display: flex;  
   align-items: center;
   background: #6d0202;
+
+  
 }
 .ant-menu-overflow-item {
   background: #6d0202 !important;
 }
+.ant-menu-overflow  {
+  background: #6d0202 !important;
+}
+.app-menu {
+  flex: 1;
+}
+.app-logo {
+  width: 60px;
+  margin-right: 20px;
+}
 .ant-menu-title-content{
 color: #fff;
 }
-
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu::after {
+  border-bottom: 0;
+ 
+  }
+ 
 .ant-menu-title-content a {
   color: black !important
   }
 
-.app-menu {
-  display: flex;
-  align-items: center;
-}
 
 .menu-burger {
   display: none;
@@ -51,3 +55,4 @@ color: #fff;
     color: black;
     }
 }
+
