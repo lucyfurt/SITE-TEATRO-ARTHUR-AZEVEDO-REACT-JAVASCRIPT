@@ -2,6 +2,7 @@ import { Divider, Layout } from 'antd';
 import Menu from './components/Header/Menu.js'
 import Carrossel from './components/Header/Carrossel.js'
 import './App.css';
+import CardNews from './components/Content/CardNews.js';
 const { Header, Footer, Content } = Layout;
 const headerStyle = {
   textAlign: 'center',
@@ -47,7 +48,7 @@ function App() {
           >
      
        <h1 style={{color: '#fff'}} >Notícias</h1></Divider>
-          
+          <CardNews/>
           <Divider
            style={{
             background: 'rgb(242,174,48)',
