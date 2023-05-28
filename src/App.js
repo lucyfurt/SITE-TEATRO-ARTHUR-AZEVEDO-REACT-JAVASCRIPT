@@ -1,24 +1,83 @@
-import logo from './logo.svg';
+import { Divider, Layout } from 'antd';
 import './App.css';
+const { Header, Footer, Content } = Layout;
+const headerStyle = {
+  textAlign: 'center',
+  backgroundColor: '#6d0202',
+  height: 130,
+  paddingInline: 50,
+  lineHeight: '64px',
 
+};
+
+const contentStyle = {
+  minHeight: 'calc(550vh - 160px)',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  
+};
+
+const footerStyle = {
+  textAlign: 'center',
+  color: '#fff',
+  backgroundColor: '#6d0202',
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Header style={headerStyle}>
+          <div>
+           
+          </div>          
+        </Header>
+        
+        <Content style={contentStyle}>
+          <Divider 
+           style={{
+            background: 'rgb(242,174,48)',
+            borderWidth: 2,
+          }}
+          orientation="center"
+          >
+     
+       <h1 style={{color: '#fff'}} >Notícias</h1></Divider>
+          
+          <Divider
+           style={{
+            background: 'rgb(242,174,48)',
+            borderWidth: 2,
+          }}
+          orientation="center"
+          ><h1 style={{color: '#fff'}}>Eventos</h1></Divider>
+
+          <Divider
+           style={{
+            background: 'rgb(242,174,48)',
+            borderWidth: 2,
+          }}
+          orientation="center"
+          ><h1 style={{color: '#fff'}}>Visitação</h1></Divider>
+         
+          <Divider
+           style={{
+            background: 'rgb(242,174,48)',
+            borderWidth: 2,
+          }}
+          orientation="center"
+          ><h1 style={{color: '#fff'}}>Bilheteria</h1></Divider>
+          
+
+          
+        
+        </Content>
+        <Footer style={footerStyle} >
+        
+        </Footer>
+      </Layout>
+    </>
   );
 }
 
