@@ -6,6 +6,7 @@ import CardNews from './components/Content/CardNews.js';
 import FullEvento from './components/Content/FullEvento.js';
 import Visitacao from './components/Content/Visitacao.js';
 import Bilheteria from './components/Content/Bilheteria.js';
+import FooterComponent from './components/Content/FooterComponent.js';
 const { Header, Footer, Content } = Layout;
 const headerStyle = {
   textAlign: 'center',
@@ -78,7 +79,7 @@ function App() {
           <Bilheteria />
         </Content>
         <Footer style={footerStyle} >
-
+          <FooterComponent />
         </Footer>
       </Layout>
     </>
