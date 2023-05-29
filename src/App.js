@@ -29,7 +29,8 @@ const footerStyle = {
 
 const headerStyle = {
  backgroundColor: '#6d0202',
- lineHeight: '64px',
+ lineHeight: '20px',
+ 
 };
 
 

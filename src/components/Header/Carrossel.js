@@ -28,6 +28,20 @@ function Carrossel() {
           style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
         />
       </div>
+       {/* Slide 4 */}
+       <div>
+        <img
+          src='https://i.ibb.co/5s0FdLN/corredor.png'
+          style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
+        />
+      </div>
+       {/* Slide 5 */}
+       <div>
+        <img
+          src='https://i.ibb.co/3pMd28p/camarote-oficial.png'
+          style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
+        />
+      </div>
     </Carousel>
   );
 }

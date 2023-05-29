@@ -11,7 +11,7 @@ const items = [
         O Teatro
       </a>
     ),
-    key: 'alipay',
+    key: 'taa',
   },
   {
     label: (
@@ -19,7 +19,7 @@ const items = [
         Próximos eventos
       </a>
     ),
-    key: 'alipay',
+    key: 'events',
   },
   {
     label: (
@@ -27,7 +27,7 @@ const items = [
         Pautas
       </a>
     ),
-    key: 'alipay',
+    key: 'pautas',
   },
   {
     label: (
@@ -35,7 +35,7 @@ const items = [
         Núcleo de Memória e Pesquisa
       </a>
     ),
-    key: 'alipay',
+    key: 'nmp',
   },
 ];
 
