@@ -27,7 +27,7 @@ useEffect(() => {
     <Row gutter={[16, 16]}>
         <Col xs={24} sm={12} lg={6}>
         <Card
-          style={{ backgroundColor: cardColors[0]}}
+          style={{ backgroundColor: cardColors[3]}}
           title={
             <span className="card-title">
               <p>TAA 206 anos</p>
@@ -44,12 +44,21 @@ useEffect(() => {
             <p>
               Masterclass "Trajetória do artista: relações entre teatro, cinema e tv" com Matheus Nachtergale
             </p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
           </p>
         </Card>
 </Col>
 <Col xs={24} sm={12} lg={6}>
         <Card
-          style={{backgroundColor: cardColors[1]}}
+          style={{backgroundColor: cardColors[3]}}
           title={
             <span className="card-title">
               <p>TAA 206 anos</p>
@@ -77,7 +86,7 @@ useEffect(() => {
 </Col>
 <Col xs={24} sm={12} lg={6}>
         <Card
-          style={{ flex: 1, backgroundColor: cardColors[2] }}
+          style={{ flex: 1, backgroundColor: cardColors[3] }}
           title={
             <span className="card-title">
               <p>TAA 206 anos</p>
@@ -92,6 +101,18 @@ useEffect(() => {
             <p>Visitação</p>
             <p>15h-17h</p>
             <p>Lançamento da visitação virtual</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
           </p>
         </Card>
 </Col>
@@ -121,7 +142,7 @@ useEffect(() => {
 </Col>
 <Col xs={24} sm={12} lg={6}>
         <Card
-          style={{  backgroundColor: cardColors[4]}}
+          style={{  backgroundColor: cardColors[3]}}
           title={
             <span className="card-title">
               <p>TAA 206 anos</p>
