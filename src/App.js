@@ -1,5 +1,5 @@
 import { Divider, Layout } from 'antd';
-import MenuTest from './components/MenuTest.js';
+
 import Carrossel from './components/Header/Carrossel.js';
 import './App.css';
 import CardNews from './components/Content/CardNews.js';
@@ -8,6 +8,7 @@ import Visitacao from './components/Content/Visitacao.js';
 import Bilheteria from './components/Content/Bilheteria.js';
 import Frame from './components/Content/Frame.js';
 import FooterComponent from './components/Footer/FooterComponent.js';
+import MenuAll from './components/MenuAll.js';
 
 const { Header, Footer, Content } = Layout;
 
@@ -36,7 +37,7 @@ function App() {
   return (
     <Layout>
       <Header style={headerStyle}>
-        <MenuTest />
+        <MenuAll/>
       </Header>
       <Carrossel />
       <Content style={contentStyle}>

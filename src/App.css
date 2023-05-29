@@ -56,3 +56,20 @@ p{
   justify-content: flex-end;
 }
 
+.menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #menu-grande {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu-pequeno {
+    display: block;
+  }
+}
+
+
