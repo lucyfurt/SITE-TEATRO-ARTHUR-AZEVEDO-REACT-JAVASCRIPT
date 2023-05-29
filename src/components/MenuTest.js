@@ -6,29 +6,17 @@ import '../App.css';
 
 const items = [
   {
-    label: 'O Teatro',
-    key: 'taa',
-
-    children: [
-      {
-        label: 'Institucional',
-        key: 'setting:1',
-      },
-      {
-        label: 'História',
-        key: 'setting:2',
-      },
-      {
-        label: 'Informações Técnicas',
-        key: 'setting:3',
-      },
-    
-    ],
+    label: (
+      <a href="/eventos" target="_blank" rel="noopener noreferrer">
+        O Teatro
+      </a>
+    ),
+    key: 'alipay',
   },
   {
     label: (
       <a href="/eventos" target="_blank" rel="noopener noreferrer">
-        Shows/Espetáculos
+        Próximos eventos
       </a>
     ),
     key: 'alipay',
@@ -42,18 +30,13 @@ const items = [
     key: 'alipay',
   },
   {
-    label: 'Núcleo de Memória e Pesquisa',
-    key: 'nmp',
-
-    children: [
-      {
-        label: 'Biblioteca Arão Paranaguá',
-        key: 'setting:1',
-      },
-    
-    
-    ],
-  }
+    label: (
+      <a href="/pautas" target="_blank" rel="noopener noreferrer">
+        Núcleo de Memória e Pesquisa
+      </a>
+    ),
+    key: 'alipay',
+  },
 ];
 
 const App = () => {
