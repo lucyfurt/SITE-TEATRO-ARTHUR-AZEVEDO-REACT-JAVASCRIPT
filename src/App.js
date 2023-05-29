@@ -41,21 +41,25 @@ function App() {
       </Header>
       <Carrossel />
       <Content style={contentStyle}>
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2 }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Notícias</h1>
-        </Divider>
+      <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
+  <h1 style={{ color: '#fff' }}>Notícias</h1>
+</Divider>
+
         <CardNews />
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2 }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Eventos</h1>
-        </Divider>
+       
+
+        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
+  <h1 style={{ color: '#fff' }}>Shows/Espetáculos</h1>
+</Divider>
+
         <FullEvento />
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2 }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Visitação</h1>
-        </Divider>
+        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
+  <h1 style={{ color: '#fff' }}>Visitação</h1>
+</Divider>
         <Visitacao />
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2 }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Bilheteria</h1>
-        </Divider>
+        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
+  <h1 style={{ color: '#fff' }}>Bilheteria</h1>
+</Divider>
         <Bilheteria />
         <Frame/>
       </Content>
