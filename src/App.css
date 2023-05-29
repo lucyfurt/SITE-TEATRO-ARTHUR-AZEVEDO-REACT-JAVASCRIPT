@@ -63,12 +63,9 @@ p {
 }
 
 .ant-menu-title-content {
-  color: #fff;
+  color: black
 }
 
-.ant-menu-title-content a {
-  color: black !important
-}
 
 @media (max-width: 768px) {
 
