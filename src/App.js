@@ -1,5 +1,5 @@
 import { Divider, Layout } from 'antd';
-import Menu from './components/Header/Menu.js';
+import MenuTest from './components/MenuTest.js';
 import Carrossel from './components/Header/Carrossel.js';
 import './App.css';
 import CardNews from './components/Content/CardNews.js';
@@ -36,7 +36,7 @@ function App() {
   return (
     <Layout>
       <Header style={headerStyle}>
-        <Menu />
+        <MenuTest />
       </Header>
       <Carrossel />
       <Content style={contentStyle}>

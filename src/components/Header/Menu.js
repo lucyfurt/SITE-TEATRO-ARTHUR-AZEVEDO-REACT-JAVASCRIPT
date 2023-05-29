@@ -147,7 +147,7 @@ const App = () => {
         title="Menu"
         placement="right"
         onClose={closeDrawer}
-        visible={drawerVisible}
+        open={drawerVisible}
       >
         <Menu
           mode="vertical"
