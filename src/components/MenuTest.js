@@ -1,52 +1,59 @@
 import React, { useState } from 'react';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
+
 import { Menu } from 'antd';
 import { Row, Col } from 'antd';
-import '../App.css'; // Importe o arquivo de estilos CSS
+import '../App.css'; 
 
 const items = [
   {
-    label: 'Navigation One',
-    key: 'mail',
-    icon: <MailOutlined />,
-  },
-  {
-    label: 'Navigation Two',
-    key: 'app',
-    icon: <AppstoreOutlined />,
-    disabled: true,
-  },
-  {
-    label: 'Navigation Three - Submenu',
-    key: 'SubMenu',
-    icon: <SettingOutlined />,
+    label: 'O Teatro',
+    key: 'taa',
+
     children: [
       {
-        label: 'Item 1',
+        label: 'Institucional',
         key: 'setting:1',
       },
       {
-        label: 'Item 2',
+        label: 'História',
         key: 'setting:2',
       },
       {
-        label: 'Item 3',
+        label: 'Informações Técnicas',
         key: 'setting:3',
       },
-      {
-        label: 'Item 4',
-        key: 'setting:4',
-      },
+    
     ],
   },
   {
     label: (
-      <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-        Navigation Four - Link
+      <a href="/eventos" target="_blank" rel="noopener noreferrer">
+        Shows/Espetáculos
       </a>
     ),
     key: 'alipay',
   },
+  {
+    label: (
+      <a href="/pautas" target="_blank" rel="noopener noreferrer">
+        Pautas
+      </a>
+    ),
+    key: 'alipay',
+  },
+  {
+    label: 'Núcleo de Memória e Pesquisa',
+    key: 'nmp',
+
+    children: [
+      {
+        label: 'Biblioteca Arão Paranaguá',
+        key: 'setting:1',
+      },
+    
+    
+    ],
+  }
 ];
 
 const App = () => {
@@ -89,7 +96,7 @@ const App = () => {
         </Menu>
 
       </Col>
-      
+
     </Row>
   );
 };

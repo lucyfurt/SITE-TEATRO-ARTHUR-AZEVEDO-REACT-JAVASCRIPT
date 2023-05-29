@@ -60,16 +60,18 @@ p{
   display: none;
 }
 
-@media (min-width: 768px) {
-  #menu-grande {
-    display: block;
+.ant-menu-title-content{
+  color: #fff;
   }
-}
+  .ant-menu-title-content a {
+    color: black !important
+    }
+  
 
-@media (max-width: 767px) {
-  #menu-pequeno {
-    display: block;
-  }
-}
-
-
+    @media (max-width: 768px) {
+    
+    
+      .ant-menu-title-content{
+        color: black;
+        }
+    }

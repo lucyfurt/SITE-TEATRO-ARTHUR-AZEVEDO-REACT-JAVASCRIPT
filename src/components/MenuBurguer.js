@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, Button, Drawer, Row, Col } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined, MenuOutlined } from '@ant-design/icons';
+import { MailOutlined, AppstoreOutlined, SettingOutlined, MenuOutlined, CloseOutlined } from '@ant-design/icons';
 
 const items = [
   {
@@ -71,10 +71,13 @@ const MenuBurger = () => {
           bodyStyle={{ padding: 0 }}
         >
           <div style={{ padding: '16px' }}>
-            <Row justify="center" style={{ marginBottom: '16px' }}>
-            <Col span={4}>
-        <img src="https://i.ibb.co/kJhYxVW/logo.png" alt="Logo" style={{ width: '60px' }} />
-      </Col>
+            <Row justify="space-between" align="middle" style={{ marginBottom: '16px' }}>
+              <Col span={6}>
+                <img src="https://i.ibb.co/kJhYxVW/logo.png" alt="Logo" style={{ width: '60px' }} />
+              </Col>
+              <Col>
+                <Button type="text" icon={<CloseOutlined />} onClick={toggleDrawer} />
+              </Col>
             </Row>
             <Menu
               onClick={handleClick}
