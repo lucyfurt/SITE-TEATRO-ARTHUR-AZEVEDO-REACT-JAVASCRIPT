@@ -1,5 +1,5 @@
 import React from 'react';
-import { FloatButton, Row, Col, Divider } from 'antd';
+import { FloatButton, Row, Col, Divider, BackTop } from 'antd';
 import { FileTextOutlined, InstagramOutlined, FacebookOutlined, YoutubeOutlined } from '@ant-design/icons';
 import './FooterComponent.css'; // Importar o arquivo CSS com as modificações
 
@@ -13,12 +13,18 @@ const FooterComponent = () => {
   const getSocialLinksClassName = () => {
     return isSmallScreen() ? 'social-links small-screen' : 'social-links';
   };
+  const style = {
+  
+    backgroundColor: "#fff",
+    color: "black",
+   
+  };
 
   return (
     <footer className="footer">
       <Row justify="space-between" align="middle">
         <Col>
-          <img src='https://i.ibb.co/vmpv5sD/logo206.png' className="img-fluid" style={{ maxWidth: '140px', height: 'auto' }}/>
+          <img src='https://i.ibb.co/vmpv5sD/logo206.png' className="img-fluid" style={{ maxWidth: '140px', height: 'auto' }} />
         </Col>
         <Col>
           <img src="https://i.ibb.co/C2HcsN6/SECMA.png" className="img-fluid" style={{ maxWidth: '220px', height: 'auto' }} />
@@ -37,17 +43,13 @@ const FooterComponent = () => {
           </div>
         </Col>
       </Row>
-      <Divider/>
+      
       <p>Todos os direitos reservados - Teatro Arthur Azevedo 2023</p>
-      <FloatButton
-        icon={<FileTextOutlined />}
-        shape="circle"
-        style={{
-          right: 10
-        }}
-        href="/pauta"
-        tooltip={<div>Pautas e locações</div>}
-      />
+      <FloatButton.BackTop 
+      style={{
+        right: 10
+      }}
+      />      
     </footer>
   );
 };
