@@ -4,9 +4,19 @@ import { FileTextOutlined, InstagramOutlined, FacebookOutlined, YoutubeOutlined 
 import './FooterComponent.css'; // Importar o arquivo CSS com as modificações
 
 const FooterComponent = () => {
+  // Função para verificar se a tela é pequena
+  const isSmallScreen = () => {
+    return window.innerWidth <= 768; // Altere o valor de 768 de acordo com sua necessidade
+  };
+
+  // Classe CSS para centralizar os links em telas pequenas
+  const getSocialLinksClassName = () => {
+    return isSmallScreen() ? 'social-links small-screen' : 'social-links';
+  };
+
   return (
     <footer className="footer">
-      <Row justify="space-between" align="middle" gutter={[8, 8]}>
+      <Row justify="space-between" align="middle">
         <Col>
           <img src='https://i.ibb.co/vmpv5sD/logo206.png' className="img-fluid" style={{ maxWidth: '140px', height: 'auto' }}/>
         </Col>
@@ -14,7 +24,7 @@ const FooterComponent = () => {
           <img src="https://i.ibb.co/C2HcsN6/SECMA.png" className="img-fluid" style={{ maxWidth: '220px', height: 'auto' }} />
         </Col>
         <Col>
-          <div className="social-links">
+          <div className={getSocialLinksClassName()}>
             <a href='https://www.instagram.com/teatroarthurazevedooficial/' target='_blank' rel="noreferrer">
               <InstagramOutlined style={{ fontSize: '30px' }} />
             </a>
