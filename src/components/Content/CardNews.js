@@ -12,6 +12,7 @@ function CardNews() {
         <Col xs={24} sm={12} lg={6}>
           <Card
             style={{
+              flex:1,
               width: '100%',
             }}
             cover={
@@ -26,13 +27,24 @@ function CardNews() {
           >
             <Meta
               title="TAA 206 anos"
-              description="O TAA está com novidade! Para comemorar os 206 anos de história, lançamos uma logo que transmite toda importância e valor desse evento."
+              description="O TAA está com novidade! Para comemorar os 206 anos de história, lançamos uma logo que transmite toda importância e valor desse evento.
+             
+              "
+              
             />
+             <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              
+             
           </Card>
         </Col>
         <Col xs={24} sm={12} lg={6}>
           <Card
-            style={{
+            style={{flex:1,
               width: '100%',
             }}
             cover={
@@ -49,11 +61,17 @@ function CardNews() {
               title="Núcleo de Memória e Pesquisa do TAA"
               description="O Núcleo de Memória e Pesquisa do TAA possui acervo riquíssimo e crescente de obras e documentos históricos referentes às artes cênicas, além de projetos de pesquisa e extensão que são desenvolvidas em parceria com instituições públicas, como a UFMA."
             />
+             <br/>
+              <br/>
+              
+              
+              
           </Card>
         </Col> 
         <Col xs={24} sm={12} lg={6}>
           <Card
             style={{
+              flex:1,
               width: '100%',
             }}
             cover={
@@ -70,11 +88,12 @@ function CardNews() {
               title="entreATO"
               description="O TAA promove a segunda edição do entreATO, cujo objetivo é promover ações artístico-pedagógicas, nas quais os participantes possam experimentar as mais diversas metodologias de criação cênica."
             />
+            
           </Card>
         </Col>
         <Col xs={24} sm={12} lg={6}>
           <Card
-            style={{
+            style={{flex:1,
               width: '100%',
             }}
             cover={
