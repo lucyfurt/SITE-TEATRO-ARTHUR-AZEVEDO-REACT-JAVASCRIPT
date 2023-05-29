@@ -4,6 +4,7 @@ import Carrossel from './components/Header/Carrossel.js';
 import './App.css';
 import CardNews from './components/Content/CardNews.js';
 import FullEvento from './components/Content/FullEvento.js';
+import Programacao from './components/Content/Programacao.js';
 import Visitacao from './components/Content/Visitacao.js';
 import Bilheteria from './components/Content/Bilheteria.js';
 import Frame from './components/Content/Frame.js';
@@ -29,7 +30,7 @@ const footerStyle = {
 
 const headerStyle = {
  backgroundColor: '#6d0202',
- lineHeight: '20px',
+ lineHeight: '64px',
  
 };
 
@@ -53,7 +54,7 @@ function App() {
   <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
 </Divider>
 
-        <FullEvento />
+        <Programacao/>
         <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
   <h1 style={{ color: '#fff' }}>Visitação</h1>
 </Divider>

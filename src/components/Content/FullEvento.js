@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Button, Row, Col, Divider } from 'antd';
 import  { useState, useEffect } from 'react';
 
+
 function FullEvento() {
   const [size, setSize] = useState('large');
 // Defina as cores dos cards
@@ -29,10 +30,10 @@ useEffect(() => {
         <Card
           style={{ backgroundColor: cardColors[3]}}
           title={
-            <span className="card-title">
-              <p>TAA 206 anos</p>
-              <p>29/05</p>
-            </span>
+            
+              <p > TAA 206 anos   29/05</p>
+            
+          
           }
           size={size}
         >
