@@ -7,7 +7,7 @@ const FooterComponent = () => {
     <footer className="footer">
       <Row justify="space-between" align="middle">
         <Col xs={12} sm={12} md={12} lg={12}>
-          <Row gutter={[64, 64]} align="middle">
+          <Row gutter={[8, 8]} align="middle">
             <Col>
               <img src='https://i.ibb.co/vmpv5sD/logo206.png' className="img-fluid" style={{ maxWidth: '140px', height: 'auto' }}/>
             </Col>
@@ -17,7 +17,7 @@ const FooterComponent = () => {
           </Row>
         </Col>
         <Col xs={12} sm={12} md={12} lg={12} style={{ textAlign: 'right' }}>
-          <Row gutter={[64, 64]} justify="end">
+          <Row gutter={[8, 8]} justify="end">
             <Col>
               <a href='https://www.instagram.com/teatroarthurazevedooficial/' target='_blank' rel="noreferrer">
                 <InstagramOutlined style={{ fontSize: '30px' }} />
