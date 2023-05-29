@@ -49,7 +49,7 @@ function App() {
        
 
         <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
-  <h1 style={{ color: '#fff' }}>Shows/Espetáculos</h1>
+  <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
 </Divider>
 
         <FullEvento />
