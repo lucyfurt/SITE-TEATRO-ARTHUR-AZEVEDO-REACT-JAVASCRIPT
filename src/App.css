@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,15 +41,16 @@
 h1 {
   font-family: 'Montserrat', sans-serif;
 }
-h2{
+
+h2 {
   font-family: 'Poppins', sans-serif;
 }
 
-h3{
+h3 {
   font-family: 'Poppins', sans-serif;
 }
 
-p{
+p {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -60,18 +62,18 @@ p{
   display: none;
 }
 
-.ant-menu-title-content{
+.ant-menu-title-content {
   color: #fff;
-  }
-  .ant-menu-title-content a {
-    color: black !important
-    }
-  
+}
 
-    @media (max-width: 768px) {
-    
-    
-      .ant-menu-title-content{
-        color: black;
-        }
-    }
+.ant-menu-title-content a {
+  color: black !important
+}
+
+@media (max-width: 768px) {
+
+
+  .ant-menu-title-content {
+    color: black;
+  }
+}
