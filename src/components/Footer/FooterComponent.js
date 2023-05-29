@@ -7,13 +7,13 @@ const FooterComponent = () => {
     <footer className="footer">
       <Row justify="center">
         <Col xs={8} sm={6} md={4} lg={2}>
-          <InstagramOutlined style={{ fontSize: '50px' }} />
+          <InstagramOutlined style={{ fontSize: '30px' }} />
         </Col>
         <Col xs={8} sm={6} md={4} lg={2}>
-          <FacebookOutlined style={{ fontSize: '50px' }} />
+          <FacebookOutlined style={{ fontSize: '30px' }} />
         </Col>
         <Col xs={8} sm={6} md={4} lg={2}>
-          <YoutubeOutlined style={{ fontSize: '50px' }} />
+          <YoutubeOutlined style={{ fontSize: '30px' }} />
         </Col>
       </Row>
 
