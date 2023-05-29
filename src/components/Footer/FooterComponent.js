@@ -5,41 +5,39 @@ import { FileTextOutlined , InstagramOutlined, FacebookOutlined, YoutubeOutlined
 const FooterComponent = () => {
   return (
     <footer className="footer">
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <img src='https://i.ibb.co/vmpv5sD/logo206.png' style={{ width: '140px', height:'70px' }}/>
-        <img src="https://i.ibb.co/C2HcsN6/SECMA.png" style={{ width: '220px', height:'65px' }} />
-      </div>
+      <Row justify="space-between" align="middle">
+        <Col xs={12} sm={12} md={12} lg={12}>
+          <Row gutter={[64, 64]} align="middle">
+            <Col>
+              <img src='https://i.ibb.co/vmpv5sD/logo206.png' className="img-fluid" style={{ maxWidth: '140px', height: 'auto' }}/>
+            </Col>
+            <Col>
+              <img src="https://i.ibb.co/C2HcsN6/SECMA.png" className="img-fluid" style={{ maxWidth: '220px', height: 'auto' }} />
+            </Col>
+          </Row>
+        </Col>
+        <Col xs={12} sm={12} md={12} lg={12} style={{ textAlign: 'right' }}>
+          <Row gutter={[64, 64]} justify="end">
+            <Col>
+              <a href='https://www.instagram.com/teatroarthurazevedooficial/' target='_blank' rel="noreferrer">
+                <InstagramOutlined style={{ fontSize: '30px' }} />
+              </a>
+            </Col>
+            <Col>
+              <a href='https://www.facebook.com/teatroarthurazevedooficial/?locale=pt_BR' target='_blank' rel="noreferrer">
+                <FacebookOutlined style={{ fontSize: '30px' }} />
+              </a>
+            </Col>
+            <Col>
+              <a href='https://www.youtube.com/channel/UCDq1f20ufxLFjUdz5eqSEtg' target='_blank' rel="noreferrer">
+                <YoutubeOutlined style={{ fontSize: '30px' }} />
+              </a>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
       <Divider/>
-<Row style={{justifyContent: 'center'}} >
-<Col xs={8} sm={6} md={4} lg={2}>
-          <a href='https://www.instagram.com/teatroarthurazevedooficial/'
-          target='_blank' rel="noreferrer" 
-          >
-          <InstagramOutlined style={{ fontSize: '30px' }} />
-          </a>
-          
-        </Col>
-        <Col xs={8} sm={6} md={4} lg={2}>
-      
-        <a href='  https://www.facebook.com/teatroarthurazevedooficial/?locale=pt_BR'
-          target='_blank' rel="noreferrer" 
-          >
-             <FacebookOutlined style={{ fontSize: '30px' }} />
-          </a>
-         
-        </Col>
-        <Col xs={8} sm={6} md={4} lg={2}>
-        <a href='  https://www.youtube.com/channel/UCDq1f20ufxLFjUdz5eqSEtg'
-          target='_blank' rel="noreferrer" 
-          >
-             <YoutubeOutlined style={{ fontSize: '30px' }} />
-        </a>
-         
-        </Col>
-       
-</Row>
       <p>Todos os direitos reservados - Teatro Arthur Azevedo 2023</p>
-
       <FloatButton
         icon={<FileTextOutlined />}
         shape="circle"
