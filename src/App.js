@@ -23,8 +23,8 @@ const contentStyle = {
 
 const footerStyle = {
   textAlign: 'center',
-  color: '#fff',
-  backgroundColor: '#6d0202',
+  color: 'black',
+  backgroundColor: '#cdd8d8',
 };
 
 const headerStyle = {
