@@ -25,7 +25,7 @@ const contentStyle = {
 const footerStyle = {
   textAlign: 'center',
   color: 'black',
-  backgroundColor: '#cdd8d8',
+  backgroundColor: '#730c02',
 };
 
 const headerStyle = {
