@@ -1,55 +1,46 @@
 import React from 'react';
-import { FloatButton, Row, Col, Divider, BackTop } from 'antd';
-import { FileTextOutlined, InstagramOutlined, FacebookOutlined, YoutubeOutlined } from '@ant-design/icons';
-import './FooterComponent.css'; // Importar o arquivo CSS com as modificações
+import { Row, Col, BackTop } from 'antd';
+import { InstagramOutlined, FacebookOutlined, YoutubeOutlined } from '@ant-design/icons';
+import './FooterComponent.css';
 
 const FooterComponent = () => {
-  // Função para verificar se a tela é pequena
   const isSmallScreen = () => {
-    return window.innerWidth <= 768; // Altere o valor de 768 de acordo com sua necessidade
+    return window.innerWidth <= 768;
   };
 
-  // Classe CSS para centralizar os links em telas pequenas
   const getSocialLinksClassName = () => {
     return isSmallScreen() ? 'social-links small-screen' : 'social-links';
-  };
-  const style = {
-  
-    backgroundColor: "#fff",
-    color: "black",
-   
   };
 
   return (
     <footer className="footer">
-      <Row justify="space-between" align="middle">
-        <Col>
-          <img src='https://i.ibb.co/vmpv5sD/logo206.png' className="img-fluid" style={{ maxWidth: '140px', height: 'auto' }} />
-        </Col>
-        <Col>
-          <img src="https://i.ibb.co/C2HcsN6/SECMA.png" className="img-fluid" style={{ maxWidth: '220px', height: 'auto' }} />
-        </Col>
-        <Col>
-          <div className={getSocialLinksClassName()}>
-            <a href='https://www.instagram.com/teatroarthurazevedooficial/' target='_blank' rel="noreferrer">
-              <InstagramOutlined style={{ fontSize: '30px' }} />
-            </a>
-            <a href='https://www.facebook.com/teatroarthurazevedooficial/?locale=pt_BR' target='_blank' rel="noreferrer">
-              <FacebookOutlined style={{ fontSize: '30px' }} />
-            </a>
-            <a href='https://www.youtube.com/channel/UCDq1f20ufxLFjUdz5eqSEtg' target='_blank' rel="noreferrer">
-              <YoutubeOutlined style={{ fontSize: '30px' }} />
-            </a>
-          </div>
-        </Col>
-      </Row>
-      
-      <p>Todos os direitos reservados - Teatro Arthur Azevedo 2023</p>
-      <FloatButton.BackTop 
-      style={{
-        right: 10
-      }}
-      />      
+      <div className="footer-content">
+        <Row justify="center" gutter={[16, 16]}>
+          <Col xs={24} sm={12} md={6}>
+            <img src="https://i.ibb.co/vmpv5sD/logo206.png" alt="Logo" className="logo" />
+          </Col>
+          <Col xs={24} sm={12} md={6}>
+            <img src="https://i.ibb.co/C2HcsN6/SECMA.png" alt="SECMA" className="secma-logo" />
+          </Col>
+          <Col xs={24} md={12}>
+            <div className={getSocialLinksClassName()}>
+              <a href="https://www.instagram.com/teatroarthurazevedooficial/" target="_blank" rel="noreferrer">
+                <InstagramOutlined style={{ fontSize: '30px' }} />
+              </a>
+              <a href="https://www.facebook.com/teatroarthurazevedooficial/?locale=pt_BR" target="_blank" rel="noreferrer">
+                <FacebookOutlined style={{ fontSize: '30px' }} />
+              </a>
+              <a href="https://www.youtube.com/channel/UCDq1f20ufxLFjUdz5eqSEtg" target="_blank" rel="noreferrer">
+                <YoutubeOutlined style={{ fontSize: '30px' }} />
+              </a>
+            </div>
+          </Col>
+        </Row>
+        <p className="copyright">
+          Todos os direitos reservados - Teatro Arthur Azevedo {new Date().getFullYear()}
+        </p>
+        <BackTop />
+      </div>
     </footer>
   );
 };
