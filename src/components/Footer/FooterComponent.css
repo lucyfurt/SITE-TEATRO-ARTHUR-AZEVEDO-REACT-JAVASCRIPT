@@ -2,7 +2,7 @@
 
 .footer {
   background-color: #730c02;
-  color: black;
+  color: #fff;
   padding: 20px;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .secma-logo {
-  max-width: 220px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .social-links.small-screen {
@@ -33,7 +33,7 @@
 }
 
 .social-links a {
-  color: black;
+  color:#fff;
 }
 
 .social-links a:hover {

@@ -9,7 +9,7 @@ function Carrossel() {
       {/* Slide 1 */}
       <div>
         <img
-          src='https://i.ibb.co/164fGX8/Boca-de-Cena.jpg'
+          src='https://i.ibb.co/XLHVTWB/0005.png'
           style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
         />
       </div>
@@ -17,25 +17,31 @@ function Carrossel() {
       {/* Slide 2 */}
       <div>
         <img
-          src='https://i.ibb.co/w6HgK0n/Corredor.jpg'
+          src='https://i.ibb.co/LCkKg7M/0004.png'
           style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
         />
       </div>
       {/* Slide 3 */}
       <div>
         <img
-          src='https://i.ibb.co/6vqhkt3/Plat-ia-2.jpg'
+          src='https://i.ibb.co/wL61HpC/0003.png'
           style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
         />
       </div>
        {/* Slide 4 */}
        <div>
         <img
-          src='https://i.ibb.co/F0shzb0/Sal-o-Nobre-4.jpg'
+          src='https://i.ibb.co/KmQXytP/0002.png'
           style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
         />
       </div>
-      
+       {/* Slide 5 */}
+       <div>
+        <img
+          src='https://i.ibb.co/yqz8DqH/0001.png'
+          style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
+        />
+      </div>
     </Carousel>
   );
 }

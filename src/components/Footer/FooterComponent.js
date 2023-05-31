@@ -15,12 +15,12 @@ const FooterComponent = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <Row justify="center" gutter={[16, 16]}>
+        <Row justify="center" gutter={[8, 8]}>
           <Col xs={24} sm={12} md={6}>
-            <img src="https://i.ibb.co/vmpv5sD/logo206.png" alt="Logo" className="logo" />
+            <img src="https://i.ibb.co/vwybPfW/Asset-4-2x.png" alt="Logo" className="logo" />
           </Col>
           <Col xs={24} sm={12} md={6}>
-            <img src="https://i.ibb.co/C2HcsN6/SECMA.png" alt="SECMA" className="secma-logo" />
+            <img src="https://i.ibb.co/pQyyTs6/Asset-1-2x.png" alt="SECMA" className="secma-logo" />
           </Col>
           <Col xs={24} md={12}>
             <div className={getSocialLinksClassName()}>
