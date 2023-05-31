@@ -8,8 +8,8 @@ function Bilheteria() {
 
         <>
             <div >
-                <h2 ><ClockCircleTwoTone />Horário de funcionamento</h2>
-                <strong><p> Terça a domingo das 13h30 às 18h30</p></strong>
+              <h2 > Horário de funcionamento </h2>
+                <p><strong>Terça a domingo das 13h30 às 18h30</strong></p>
             </div>
         </>
 
