@@ -1,8 +1,7 @@
 import React from 'react';
-import { Card, Tabs, Row, Col, Input, Calendar } from 'antd';
+import { Card, Tabs, Row, Col } from 'antd';
 
 const { TabPane } = Tabs;
-const { Search } = Input;
 
 const TheatreSchedule = () => {
     const cardColors = ['#FAD0C9', '#E4C1F9', '#B5EAD7', '#FFE4A1', '#C9E4F9'];
@@ -83,10 +82,6 @@ const TheatreSchedule = () => {
                                 <p>Horário: 09h - no CCVM</p>
                             </Card>
                         </Col>
-                    </Row>
-                </TabPane>
-                <TabPane tab="Música" key="2">
-                    <Row gutter={[16, 16]} justify="center">
                         <Col xs={24} sm={12} md={8} lg={6} xl={4}>
                             <Card
                                 title="TAA 206 anos"
@@ -96,24 +91,6 @@ const TheatreSchedule = () => {
                                 <p>Cerimônia de aniversário + Orquestra João do Vale (MA)</p>
                                 <p>Horário: 15h-17h</p>
                             </Card>
-                        </Col>
-                        <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-                            <Card
-                                title="TAA 206 anos"
-                                extra="Data: 02/06/2023"
-                                style={{ backgroundColor: cardColors[4] }}
-                            >
-                                <p>Show "Lado B"</p>
-                                <p>Emanuele Paz (MA)</p>
-                                <p>Ingressos limitados</p>
-                                <p>Horário: 19h - 20h</p>
-                            </Card>
-                        </Col>
-                    </Row>
-                </TabPane>
-                <TabPane tab="Espetáculo" key="3">
-                    <Row gutter={[16, 16]} justify="center">
-                        <Col xs={24} sm={12} md={8} lg={6} xl={4}>
                             <Card
                                 title="TAA 206 anos"
                                 extra="Data: 01/06/2023"
@@ -135,6 +112,16 @@ const TheatreSchedule = () => {
                                 <p>Xama Teatro (MA)</p>
                                 <p>Ingressos limitados</p>
                                 <p>Horário: 18h</p>
+                            </Card>
+                            <Card
+                                title="TAA 206 anos"
+                                extra="Data: 02/06/2023"
+                                style={{ backgroundColor: cardColors[4] }}
+                            >
+                                <p>Show "Lado B"</p>
+                                <p>Emanuele Paz (MA)</p>
+                                <p>Ingressos limitados</p>
+                                <p>Horário: 19h-20h</p>
                             </Card>
                         </Col>
                     </Row>
