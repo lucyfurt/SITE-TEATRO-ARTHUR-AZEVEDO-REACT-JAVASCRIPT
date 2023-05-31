@@ -1,7 +1,7 @@
 /* FooterComponent.css */
 
 .footer {
-  background-color: #fff;
+  background-color: #730c02;
   color: black;
   padding: 20px;
 }
@@ -57,7 +57,7 @@
   height: 40px;
   line-height: 40px;
   background-color: #730c02;
-  color: white;
+  color: #730c02;
   text-align: center;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);

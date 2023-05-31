@@ -3,7 +3,6 @@ import { Divider, Layout } from 'antd';
 import Carrossel from './components/Header/Carrossel.js';
 import './App.css';
 import CardNews from './components/Content/CardNews.js';
-import FullEvento from './components/Content/FullEvento.js';
 import Programacao from './components/Content/Programacao.js';
 import Visitacao from './components/Content/Visitacao.js';
 import Bilheteria from './components/Content/Bilheteria.js';
@@ -29,9 +28,9 @@ const footerStyle = {
 };
 
 const headerStyle = {
- backgroundColor: '#6d0202',
- lineHeight: '64px',
- 
+  backgroundColor: '#6d0202',
+  lineHeight: '64px',
+
 };
 
 
@@ -39,31 +38,28 @@ function App() {
   return (
     <Layout>
       <Header style={headerStyle}>
-        <MenuAll/>
+        <MenuAll />
       </Header>
       <Carrossel />
       <Content style={contentStyle}>
-      <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
-  <h1 style={{ color: '#fff' }}>Notícias</h1>
-</Divider>
-
-        <CardNews />
        
-
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
-  <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
-</Divider>
-
-        <Programacao/>
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
-  <h1 style={{ color: '#fff' }}>Visitação</h1>
-</Divider>
+        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
+          <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
+        </Divider>
+        <Programacao />
+        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
+          <h1 style={{ color: '#fff' }}>Notícias</h1>
+        </Divider>
+        <CardNews />
+        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
+          <h1 style={{ color: '#fff' }}>Visitação</h1>
+        </Divider>
         <Visitacao />
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight:'0', fontSize:'14' }} orientation="center">
-  <h1 style={{ color: '#fff' }}>Bilheteria</h1>
-</Divider>
+        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
+          <h1 style={{ color: '#fff' }}>Bilheteria</h1>
+        </Divider>
         <Bilheteria />
-        <Frame/>
+        <Frame />
       </Content>
       <Footer style={footerStyle}>
         <FooterComponent />

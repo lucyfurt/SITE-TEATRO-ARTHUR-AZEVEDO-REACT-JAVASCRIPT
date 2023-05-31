@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import { FileTextOutlined } from '@ant-design/icons';
 import { Card } from 'antd';
+import './CardNews.css'
 
 const { Meta } = Card;
 
