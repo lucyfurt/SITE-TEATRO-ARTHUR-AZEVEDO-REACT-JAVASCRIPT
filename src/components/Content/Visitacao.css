@@ -1,0 +1,53 @@
+/* Visitacao.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .col {
+    flex: 1;
+  }
+  
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #f2ae30;
+  }
+  
+  .modal {
+    background-color: #ffcc80;
+  }
+  
+  .protocol {
+    display: flex;
+    align-items: center;
+  }
+  
+  .protocol-icon {
+    margin-right: 8px;
+  }
+  
