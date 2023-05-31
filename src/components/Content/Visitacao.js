@@ -34,7 +34,7 @@ function Visitacao() {
         </Row>
       </div>
 
-      <Button style={{ backgroundColor: '#ffcc80',  }} className="button text-center" type="primary" shape="primary" size={size} onClick={() => setModal2Open(true)}>
+      <Button style={{ backgroundColor: '#f2ae30',  }} className="button text-center" type="primary" shape="primary" size={size} onClick={() => setModal2Open(true)}>
         Mais informações
       </Button>
       <Modal
