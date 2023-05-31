@@ -9,7 +9,7 @@ const TheatreSchedule = () => {
     return (
         <div>
             <Tabs defaultActiveKey="1">
-                <TabPane tab="Teatro" key="1">
+                <TabPane key="1">
                     <Row gutter={[16, 16]} justify="center">
                         <Col xs={24} sm={12} md={8} lg={6} xl={4}>
                             <Card
