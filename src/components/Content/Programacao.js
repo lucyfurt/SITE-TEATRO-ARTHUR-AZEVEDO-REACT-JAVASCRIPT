@@ -1,7 +1,5 @@
 import React from 'react';
-import { Card, Tabs, Row, Col, Pagination } from 'antd';
-
-const { TabPane } = Tabs;
+import { Card, Row, Col, Pagination, Button } from 'antd';
 
 const TheatreSchedule = () => {
     const cardColors = ['#FAD0C9', '#E4C1F9', '#B5EAD7', '#FFE4A1', '#C9E4F9'];
@@ -113,6 +111,15 @@ const TheatreSchedule = () => {
                                     {item.value}
                                 </p>
                             ))}
+                            {card.title === 'Stand Up' || card.title === 'Show' ? (
+
+                                <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                                    style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%', 
+                                    backgroundColor: 'transparent', color: '#1890ff', borde:'1px' }}>
+                                         
+                                    Compre aqui
+                                </Button>
+                            ) : null}
                         </Card>
                     </Col>
                 ))}
@@ -125,10 +132,7 @@ const TheatreSchedule = () => {
                     onChange={setCurrentPage}
                 />
             </div>
-
-
         </div>
     );
 };
-
 export default TheatreSchedule;
