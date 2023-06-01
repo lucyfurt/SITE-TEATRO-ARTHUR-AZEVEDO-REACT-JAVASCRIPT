@@ -26,10 +26,10 @@ const FooterComponent = () => {
         </Row>
         <br /><br />
 
-        <div className="copyright" style={{ margin: '10px' }}>
+        <div className="copyright" style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
           Todos os direitos reservados - Teatro Arthur Azevedo {new Date().getFullYear()}
         </div>
-        <div className={getSocialLinksClassName()}>
+        <div className={getSocialLinksClassName()} style={{ fontSize: '30px' }}>
           <a href="https://www.instagram.com/teatroarthurazevedooficial/" target="_blank" rel="noreferrer">
             <InstagramOutlined style={{ fontSize: '30px' }} />
           </a>
