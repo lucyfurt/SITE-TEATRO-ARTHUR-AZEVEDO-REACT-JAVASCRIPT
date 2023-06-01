@@ -100,6 +100,7 @@ const TheatreSchedule = () => {
     ];
 
     return (
+        <>
         <div>
             <Row gutter={[16, 16]} justify="center">
                 {cardData.slice(startIndex, endIndex).map((card, index) => (
@@ -114,16 +115,29 @@ const TheatreSchedule = () => {
                             {card.title === 'Stand Up' || card.title === 'Show' ? (
 
                                 <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                                    style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%', 
-                                    backgroundColor: 'transparent', color: '#1890ff', borde:'1px' }}>
-                                         
+                                    style={{
+                                        display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
+                                        backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
+                                    }}>
+
                                     Compre aqui
                                 </Button>
                             ) : null}
                         </Card>
                     </Col>
                 ))}
+
             </Row>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+            <Button
+                style={{ backgroundColor: '#f2ae30' }}
+                className="button text-center"
+                type="primary"
+                shape="primary"
+            >
+                Todos os eventos
+            </Button>
+            </div>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
                 <Pagination
                     current={currentPage}
@@ -132,7 +146,12 @@ const TheatreSchedule = () => {
                     onChange={setCurrentPage}
                 />
             </div>
+        
         </div>
+      
+        </>
+    
     );
+
 };
 export default TheatreSchedule;
