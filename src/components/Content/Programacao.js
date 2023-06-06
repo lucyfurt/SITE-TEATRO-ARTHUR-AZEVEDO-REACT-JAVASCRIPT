@@ -9,78 +9,7 @@ const TheatreSchedule = () => {
     const startIndex = (currentPage - 1) * cardsPerPage;
     const endIndex = startIndex + cardsPerPage;
     const cardData = [
-        {
-            title: 'TAA 206 anos',
-            extra: 'Data: 29 a 31/05',
-            backgroundColor: cardColors[0],
-            content: [
-                { label: 'Visitação', value: 'Horário: 14h-16h' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 30/05/2023",
-            backgroundColor: cardColors[1],
-            content: [
-                { label: ' Oficina "Encenação contemporânea escolhas estéticas e processo de criação Companhia Budejar Criações Artísticas MA-CE', value: 'Horário: 15h-18h' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 30/05/2023",
-            backgroundColor: cardColors[2],
-            content: [
-                { label: ' Ciclo de Palestras "Gestão e Produção Cultural nas instituições públicas, privadas e grupos independentes"Com Josiane Oliveira, Alana Araújo e Isoneth Almeida. Parceria: Sesc Ma.', value: 'Horário: 19h' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 31/05/2023",
-            backgroundColor: cardColors[3],
-            content: [
-                { label: 'Lançamento da visitação virtual', value: 'Horário: 15h-17h' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 01/06/2023",
-            backgroundColor: cardColors[4],
-            content: [
-                { label: ' Seminário "Modos de ocupar a cidade e formação do artista-docente", Com Teatro/Ufma', value: 'Horário: 09h - no CCVM' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 01/06/2023",
-            backgroundColor: cardColors[0],
-            content: [
-                { label: 'Cerimônia de aniversário + Orquestra João do Vale (MA)', value: 'Horário: 15h-17h' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 01/06/2023",
-            backgroundColor: cardColors[1],
-            content: [
-                { label: 'Espetáculo "Sobre Azares Futuros" Companhia Budejar Criações Artísticas (MA/CE)', value: 'Horário: 20h' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 01/06/2023",
-            backgroundColor: cardColors[2],
-            content: [
-                { label: 'Espetáculo "A Carroça é nossa" Xama Teatro (MA)', value: 'Horário: 18h' },
-            ],
-        },
-        {
-            title: 'TAA 206 anos',
-            extra: "Data: 02/06/2023",
-            backgroundColor: cardColors[3],
-            content: [
-                { label: 'Show "Lado B", Emanuele Paz (MA)', value: 'Horário: 19h-20h' },
-            ],
-        },
+       
         {
             title: 'Stand Up',
             extra: "Data: 03/06/2023",

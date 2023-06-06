@@ -79,7 +79,7 @@ useEffect(() => {
             </p>
             <p>19h</p>
             <p>
-              Ciclo de Palestras "Gestão e Produção Cultural nas instituições públicas, privadas e grupos independentes"
+              Ciclo de Palestras Gestão e Produção Cultural nas instituições públicas...
               Coom Josiane Oliveira, Alana Araújo e Isoneth Almeida. Parceria: Sesc Ma.
             </p>
           </p>

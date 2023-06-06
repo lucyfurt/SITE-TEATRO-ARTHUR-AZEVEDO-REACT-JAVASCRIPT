@@ -1,7 +1,6 @@
 import React from 'react';
 import { Divider, Layout } from 'antd';
 import Carrossel from '../components/Header/Carrossel'
-import '../App.css'
 import CardNews from '../components/Content/CardNews.js';
 import Programacao from '../components/Content/Programacao.js';
 import Visitacao from '../components/Content/Visitacao.js';
@@ -32,9 +31,6 @@ const headerStyle = {
   lineHeight: '64px',
 
 };
-
-
-
 function HomePage() {
   return (
     <Layout>
@@ -46,7 +42,7 @@ function HomePage() {
         <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
           <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
         </Divider>
-        <Programacao />
+      <Programacao/>
         <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
           <h1 style={{ color: '#fff' }}>Notícias</h1>
         </Divider>
@@ -64,7 +60,7 @@ function HomePage() {
       <Footer style={footerStyle}>
         <FooterComponent />
       </Footer>
-    </Layout>
+    </Layout >
   );
 }
 
