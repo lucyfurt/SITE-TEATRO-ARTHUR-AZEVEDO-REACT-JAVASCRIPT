@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MenuBurger from './MenuBurguer'
 import MenuTest from './MenuTest';
-
+import './Menu.css'
 const MenuAll = () => {
   const [isScreenSmaller, setIsScreenSmaller] = useState(false);
 
