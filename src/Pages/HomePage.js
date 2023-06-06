@@ -9,7 +9,7 @@ import Bilheteria from '../components/Content/Bilheteria.js';
 import Frame from '../components/Content/Frame.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
 import MenuAll from '../components/Header/MenuAll.js';
-import { Link } from 'react-router-dom';
+
 const { Header, Footer, Content } = Layout;
 
 const contentStyle = {
@@ -37,12 +37,12 @@ const headerStyle = {
 
 function HomePage() {
   return (
-<Layout>
+    <Layout>
       <Header style={headerStyle}>
-      <MenuAll />
+        <MenuAll />
       </Header>
       <Carrossel />
-      <Content style={contentStyle}>       
+      <Content style={contentStyle}>
         <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
           <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
         </Divider>
