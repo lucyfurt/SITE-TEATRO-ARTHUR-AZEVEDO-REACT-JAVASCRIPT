@@ -14,7 +14,7 @@ const items = [
   },
   {
     label: (
-      <a href="/eventos" target="_blank" rel="noopener noreferrer">
+      <a href="/allevents" target="_blank" rel="noopener noreferrer">
         Próximos eventos
       </a>
     ),

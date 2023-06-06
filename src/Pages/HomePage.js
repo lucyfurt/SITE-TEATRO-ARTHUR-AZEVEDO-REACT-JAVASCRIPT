@@ -42,7 +42,7 @@ function HomePage() {
         <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
           <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
         </Divider>
-      <Programacao/>
+        <Programacao />
         <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
           <h1 style={{ color: '#fff' }}>Notícias</h1>
         </Divider>
@@ -63,5 +63,4 @@ function HomePage() {
     </Layout >
   );
 }
-
 export default HomePage;

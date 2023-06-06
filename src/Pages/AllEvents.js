@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Row, Col, Pagination, Button } from 'antd';
 
-const TheatreSchedule = () => {
+const AllEvents = () => {
     const cardColors = ['#FAD0C9', '#E4C1F9', '#B5EAD7', '#FFE4A1', '#C9E4F9'];
     const cardsPerPage = 4;
     const totalCards = 12;
@@ -74,15 +74,7 @@ const TheatreSchedule = () => {
 
             </Row>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
-            <Button
-                style={{ backgroundColor: '#f2ae30' }}
-                className="button text-center"
-                type="primary"
-                shape="primary"
-                href="/allevents" 
-            >
-                Todos os eventos
-            </Button>
+          
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
                 <Pagination
@@ -100,4 +92,4 @@ const TheatreSchedule = () => {
     );
 
 };
-export default TheatreSchedule;
+export default AllEvents;
