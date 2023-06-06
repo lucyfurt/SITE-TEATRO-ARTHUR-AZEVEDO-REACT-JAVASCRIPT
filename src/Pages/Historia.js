@@ -4,7 +4,7 @@ import { Layout, Typography, Timeline, Carousel } from 'antd';
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 
-function HistoriaInstituicao() {
+function Historia() {
     return (
         <Layout>
             <Header style={{ background: '#f0f2f5', padding: '20px' }}>
@@ -87,4 +87,4 @@ function HistoriaInstituicao() {
     );
 }
 
-export default HistoriaInstituicao;
+export default Historia;
