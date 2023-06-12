@@ -20,6 +20,14 @@ const items = [
   },
   {
     label: (
+      <a href="/tecnico" target="_blank" rel="noopener noreferrer">
+        Informações Técnicas
+      </a>
+    ),
+    key: 'institucional',
+  },
+  {
+    label: (
       <a href="/allevents" target="_blank" rel="noopener noreferrer">
         Próximos eventos
       </a>
