@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-
-import { Menu } from 'antd';
-import { Row, Col } from 'antd';
+import { Row, Col, Menu } from 'antd';
 
 const items = [
   {
@@ -11,6 +9,14 @@ const items = [
       </a>
     ),
     key: 'taa',
+  },
+  {
+    label: (
+      <a href="/institucional" target="_blank" rel="noopener noreferrer">
+        Institucional
+      </a>
+    ),
+    key: 'institucional',
   },
   {
     label: (

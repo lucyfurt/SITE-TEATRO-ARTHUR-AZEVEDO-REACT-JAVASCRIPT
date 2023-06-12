@@ -4,7 +4,8 @@ import HomePage from './Pages/HomePage';
 import Historia from './Pages/Historia';
 import AllEvents from './Pages/AllEvents'
 import Pautas from './Pages/Pautas';
-import Nucleo from './Pages/Nucleo'
+import Nucleo from './Pages/Nucleo';
+import Institucional from './Pages/Institucional';
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/allevents" element={<AllEvents />} />
         <Route path="/pautas" element={<Pautas />} />
         <Route path="/nmp" element={<Nucleo />} />
+        <Route path="/institucional" element={<Institucional />} />
       </Routes>
     </Router>
   );
