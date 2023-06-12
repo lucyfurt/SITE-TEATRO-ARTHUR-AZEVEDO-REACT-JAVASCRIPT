@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import Historia from './Pages/Historia';
-import Programacao from './components/Content/Programacao';
 import AllEvents from './Pages/AllEvents'
+import Pautas from './Pages/Pautas';
+import Nucleo from './Pages/Nucleo'
 function App() {
   return (
     <Router>
@@ -11,6 +12,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/teatro" element={<Historia />} />       
         <Route path="/allevents" element={<AllEvents />} />
+        <Route path="/pautas" element={<Pautas />} />
+        <Route path="/nmp" element={<Nucleo />} />
       </Routes>
     </Router>
   );

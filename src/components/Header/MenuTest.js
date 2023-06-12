@@ -30,7 +30,7 @@ const items = [
   },
   {
     label: (
-      <a href="/pautas" target="_blank" rel="noopener noreferrer">
+      <a href="/nmp" target="_blank" rel="noopener noreferrer">
         Núcleo de Memória e Pesquisa
       </a>
     ),
