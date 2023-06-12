@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col, Typography, Layout, Button, Divider } from 'antd';
-
+import rider_medidas from '../assets/Rider_Tecnico_-_Medidas_e_material_cenico.pdf'
+import rider_luz from '../assets/Rider_Tecnico_de_Luz.pdf'
+import rider_som from '../assets/Rider_Tecnico_de_Som.pdf'
 const { Title, Text } = Typography;
 const { Content, Header, Footer } = Layout;
 const TheatreParts = () => {
@@ -123,9 +125,9 @@ const TheatreParts = () => {
                     <Divider />
                     <h1 style={{ textAlign: 'center' }}>Rider técnico</h1>
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
-                        <Button href='src\assets\Rider_Tecnico_-_Medidas_e_material_cenico.pdf' style={{ marginRight: '8px', backgroundColor: 'orange', borderColor: 'orange', color: 'white' }}>Rider Técnico Medidas e Material Cênico</Button>
-                        <Button href='src\assets\Rider_Tecnico_de_Luz.pdf' style={{ marginRight: '8px', backgroundColor: 'orange', borderColor: 'orange', color: 'white' }}>Rider Técnico de Luz</Button>
-                        <Button href='src\assets\Rider_Tecnico_de_Som.pdf' style={{ backgroundColor: 'orange', borderColor: 'orange', color: 'white' }}>Rider Técnico de Som</Button>
+                        <Button href={rider_medidas} style={{ marginRight: '8px', backgroundColor: 'orange', borderColor: 'orange', color: 'white' }}>Rider Técnico Medidas e Material Cênico</Button>
+                        <Button href={rider_luz} style={{ marginRight: '8px', backgroundColor: 'orange', borderColor: 'orange', color: 'white' }}>Rider Técnico de Luz</Button>
+                        <Button href={rider_som} style={{ backgroundColor: 'orange', borderColor: 'orange', color: 'white' }}>Rider Técnico de Som</Button>
                     </div>
                     <Divider />
                 </Content>
