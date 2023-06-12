@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Pagination, Button, Layout, Typography } from 'antd';
+import { Card, Row, Col, Pagination, Button, Layout, Typography, Divider } from 'antd';
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 const AllEvents = () => {
@@ -49,13 +49,15 @@ const AllEvents = () => {
         <>
 
             <Layout>
-                <Header style={{ background: '#f0f2f5', padding: '20px' }}>
-                    <Title level={3} style={{ color: '#1890ff', margin: 0 }}>
-                        Espetáculos/ Shows
-                    </Title>
-                </Header>
+            <Header style={{ background: '#6d0202', padding: '20px' }}>
+                <Title level={3} style={{ color: '#fff', margin: 0 }}>
+                  <a style={{color: '#fff'}}href='/'>Teatro Arthur Azevedo</a>  
+                </Title>            
+            </Header>
+            <h1 style={{textAlign: 'center'}}>Shows/Espetáculos</h1>
+                <Divider/>
                 <Content>
-                    <div>
+                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
                         <Row gutter={[16, 16]} justify="center">
                             {cardData.slice(startIndex, endIndex).map((card, index) => (
                                 <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
@@ -81,22 +83,19 @@ const AllEvents = () => {
                                 </Col>
                             ))}
 
-                        </Row>
-                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+                        </Row>                       
 
                         </div>
-                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
                             <Pagination
                                 current={currentPage}
                                 pageSize={cardsPerPage}
                                 total={totalCards}
                                 onChange={setCurrentPage}
                             />
-                        </div>
-
-                    </div>
+                        </div>                
                 </Content>
-                <Footer style={{ background: '#001529', padding: '20px', textAlign: 'center', color: '#fff' }}>
+                <Footer style={{marginTop: '80px', background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
                     Teatro Arthur Azevedo  © Todos os direitos reservados 2023
                 </Footer>
             </Layout>

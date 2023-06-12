@@ -24,13 +24,13 @@ const Pautas = () => {
 
     return (
         <Layout>
-            <Header style={{ background: '#f0f2f5', padding: '20px' }}>
-                <Title level={3} style={{ color: '#1890ff', margin: 0 }}>
-                    Teatro Arthur Azevedo
+            <Header style={{ background: '#6d0202', padding: '20px' }}>
+                <Title level={3} style={{ color: '#fff', margin: 0 }}>
+                    <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
                 </Title>
             </Header>
             <Content>
-                <h1>Reserva de pautas</h1>
+                <h1 style={{ textAlign: 'center' }}>Reserva de pautas</h1>
                 <Form
                     name="reservation_form"
                     onFinish={onFinish}
@@ -82,13 +82,15 @@ const Pautas = () => {
                     </Form.Item>
 
                     <Form.Item wrapperCol={{ offset: 6, span: 14 }}>
-                        <Button type="primary" htmlType="submit">
-                            Reservar
-                        </Button>
+                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+                            <Button htmlType="submit" style={{ backgroundColor: 'orange', borderColor: 'orange', color: 'white' }}>
+                                Reservar
+                            </Button>
+                        </div>
                     </Form.Item>
                 </Form>
             </Content>
-            <Footer style={{ background: '#001529', padding: '20px', textAlign: 'center', color: '#fff' }}>
+            <Footer style={{ marginTop: '70px', background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
                 Teatro Arthur Azevedo  © Todos os direitos reservados 2023
             </Footer>
         </Layout>

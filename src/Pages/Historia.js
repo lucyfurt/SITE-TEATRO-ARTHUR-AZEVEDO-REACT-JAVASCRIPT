@@ -7,9 +7,9 @@ const { Title } = Typography;
 function Historia() {
     return (
         <Layout>
-            <Header style={{ background: '#f0f2f5', padding: '20px' }}>
-                <Title level={3} style={{ color: '#1890ff', margin: 0 }}>
-                    Teatro Arthur Azevedo
+            <Header style={{ background: '#6d0202', padding: '20px' }}>
+                <Title level={3} style={{ color: '#fff', margin: 0 }}>
+                  <a style={{color: '#fff'}}href='/'>Teatro Arthur Azevedo</a>  
                 </Title>
             </Header>
             <Content style={{ padding: '50px' }}>
@@ -80,7 +80,7 @@ function Historia() {
                     </Timeline.Item>
                 </Timeline>
             </Content>
-            <Footer style={{ background: '#001529', padding: '20px', textAlign: 'center', color: '#fff' }}>
+            <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
                 Teatro Arthur Azevedo  © Todos os direitos reservados 2023
             </Footer>
         </Layout>

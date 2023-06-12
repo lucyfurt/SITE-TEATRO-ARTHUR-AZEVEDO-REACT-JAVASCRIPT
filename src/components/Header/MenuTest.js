@@ -4,7 +4,7 @@ import { Row, Col, Menu } from 'antd';
 const items = [
   {
     label: (
-      <a href="/teatro" target="_blank" rel="noopener noreferrer">
+      <a href="/teatro" rel="noopener noreferrer">
         O Teatro
       </a>
     ),
@@ -12,7 +12,7 @@ const items = [
   },
   {
     label: (
-      <a href="/institucional" target="_blank" rel="noopener noreferrer">
+      <a href="/institucional"  rel="noopener noreferrer">
         Institucional
       </a>
     ),
@@ -20,7 +20,7 @@ const items = [
   },
   {
     label: (
-      <a href="/tecnico" target="_blank" rel="noopener noreferrer">
+      <a href="/tecnico" rel="noopener noreferrer">
         Informações Técnicas
       </a>
     ),
@@ -28,7 +28,7 @@ const items = [
   },
   {
     label: (
-      <a href="/allevents" target="_blank" rel="noopener noreferrer">
+      <a href="/allevents"  rel="noopener noreferrer">
         Próximos eventos
       </a>
     ),
@@ -36,7 +36,7 @@ const items = [
   },
   {
     label: (
-      <a href="/pautas" target="_blank" rel="noopener noreferrer">
+      <a href="/pautas"  rel="noopener noreferrer">
         Pautas
       </a>
     ),
@@ -44,7 +44,7 @@ const items = [
   },
   {
     label: (
-      <a href="/nmp" target="_blank" rel="noopener noreferrer">
+      <a href="/nmp" rel="noopener noreferrer">
         Núcleo de Memória e Pesquisa
       </a>
     ),
