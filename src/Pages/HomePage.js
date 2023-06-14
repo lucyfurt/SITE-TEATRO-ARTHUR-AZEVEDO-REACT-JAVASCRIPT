@@ -8,6 +8,7 @@ import Bilheteria from '../components/Content/Bilheteria.js';
 import Frame from '../components/Content/Frame.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
 import MenuAll from '../components/Header/MenuAll.js';
+import HistoriaHome from '../components/Content/HistoriaHome';
 
 const { Header, Footer, Content } = Layout;
 
@@ -39,20 +40,21 @@ function HomePage() {
       </Header>
       <Carrossel />
       <Content style={contentStyle}>
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Próximos Eventos</h1>
+        <Divider orientation="left">
+          <h1 style={{ color: 'black', fontSize:'36px' }}>Próximos Eventos</h1>
         </Divider>
       <Programacao/>
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Notícias</h1>
+      <HistoriaHome/>
+      <Divider orientation="left">
+          <h1 style={{ color: 'black', fontSize:'36px' }}>Notícias</h1>
         </Divider>
         <CardNews />
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Visitação</h1>
+        <Divider orientation="left">
+          <h1 style={{ color: 'black', fontSize:'36px' }}>Visitação</h1>
         </Divider>
         <Visitacao />
-        <Divider style={{ background: 'rgb(242, 174, 48)', borderWidth: 2, lineHeight: '0', fontSize: '14' }} orientation="center">
-          <h1 style={{ color: '#fff' }}>Bilheteria</h1>
+        <Divider orientation="left">
+          <h1 style={{ color: 'black', fontSize:'36px' }}>Bilheteria</h1>
         </Divider>
         <Bilheteria />
         <Frame />

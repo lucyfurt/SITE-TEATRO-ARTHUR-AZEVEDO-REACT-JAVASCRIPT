@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Menu } from 'antd';
+import { Row, Col, Menu, Divider } from 'antd';
 
 const items = [
   {
@@ -80,17 +80,20 @@ const App = () => {
                   {item.children.map((child) => (
                     <Menu.Item key={child.key}>{child.label}</Menu.Item>
                   ))}
+                 
                 </Menu.SubMenu>
               );
             }
             return (
               <Menu.Item key={item.key} icon={item.icon}>
                 {item.label}
+               
               </Menu.Item>
             );
           })}
+        
         </Menu>
-
+     
       </Col>
 
     </Row>

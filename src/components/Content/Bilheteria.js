@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-    ClockCircleTwoTone,
-} from '@ant-design/icons';
 
 function Bilheteria() {
     return (
