@@ -6,9 +6,9 @@ const App = () => {
     return (
         <div style={{ textAlign: 'center' }}>
             <Row gutter={[16, 16]} justify="center">
-                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+                <Col xs={24} sm={12} md={8} lg={6}>
                     <Card
-                        style={{ width: 300 }}
+                        style={{ width: '100%' }}
                         cover={
                             <img
                                 alt="example"
@@ -20,9 +20,9 @@ const App = () => {
                         <Meta title="16.06 Stand-up" description="Emerson Ceará" />
                     </Card>
                 </Col>
-                <Col xs={{ span: 11, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+                <Col xs={24} sm={12} md={8} lg={6}>
                     <Card
-                        style={{ width: 300 }}
+                        style={{ width: '100%' }}
                         cover={
                             <img
                                 alt="example"
@@ -34,9 +34,9 @@ const App = () => {
                         <Meta title="17.06 Show" description="This is the description" />
                     </Card>
                 </Col>
-                <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+                <Col xs={24} sm={12} md={8} lg={6}>
                     <Card
-                        style={{ width: 300 }}
+                        style={{ width: '100%' }}
                         cover={
                             <img
                                 alt="example"
@@ -54,15 +54,15 @@ const App = () => {
                     <h1>Todos os eventos</h1>
                 </span>
                 <div style={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
-                    <Button type="primary" shape="round" icon={<RightOutlined />} size="large" 
-                    style={{ backgroundColor: 'orange' }}
+                    <Button
+                        type="primary"
+                        shape="round"
+                        icon={<RightOutlined />}
+                        size="large"
+                        style={{ backgroundColor: 'orange' }}
                     />
                 </div>
             </div>
-
-
-
-
         </div>
     );
 };

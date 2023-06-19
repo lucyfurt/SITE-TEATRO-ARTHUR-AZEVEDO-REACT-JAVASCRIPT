@@ -4,7 +4,7 @@ import { RightOutlined } from '@ant-design/icons';
 
 function HistoriaHome() {
     return (
-        <div style={{ background: "#6d0202", display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
+        <div style={{ background: "#6d0202", display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div>
                 <Row>
                     <Col span={12}>
