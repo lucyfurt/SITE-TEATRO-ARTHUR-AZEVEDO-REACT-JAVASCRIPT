@@ -9,6 +9,7 @@ import Frame from '../components/Content/Frame.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
 import MenuAll from '../components/Header/MenuAll.js';
 import HistoriaHome from '../components/Content/HistoriaHome';
+import MenuHamg from '../components/Header/MenuHamg'
 
 const { Header, Footer, Content } = Layout;
 
@@ -29,16 +30,16 @@ const footerStyle = {
 
 const headerStyle = {
   backgroundColor: '#6d0202',
-  lineHeight: '64px',
+  lineHeight: '100px',
 
 };
 function HomePage() {
   return (
     <Layout>
       <Header style={headerStyle}>
-        <MenuAll />
+        <MenuHamg/>
       </Header>
-      <Carrossel />
+     <Carrossel/>
       <Content style={contentStyle}>
         <Divider orientation="left">
           <h1 style={{ color: 'black', fontSize:'36px' }}>Próximos Eventos</h1>

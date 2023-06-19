@@ -52,7 +52,7 @@ const App = () => {
       </Row>
       <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'flex-end' }}>
         <span style={{ alignSelf: 'center', marginRight: '8px' }}>
-          <h1>Todos os eventos</h1>
+          <h1>Veja a programação completa</h1>
         </span>
         <div style={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
           <Button
