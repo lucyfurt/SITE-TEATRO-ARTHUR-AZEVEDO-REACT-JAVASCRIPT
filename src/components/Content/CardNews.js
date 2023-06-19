@@ -21,8 +21,8 @@ const NewsComponent = () => {
     },
     {
       title: 'Notícia 4',
-      description: 'Descrição da notícia 4',
-      image: 'https://i.ibb.co/x7crZ5f/Brilho-Contraste-1.png',
+      description: 'Descrição da notícia 3',
+      image: 'https://i.ibb.co/Zf2MNgH/Whats-App-Image-2023-05-25-at-17-40-23.jpg',
     },
   ];
 
@@ -34,6 +34,8 @@ const NewsComponent = () => {
             <Card
               hoverable
               cover={<img alt={news.title} src={news.image} />}
+              bodyStyle={{ padding: '20px' }} // Increase card's padding
+              style={{ height: '100%' }} // Adjust card's 
             >
               <Meta title={news.title} description={news.description} />
             </Card>
