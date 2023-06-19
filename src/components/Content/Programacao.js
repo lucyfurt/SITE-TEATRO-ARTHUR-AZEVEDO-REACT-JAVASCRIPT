@@ -8,7 +8,7 @@ const App = () => {
       <Row gutter={[16, 16]} justify="center">
         <Col xs={24} sm={12} md={8} lg={6}>
           <Card
-            style={{ width: '100%' }}
+            style={{ width: '100%', height:'100%'}}
             cover={
               <img
                 alt="example"

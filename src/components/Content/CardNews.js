@@ -19,11 +19,7 @@ const NewsComponent = () => {
       description: 'Descrição da notícia 3',
       image: 'https://i.ibb.co/Zf2MNgH/Whats-App-Image-2023-05-25-at-17-40-23.jpg',
     },
-    {
-      title: 'Notícia 4',
-      description: 'Descrição da notícia 3',
-      image: 'https://i.ibb.co/Zf2MNgH/Whats-App-Image-2023-05-25-at-17-40-23.jpg',
-    },
+   
   ];
 
   return (
