@@ -20,7 +20,7 @@
   }
   
   .bm-cross {
-    background: black;
+    background: #b8b7ad;
   }
   
   .bm-menu {
@@ -29,6 +29,7 @@
     font-size: 1.15em;
     overflow: hidden !important;
     height: 100%;
+    
   }
   
   .bm-menu-wrap {
@@ -37,7 +38,7 @@
   }
   
   .bm-item-list {
-    color: #b8b7ad;
+    color: #262517;
     padding: 0.8em;
   }
   
@@ -64,19 +65,31 @@
     align-items: center;
   }
   
-  .menu-item {
-    display: block;
-    padding: 5px 10px; /* Ajuste o valor do padding conforme necessário */
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
+ 
   
   .menu-item:hover {
     background-color: #ddd;
     color: #333;
   }
+  .bm-item-list {
+    color: #b8b7ad;
+    text-align: center; /* Add this line to center the menu items horizontally */
+  }
+  
+  .menu-item {   
+    
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+    /* Add this line to center the menu items horizontally */
+  }
+  
+  .bm-menu-wrap{
+    width: 1300px !important;
+    height: 100% !important;
+    padding: 40px;
+  }
+
   
   
   
