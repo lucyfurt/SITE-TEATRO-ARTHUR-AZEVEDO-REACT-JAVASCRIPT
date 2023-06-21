@@ -1,109 +1,143 @@
-import React from 'react';
-import { Card, Row, Col, Pagination, Button, Layout, Typography, Divider } from 'antd';
+import { ZoomInOutlined, RightOutlined } from '@ant-design/icons';
+import { Card, Row, Col, Layout, Typography } from 'antd';
+const { Meta } = Card;
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
-const AllEvents = () => {
-    const cardColors = ['#FAD0C9', '#E4C1F9', '#B5EAD7', '#FFE4A1', '#C9E4F9'];
-    const cardsPerPage = 4;
-    const totalCards = 12;
-    const [currentPage, setCurrentPage] = React.useState(1);
-    const startIndex = (currentPage - 1) * cardsPerPage;
-    const endIndex = startIndex + cardsPerPage;
-    const cardData = [
-
-        {
-            title: 'Stand Up',
-            extra: "Data: 03/06/2023",
-            backgroundColor: cardColors[0],
-            content: [
-                { label: 'Stand Up Modo Efetivo pt.2  Sujeito Homem - Tiago Ventura', value: 'Horário: 21h' },
-            ],
-        },
-        {
-            title: 'Show',
-            extra: "Data: 04/06/2023",
-            backgroundColor: cardColors[1],
-            content: [
-                { label: 'Bee Gees Experience', value: 'Horário: 21h' },
-            ],
-        },
-        {
-            title: 'Escola do Rock',
-            extra: "Data: 09/06/2023",
-            backgroundColor: cardColors[2],
-            content: [
-                { label: 'Bee Gees Experience', value: 'Horário: 21h' },
-            ],
-        },
-        {
-            title: 'Guarnicê',
-            extra: "Data: 09/06/2023",
-            backgroundColor: cardColors[3],
-            content: [
-                { label: 'Bee Gees Experience', value: 'Horário: 21h' },
-            ],
-        },
-    ];
-
+const App = () => {
     return (
-        <>
-
-            <Layout>
+        <Layout>
             <Header style={{ background: '#6d0202', padding: '20px' }}>
                 <Title level={3} style={{ color: '#fff', margin: 0 }}>
-                  <a style={{color: '#fff'}}href='/'>Teatro Arthur Azevedo</a>  
-                </Title>            
+                    <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
+                </Title>
             </Header>
-            <h1 style={{textAlign: 'center'}}>Shows/Espetáculos</h1>
-                <Divider/>
-                <Content>
-                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
-                        <Row gutter={[16, 16]} justify="center">
-                            {cardData.slice(startIndex, endIndex).map((card, index) => (
-                                <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
-                                    <Card title={card.title} extra={card.extra} style={{ backgroundColor: card.backgroundColor }}>
-                                        {card.content.map((item, idx) => (
-                                            <p key={idx}>
-                                                <strong>{item.label}: </strong>
-                                                {item.value}
-                                            </p>
-                                        ))}
-                                        {card.title === 'Stand Up' || card.title === 'Show' ? (
+            <Content style={{ padding: '50px' }}>
+                <div style={{ textAlign: 'center' }}>
+                    <Row gutter={[16, 16]} justify="center">
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%', height: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="16.06 Stand-up" description="Emerson Ceará" />
+                            </Card>
+                        </Col>
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="17.06 Show" description="This is the description" />
+                            </Card>
+                        </Col>
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="18.06" description="This is the description" />
+                            </Card>
+                        </Col>
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%', height: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="16.06 Stand-up" description="Emerson Ceará" />
+                            </Card>
+                        </Col>
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="17.06 Show" description="This is the description" />
+                            </Card>
+                        </Col>
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="18.06" description="This is the description" />
+                            </Card>
+                        </Col>
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="17.06 Show" description="This is the description" />
+                            </Card>
+                        </Col>
+                        <Col xs={24} sm={12} md={8} lg={6}>
+                            <Card
+                                style={{ width: '100%' }}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                    />
+                                }
+                                actions={[<ZoomInOutlined />]}
+                            >
+                                <Meta title="18.06" description="This is the description" />
+                            </Card>
+                        </Col>
+                    </Row>
+                </div>
+            </Content>
+            <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
+                Teatro Arthur Azevedo  © Todos os direitos reservados 2023
+            </Footer>
+        </Layout>
 
-                                            <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                                                style={{
-                                                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                                                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                                                }}>
-
-                                                Compre aqui
-                                            </Button>
-                                        ) : null}
-                                    </Card>
-                                </Col>
-                            ))}
-
-                        </Row>                       
-
-                        </div>
-                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-                            <Pagination
-                                current={currentPage}
-                                pageSize={cardsPerPage}
-                                total={totalCards}
-                                onChange={setCurrentPage}
-                            />
-                        </div>                
-                </Content>
-                <Footer style={{marginTop: '80px', background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
-                    Teatro Arthur Azevedo  © Todos os direitos reservados 2023
-                </Footer>
-            </Layout>
 
 
-        </>
 
     );
-
 };
-export default AllEvents;
+
+export default App;

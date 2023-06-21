@@ -8,7 +8,7 @@ const App = () => {
       <Row gutter={[16, 16]} justify="center">
         <Col xs={24} sm={12} md={8} lg={6}>
           <Card
-            style={{ width: '100%', height:'100%'}}
+            style={{ width: '100%', height: '100%' }}
             cover={
               <img
                 alt="example"
@@ -48,7 +48,7 @@ const App = () => {
             <Meta title="18.06" description="This is the description" />
           </Card>
         </Col>
-       
+
       </Row>
       <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'flex-end' }}>
         <span style={{ alignSelf: 'center', marginRight: '8px' }}>
@@ -61,6 +61,7 @@ const App = () => {
             icon={<RightOutlined />}
             size="large"
             style={{ backgroundColor: 'orange' }}
+            href='/allevents'
           />
         </div>
       </div>

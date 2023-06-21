@@ -5,19 +5,19 @@ import './menuHamb.css';
 const MyMenu = () => {
   return (
     <Menu>
-      <a className="menu-item" href="/">
+      <a className="menu-item" href="/teatro">
         O Teatro
       </a>
-      <a className="menu-item" href="/about">
+      <a className="menu-item" href="/institucional">
         Institucional
       </a>
-      <a className="menu-item" href="/services">
+      <a className="menu-item" href="/pautas">
         Pautas
       </a>
-      <a className="menu-item" href="/contact">
+      <a className="menu-item" href="/tecnico">
         Informações Técnicas
       </a>
-      <a className="menu-item" href="/contact">
+      <a className="menu-item" href="/nmp">
         Núcleo de Memória e Pesquisa
       </a>
     </Menu>
