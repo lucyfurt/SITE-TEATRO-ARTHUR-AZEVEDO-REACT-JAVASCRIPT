@@ -18,6 +18,14 @@ const App = () => {
             actions={[<ZoomInOutlined />]}
           >
             <Meta title="16.06 Stand-up" description="Emerson Ceará" />
+            <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+              style={{
+                display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
+                backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
+              }}>
+
+              Compre aqui
+            </Button>
           </Card>
         </Col>
         <Col xs={24} sm={12} md={8} lg={6}>
@@ -32,6 +40,14 @@ const App = () => {
             actions={[<ZoomInOutlined />]}
           >
             <Meta title="17.06 Show" description="This is the description" />
+            <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+              style={{
+                display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
+                backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
+              }}>
+
+              Compre aqui
+            </Button>
           </Card>
         </Col>
         <Col xs={24} sm={12} md={8} lg={6}>
@@ -46,6 +62,14 @@ const App = () => {
             actions={[<ZoomInOutlined />]}
           >
             <Meta title="18.06" description="This is the description" />
+            <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+              style={{
+                display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
+                backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
+              }}>
+
+              Compre aqui
+            </Button>
           </Card>
         </Col>
 
