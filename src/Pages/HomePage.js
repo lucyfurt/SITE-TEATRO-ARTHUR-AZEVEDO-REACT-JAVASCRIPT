@@ -7,7 +7,6 @@ import Visitacao from '../components/Content/Visitacao.js';
 import Bilheteria from '../components/Content/Bilheteria.js';
 import Frame from '../components/Content/Frame.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
-
 import HistoriaHome from '../components/Content/HistoriaHome';
 import MenuHamg from '../components/Header/MenuHamg'
 
