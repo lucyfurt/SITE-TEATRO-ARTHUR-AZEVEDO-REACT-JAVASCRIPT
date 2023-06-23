@@ -36,6 +36,8 @@
   right: 10px;
   top: 65px;
   position: absolute !important;
+  height: 0% !important;
+  width: 100% !important;
 }
 
 /* Estilos para os itens do menu */
@@ -74,30 +76,12 @@
 }
 
 .bm-menu-wrap {
-  width: 1000px !important;
+  width: 600px !important;
   height: 100% !important;
   position: absolute !important;
 
   height: 100%;
 }
-
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .bm-menu {
-    padding: 0.5em 2em 0;
-    font-size: 1em;
-  }
-
-  .bm-menu-wrap {
-    width: 100% !important;
-    padding: 20px;
-  }
-
-  .menu-item {
-    font-size: 24px;
-  }
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -130,4 +114,23 @@
 .menu-container {
   align-items: center;
   width: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    height: auto;
+  }
+
+  .menu-container {
+    width: auto;
+  }
+
+  .menu-item {
+    font-size: 24px;
+  }
+ 
 }
