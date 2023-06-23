@@ -19,9 +19,9 @@
 }
 
 .bm-cross {
-  background: #fff;
-  margin-top: 80px;
-  left: 200px;
+ 
+  
+ 
 }
 
 .bm-menu {
@@ -79,7 +79,6 @@
   width: 600px !important;
   height: 100% !important;
   position: absolute !important;
-
   height: 100%;
 }
 .header {
