@@ -32,7 +32,7 @@
 }
 
 .bm-overlay { 
-  width: 600px !important;
+  width: 500px !important;
   height: 600px !important ;
   left: 400px !important; 
   position: absolute;
@@ -75,7 +75,7 @@
 }
 
 .bm-menu-wrap {
-  width: 600px !important;
+  width: 500px !important;
   height: 600px !important ;
   left: 400px !important; 
 }
