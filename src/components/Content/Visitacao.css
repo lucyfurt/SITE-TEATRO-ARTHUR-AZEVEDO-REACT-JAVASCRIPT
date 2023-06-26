@@ -30,5 +30,6 @@
 }
 
 .visit{
-  background: linear-gradient(to bottom, #cccccc, #f2ae30);
+  
+  border: 0;
 }
