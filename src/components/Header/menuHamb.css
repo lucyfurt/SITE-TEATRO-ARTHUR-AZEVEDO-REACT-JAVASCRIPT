@@ -16,8 +16,8 @@
 .bm-cross-button {
   height: 50px;
   width: 50px;
-  margin-top: 5px;
-  right: 100px;
+  margin-top: 10px;
+  right: 150px;
  
 }
 
@@ -34,7 +34,7 @@
 .bm-overlay { 
   width: 500px !important;
   height: 600px !important ;
-  left: 400px !important; 
+  left: 350px !important; 
   position: absolute;
 }
 
@@ -71,13 +71,13 @@
 .menu-item {
   color: #fff;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .bm-menu-wrap {
-  width: 500px !important;
-  height: 600px !important ;
-  left: 400px !important; 
+  width: 480px !important;
+  height: 500px !important ;
+  left: 350px !important; 
 }
 .header {
   display: flex;
