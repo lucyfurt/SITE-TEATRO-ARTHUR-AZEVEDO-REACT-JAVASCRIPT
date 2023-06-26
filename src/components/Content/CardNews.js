@@ -30,8 +30,8 @@ const NewsComponent = () => {
             <Card
               hoverable
               cover={<img alt={news.title} src={news.image} />}
-              bodyStyle={{ padding: '20px' }} // Increase card's padding
-              style={{ height: '100%' }} // Adjust card's 
+              bodyStyle={{ padding: '20px' }} 
+              style={{ height: '100%' }} 
             >
               <Meta title={news.title} description={news.description} />
             </Card>
