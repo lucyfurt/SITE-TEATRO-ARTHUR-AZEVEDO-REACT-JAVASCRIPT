@@ -1,5 +1,5 @@
-import { Card, Row, Col } from 'antd';
-
+import { Card, Row, Col, Button } from 'antd';
+import { RightOutlined } from '@ant-design/icons';
 const { Meta } = Card;
 
 const NewsComponent = () => {
@@ -9,7 +9,7 @@ const NewsComponent = () => {
       description: 'Descrição da notícia 1',
       image: 'https://i.ibb.co/y6BjDVk/Whats-App-Image-2023-05-25-at-17-40-32.jpg',
       link: '/allNews'
-      
+
     },
     {
       title: 'Notícia 2',
@@ -23,7 +23,7 @@ const NewsComponent = () => {
       image: 'https://i.ibb.co/Zf2MNgH/Whats-App-Image-2023-05-25-at-17-40-23.jpg',
       link: '/allNews'
     },
-   
+
   ];
 
   return (
@@ -34,14 +34,29 @@ const NewsComponent = () => {
             <Card
               hoverable
               cover={<img alt={news.title} src={news.image} />}
-              bodyStyle={{ padding: '20px' }} 
-              style={{ height: '100%' }} 
+              bodyStyle={{ padding: '20px' }}
+              style={{ height: '100%' }}
             >
               <Meta title={news.title} description={news.description} />
             </Card>
           </Col>
         ))}
       </Row>
+      <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'flex-end' }}>
+        <span style={{ alignSelf: 'center', marginRight: '8px' }}>
+          <h1>Mais notícias</h1>
+        </span>
+        <div style={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
+          <Button
+            type="primary"
+            shape="round"
+            icon={<RightOutlined />}
+            size="large"
+            style={{ backgroundColor: 'orange' }}
+            href='/allNews'
+          />
+        </div>
+      </div>
     </div>
   );
 };

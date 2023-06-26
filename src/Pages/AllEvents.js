@@ -1,4 +1,4 @@
-import { ZoomInOutlined, RightOutlined } from '@ant-design/icons';
+import { ZoomInOutlined } from '@ant-design/icons';
 import { Card, Row, Col, Layout, Typography } from 'antd';
 const { Meta } = Card;
 const { Content, Header, Footer } = Layout;
