@@ -17,7 +17,7 @@ const FooterComponent = () => {
       <div className="footer-content">
         <Row justify="center" gutter={[6, 6]}>
           <Col xs={24} sm={12} md={6}>
-            <img src="https://i.ibb.co/vwybPfW/Asset-4-2x.png" alt="Logo" className="logo" />
+          <a href="https://ibb.co/YRn6kJS"><img src="https://i.ibb.co/vwybPfW/Asset-4-2x.png" alt="Asset-4-2x" border="0" style={{width:'200px'}}/></a>
           </Col>
           <Col xs={24} sm={12} md={6}>
             <img src="https://i.ibb.co/pQyyTs6/Asset-1-2x.png" alt="SECMA" className="secma-logo" />
