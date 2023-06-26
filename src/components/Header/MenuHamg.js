@@ -28,7 +28,6 @@ const Header = () => {
             Núcleo de Memória e Pesquisa
           </a>
         </Menu>
-        
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+/* Menu styles */
 .bm-burger-button {
   position: absolute;
   width: 25px;
@@ -14,37 +15,32 @@
 }
 
 .bm-cross-button {
-  height: 50px;
-  width: 50px;
   margin-top: 10px;
-  right: 150px;
- 
+  left: 500px
 }
 
 .bm-cross {
- background: #fff;
+  background: #fff;
+  left: 500px
+  
 }
 
-.bm-menu {
-  background: #f2f2f2 transparent;
-  font-size: 1em;
-  overflow: hidden !important;
+.bm-menu { 
+  font-size: 36px;
+  overflow: hidden;
+  
+  width: 500px;
 }
 
-.bm-overlay { 
-  width: 500px !important;
-  height: 600px !important ;
-  left: 350px !important; 
-  position: absolute;
-}
-
-/* Estilos para os itens do menu */
 .bm-item {
-  display: inline-block;
+  display: block;
+  margin-bottom: 10px;
+  color:#fff
 }
 
 .bm-item a {
-  color: #b8b7ad;
+  display: block;
+color: #fff;
   text-decoration: none;
 }
 
@@ -52,40 +48,13 @@
   color: red;
 }
 
-.menu-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.menu-item:hover {
-  background-color: #ddd;
-  color: #333;
-}
-
-.bm-item-list {
-  color: #b8b7ad;
-  text-align: center;
-  
-}
-
-.menu-item {
-  color: #fff;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.bm-menu-wrap {
-  width: 480px !important;
-  height: 500px !important ;
-  left: 350px !important; 
-}
+/* Header styles */
 .header {
   display: flex;
   align-items: center;
   background-color: #6d0202;
   padding-right: 5px;
   height: 70px;
-
 }
 
 .logo-container {
@@ -105,7 +74,6 @@
   font-weight: bold;
   color: #fff;
   margin: 10px;
-
 }
 
 .menu-container {
@@ -113,21 +81,3 @@
   padding-top: 160px;
 }
 
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding-right: 0;
-    height: auto;
-  }
-
-  .menu-container {
-    width: auto;
-  }
-
-  .menu-item {
-    font-size: 24px;
-  }
- 
-}
