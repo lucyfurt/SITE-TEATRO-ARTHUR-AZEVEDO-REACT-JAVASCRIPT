@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { Layout, Typography, Button, Steps } from 'antd';
+import { Layout, Typography, Button } from 'antd';
 import './ContactForm.css';
 
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
-const { Step } = Steps;
+
 
 function ContactForm() {
-  const [currentStep, setCurrentStep] = useState(0);
+ 
   const [state, handleSubmit] = useForm("moqoaddy");
 
-  const nextStep = () => {
-    setCurrentStep(currentStep + 1);
-  };
-
-  const prevStep = () => {
-    setCurrentStep(currentStep - 1);
-  };
-
+ 
   if (state.succeeded) {
     return <p>Formulário enviado com sucesso!</p>;
   }
@@ -36,19 +29,15 @@ function ContactForm() {
           <p>
             Agradecemos pelo seu interesse em reservar pautas em nosso teatro. Para obter todas as informações detalhadas e requisitos necessários, solicitamos que você baixe o edital para pedidos de pautas no botão a seguir:
           </p>
-          <Button type="primary" shape="round">
+          <Button type="primary" shape="round" className='button-container' >
             Inscrições encerradas! - Edital
           </Button>
           <p>
             Fique atento(a) ao prazo estabelecido no edital para a entrega do formulário completo. Qualquer dúvida ou esclarecimento adicional, por favor, entre em contato conosco pelo email: pauta.taa@gmail.com
             Após ler atentamente o edital e se familiarizar com os termos e condições, preencha o formulário abaixo com as informações solicitadas:
           </p>
-        </div>
-        <Steps current={currentStep}>
-          <Step title="Informações Pessoais" />
-          <Step title="Detalhes do Evento" />
-        </Steps>
-        {currentStep === 0 && (
+        </div>   
+    
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="nome">Nome:</label>
@@ -68,15 +57,8 @@ function ContactForm() {
                 field="celular"
                 errors={state.errors}
               />
-            </div>
-            <Button type="primary" onClick={nextStep} disabled={state.submitting}>
-              Próximo
-            </Button>
-           
-          </form>
-        )}
-        {currentStep === 1 && (
-          <form className="contact-form" onSubmit={handleSubmit}>
+            </div>      
+  
             <div className="form-group">
               <label htmlFor="data">Data início:</label>
               <input id="data" type="date" name="data_inicio" />
@@ -118,13 +100,12 @@ function ContactForm() {
               <input id="empresa" type="text" name="empresa" />
               <ValidationError prefix="Empresa" field="empresa" errors={state.errors} />
             </div>
-            <Button onClick={prevStep}>Anterior</Button>
+          
             <button className="submit-button" type="submit" disabled={state.submitting}>
               Enviar
             </button>
           </form>
-        )}
-      </Content>
+        </Content>
       <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
         Teatro Arthur Azevedo © Todos os direitos reservados 2023
       </Footer>

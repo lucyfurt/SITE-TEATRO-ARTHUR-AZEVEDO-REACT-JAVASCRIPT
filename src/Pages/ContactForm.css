@@ -70,3 +70,9 @@ textarea {
 .ant-steps-item-title::after {
   content: none;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
