@@ -29,15 +29,13 @@
   background: #f2f2f2 transparent;
   font-size: 1em;
   overflow: hidden !important;
-  
 }
 
 .bm-overlay { 
-  width: 500px !important;
+  width: 600px !important;
   height: 600px !important ;
-  left: 400px !important;
- 
-  
+  left: 400px !important; 
+  position: absolute;
 }
 
 /* Estilos para os itens do menu */
@@ -77,10 +75,9 @@
 }
 
 .bm-menu-wrap {
-  width: 400px !important;
-  height: 500px !important ;
-  left: 300px !important;
- 
+  width: 600px !important;
+  height: 600px !important ;
+  left: 400px !important; 
 }
 .header {
   display: flex;
