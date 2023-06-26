@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
+import './historiaHome.css'
 
 function HistoriaHome() {
     return (
@@ -16,13 +17,13 @@ function HistoriaHome() {
                                 O Teatro
 
                             </h1>
-                            <h1 style={{ color: "#fff", marginBottom: '30px' }}>
+                            <p style={{ color: "#fff", marginBottom: '30px' , fontSize:'24px'}}>
                                 Com mais de 200 anos de história, o Teatro Arthur Azevedo é hoje o segundo
                                 teatro mais antigo do Brasil e um dos mais bem equipados palcos do Estado do Maranhão.
-                            </h1>
+                            </p>
                             <div style={{ display: 'flex', alignItems: 'center' }}>
                                 <span style={{ alignSelf: 'center', marginRight: '8px', color: '#fff' }}>
-                                    <h1>Saiba mais</h1>
+                                    <p style={{fontSize: '24px'}}>Saiba mais</p>
                                 </span>
                                 <Button type="primary"
                                     href='/teatro'
