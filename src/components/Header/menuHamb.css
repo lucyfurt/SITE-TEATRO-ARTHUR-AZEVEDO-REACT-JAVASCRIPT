@@ -14,30 +14,30 @@
 }
 
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  right: 100px;
+ 
 }
 
 .bm-cross {
- 
-  
- 
+ background: #fff;
 }
 
 .bm-menu {
   background: #f2f2f2 transparent;
-  font-size: 1.15em;
+  font-size: 1em;
   overflow: hidden !important;
-  margin-top: 80px;
+  
 }
 
-.bm-overlay {
-  background: rgba(155, 33, 33, 0.3);
-  right: 10px;
-  top: 65px;
+.bm-overlay { 
+  width: 500px !important;
+  height: 600px !important ;
+  left: 400px !important;
   position: absolute !important;
-  height: 0% !important;
-  width: 100% !important;
+  
 }
 
 /* Estilos para os itens do menu */
@@ -67,6 +67,7 @@
 .bm-item-list {
   color: #b8b7ad;
   text-align: center;
+  
 }
 
 .menu-item {
@@ -76,10 +77,10 @@
 }
 
 .bm-menu-wrap {
-  width: 600px !important;
-  height: 100% !important;
+  width: 500px !important;
+  height: 600px !important ;
+  left: 400px !important;
   position: absolute !important;
-  height: 100%;
 }
 .header {
   display: flex;
@@ -106,13 +107,13 @@
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  margin: 40px;
+  margin: 10px;
 
 }
 
 .menu-container {
   align-items: center;
-  width: 10px;
+  padding-top: 160px;
 }
 
 /* Responsive Styles */
