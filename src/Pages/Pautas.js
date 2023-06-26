@@ -69,9 +69,10 @@ function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <Button type="primary" onClick={nextStep}>
+            <Button type="primary" onClick={nextStep} disabled={state.submitting}>
               Próximo
             </Button>
+           
           </form>
         )}
         {currentStep === 1 && (
