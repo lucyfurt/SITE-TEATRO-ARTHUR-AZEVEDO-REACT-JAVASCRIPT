@@ -56,8 +56,7 @@ const HomePage = () => {
         <Divider orientation="left">
           <h1 style={{ color: 'black', fontSize: '36px' }}>Bilheteria</h1>
         </Divider>
-        <Bilheteria />
-        <Frame />
+        <Bilheteria />      
       </Content>
       <Footer style={footerStyle}>
         <FooterComponent />

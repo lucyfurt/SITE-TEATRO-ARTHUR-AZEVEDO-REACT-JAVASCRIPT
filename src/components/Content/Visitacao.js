@@ -5,7 +5,7 @@ import {
   BankTwoTone,
   MessageTwoTone,
 } from '@ant-design/icons';
-import './Visitacao.css';
+
 
 const { TabPane } = Tabs;
 
