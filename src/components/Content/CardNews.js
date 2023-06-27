@@ -30,7 +30,7 @@ const NewsComponent = () => {
     <div style={{ padding: '10px' }}>
       <Row gutter={[16, 16]} justify="center">
         {newsData.map((news, index) => (
-          <Col xs={24} sm={12} md={8} lg={6} key={index}>
+          <Col xs={24} sm={12} md={8} lg={4} key={index}>
             <Card
               hoverable
               cover={<img alt={news.title} src={news.image} />}
@@ -42,8 +42,8 @@ const NewsComponent = () => {
           </Col>
         ))}
       </Row>
-      <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'flex-end' }}>
-        <span style={{ alignSelf: 'center', marginRight: '8px' }}>
+      <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'flex-end' }}>
+        <span style={{ alignSelf: 'center', marginRight: '5px' }}>
           <h1>Mais notícias</h1>
         </span>
         <div style={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
