@@ -1,6 +1,6 @@
 import React from 'react';
-import { Row, Col, BackTop } from 'antd';
-import { InstagramOutlined, FacebookOutlined, YoutubeOutlined } from '@ant-design/icons';
+import { Row, Col, BackTop, FloatButton } from 'antd';
+import { InstagramOutlined, FacebookOutlined, YoutubeOutlined, QuestionCircleOutlined } from '@ant-design/icons';
 import './FooterComponent.css';
 
 const FooterComponent = () => {
@@ -42,6 +42,13 @@ const FooterComponent = () => {
           </a>
         </div>
         <BackTop />
+        <FloatButton
+      icon={<QuestionCircleOutlined />}
+      type="default"
+      style={{
+        right: 150,
+      }}
+    />
       </div>
     </footer>
   );
