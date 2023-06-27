@@ -27,14 +27,14 @@ const NewsComponent = () => {
   ];
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ padding: '10px' }}>
       <Row gutter={[16, 16]} justify="center">
         {newsData.map((news, index) => (
           <Col xs={24} sm={12} md={8} lg={6} key={index}>
             <Card
               hoverable
               cover={<img alt={news.title} src={news.image} />}
-              bodyStyle={{ padding: '20px' }}
+              bodyStyle={{ padding: '10px' }}
               style={{ height: '100%' }}
             >
               <Meta title={news.title} description={news.description} />
