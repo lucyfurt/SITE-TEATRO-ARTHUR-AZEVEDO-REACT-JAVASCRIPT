@@ -8,6 +8,8 @@ import Nucleo from './Pages/Nucleo';
 import Institucional from './Pages/Institucional';
 import Espacos from './Pages/Espacos';
 import NewsPage from './Pages/newsPage';
+import FaleConosco from './Pages/FaleConosco';
+
 function App() {
   return (
     <Router>
@@ -20,6 +22,8 @@ function App() {
         <Route path="/institucional" element={<Institucional />} />
         <Route path="/tecnico" element={<Espacos/>} />
         <Route path="/allNews" element={<NewsPage/>} />
+        <Route path="/faleconosco" element={<FaleConosco/>} />
+     
       </Routes>
     </Router>
   );

@@ -17,7 +17,7 @@ const FooterComponent = () => {
       <div className="footer-content">
         <Row justify="center" gutter={[6, 6]}>
           <Col xs={24} sm={12} md={6}>
-          <a href="https://ibb.co/YRn6kJS"><img src="https://i.ibb.co/vwybPfW/Asset-4-2x.png" alt="Asset-4-2x" border="0" style={{width:'200px'}}/></a>
+            <a href="https://ibb.co/YRn6kJS"><img src="https://i.ibb.co/vwybPfW/Asset-4-2x.png" alt="Asset-4-2x" border="0" style={{ width: '200px' }} /></a>
           </Col>
           <Col xs={24} sm={12} md={6}>
             <img src="https://i.ibb.co/pQyyTs6/Asset-1-2x.png" alt="SECMA" className="secma-logo" />
@@ -29,8 +29,8 @@ const FooterComponent = () => {
         <div className="copyright" >
           Todos os direitos reservados - Teatro Arthur Azevedo {new Date().getFullYear()}
         </div>
-        <div className={getSocialLinksClassName()} 
-        style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+        <div className={getSocialLinksClassName()}
+          style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
           <a href="https://www.instagram.com/teatroarthurazevedooficial/" target="_blank" rel="noreferrer">
             <InstagramOutlined style={{ fontSize: '30px' }} />
           </a>
@@ -43,12 +43,13 @@ const FooterComponent = () => {
         </div>
         <BackTop />
         <FloatButton
-      icon={<QuestionCircleOutlined />}
-      type="default"
-      style={{
-        right: 150,
-      }}
-    />
+          icon={<QuestionCircleOutlined />}
+          type="default"
+          style={{
+            right: 150,
+          }}
+          href='/faleconosco'
+        />
       </div>
     </footer>
   );
