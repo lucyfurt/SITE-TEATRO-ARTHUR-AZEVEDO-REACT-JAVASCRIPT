@@ -24,11 +24,11 @@ const contentStyle = {
 const footerStyle = {
   textAlign: 'center',
   color: 'black',
-  backgroundColor: '#730c02',
+  backgroundColor: '#861A16',
 };
 
 const headerStyle = {
-  backgroundColor: '#6d0202',
+  backgroundColor: '#861A16',
   lineHeight: '100px',
 };
 

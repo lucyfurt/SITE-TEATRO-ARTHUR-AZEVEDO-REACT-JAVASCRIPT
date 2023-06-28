@@ -92,7 +92,7 @@ const App = () => {
             shape="round"
             icon={<RightOutlined />}
             size="large"
-            style={{ backgroundColor: 'orange' }}
+            style={{ backgroundColor: '#67A4FB' }}
             href='/allevents'
           />
         </div>

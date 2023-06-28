@@ -5,7 +5,7 @@ import './historiaHome.css'
 
 function HistoriaHome() {
     return (
-        <div style={{ background: "#6d0202", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ background: "#E76A53", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div>
                 <Row>
                     <Col span={12}>
@@ -30,7 +30,7 @@ function HistoriaHome() {
                                     shape="round"
                                     icon={<RightOutlined />}
                                     size="large"
-                                    style={{ backgroundColor: 'orange', color: "#fff" }} />
+                                    style={{ backgroundColor: '#67A4FB', color: "#fff" }} />
                             </div>
                         </div>
                     </Col>
