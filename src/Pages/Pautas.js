@@ -1,6 +1,6 @@
 import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-import { Layout, Typography, Button, Form, Input, DatePicker } from 'antd';
+import { useForm } from '@formspree/react';
+import { Layout, Typography, Button } from 'antd';
 import './ContactForm.css';
 
 const { Content, Header, Footer } = Layout;
@@ -12,7 +12,6 @@ const Pautas = () => {
   if (state.succeeded) {
     return <p>Formulário enviado com sucesso!</p>;
   }
-
   return (
     <Layout>
       <Header style={{ background: '#6d0202', padding: '20px' }}>
@@ -37,7 +36,7 @@ const Pautas = () => {
             </Button>
           </div>
           <div className="button-container">
-            <Button type="primary" shape="round">
+            <Button type="primary" shape="round" href='/inscricoes'>
               Inscrições
             </Button>
           </div>

@@ -9,6 +9,7 @@ import Institucional from './Pages/Institucional';
 import Espacos from './Pages/Espacos';
 import NewsPage from './Pages/newsPage';
 import FaleConosco from './Pages/FaleConosco';
+import FormPauta from './Pages/FormPauta';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/tecnico" element={<Espacos/>} />
         <Route path="/allNews" element={<NewsPage/>} />
         <Route path="/faleconosco" element={<FaleConosco/>} />
+        <Route path="/inscricoes" element={<FormPauta/>} />
      
       </Routes>
     </Router>

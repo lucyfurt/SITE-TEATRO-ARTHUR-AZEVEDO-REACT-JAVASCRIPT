@@ -6,7 +6,7 @@ import './ContactForm.css';
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 
-const Pautas = () => {
+const FormPauta = () => {
   const [state, handleSubmit] = useForm("moqoaddy");
 
   if (state.succeeded) {
@@ -67,3 +67,4 @@ const Pautas = () => {
       </Layout>
   )
 }
+export default FormPauta;
