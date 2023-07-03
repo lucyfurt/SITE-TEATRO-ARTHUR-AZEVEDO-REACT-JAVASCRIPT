@@ -24,9 +24,9 @@ function Visitacao() {
             }
             key="1"
           >
-            <Card className='visit'>
-              <p style={{fontSize:'30px'}}><strong>Terça das 14h às 17h</strong></p>
-              <p>
+            <Card >
+              <p style={{fontSize:'24px'}}><strong>Terça das 14h às 17h</strong></p>
+              <p style={{fontSize:'24px'}}>
                 Não é necessário agendamento, basta chegar à bilheteria e receber as instruções.
                 Dependendo da quantidade de visitantes, a visita poderá ser dividida em grupos
                 para melhor aproveitamento e segurança de todos.
@@ -35,20 +35,20 @@ function Visitacao() {
           </TabPane>
           <TabPane
             tab={
-              <span>
+              <span style={{fontSize:'36px'}}>
                 <BankTwoTone />
                 Instituições
               </span>
             }
             key="2"
           >
-            <Card className='visit'>
-              <p className="opening-hours"><strong>Terça das 14h às 17h</strong></p>
-              <p>
+            <Card >
+              <p style={{fontSize:'24px'}}><strong>Terça das 14h às 17h</strong></p>
+              <p style={{fontSize:'24px'}}>
                 Agendamento por meio de ofício contendo as seguintes informações: dia,
                 quantidade de visitantes e faixa etária, deverá ser enviado para o email:
               </p>
-              <p className="email"><MessageTwoTone /><strong>pauta.taa@gmail.com</strong></p>
+              <p style={{fontSize:'24px'}}><MessageTwoTone /><strong>pauta.taa@gmail.com</strong></p>
             </Card>
           </TabPane>
         </Tabs>
