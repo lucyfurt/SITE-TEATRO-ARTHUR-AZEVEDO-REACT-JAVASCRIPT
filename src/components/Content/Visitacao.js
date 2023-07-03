@@ -17,7 +17,7 @@ function Visitacao() {
         <Tabs defaultActiveKey="1" centered>
           <TabPane
             tab={
-              <span>
+              <span style={{fontSize:'36px', }}>
                 <EnvironmentTwoTone />
                 Turística
               </span>
@@ -25,7 +25,7 @@ function Visitacao() {
             key="1"
           >
             <Card className='visit'>
-              <p className="opening-hours"><strong>Terça das 14h às 17h</strong></p>
+              <p style={{fontSize:'30px'}}><strong>Terça das 14h às 17h</strong></p>
               <p>
                 Não é necessário agendamento, basta chegar à bilheteria e receber as instruções.
                 Dependendo da quantidade de visitantes, a visita poderá ser dividida em grupos
