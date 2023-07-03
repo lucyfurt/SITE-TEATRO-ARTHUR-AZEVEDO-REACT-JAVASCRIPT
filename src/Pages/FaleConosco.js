@@ -44,7 +44,7 @@ function ContactUsForm() {
           </div>
           
           <button className="submit-button" type="submit" disabled={state.submitting}>
-            Send Message
+            Enviar
           </button>
         </form>
       </Content>
