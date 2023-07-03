@@ -28,7 +28,7 @@ function ContactUsForm() {
     
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">Nome:</label>
             <input id="name" type="text" name="name" />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
           </div>
@@ -38,7 +38,7 @@ function ContactUsForm() {
             <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">Mensagem:</label>
             <textarea id="message" name="message" />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
           </div>
