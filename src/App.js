@@ -10,6 +10,7 @@ import Espacos from './Pages/Espacos';
 import NewsPage from './Pages/newsPage';
 import FaleConosco from './Pages/FaleConosco';
 import FormPauta from './Pages/FormPauta';
+import Nae from './Pages/Nae';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/allNews" element={<NewsPage/>} />
         <Route path="/faleconosco" element={<FaleConosco/>} />
         <Route path="/inscricoes" element={<FormPauta/>} />
+        <Route path="/nae" element={<Nae/>} />
      
       </Routes>
     </Router>

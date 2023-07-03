@@ -27,6 +27,9 @@ const Header = () => {
           <a className="menu-item" href="/nmp">
             Núcleo de Memória e Pesquisa
           </a>
+          <a className="menu-item" href="/nmp">
+            Núcleo Arte e Educação
+          </a>
         </Menu>
       </div>
     </div>
