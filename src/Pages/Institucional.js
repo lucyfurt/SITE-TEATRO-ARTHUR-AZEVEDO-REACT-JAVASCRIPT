@@ -42,13 +42,6 @@ const Institutional = () => {
             </Card>
           </TabPane>
           <TabPane tab="Equipe Técnica" key="2">
-            <Card title="Chefe de Pauta">
-              <Meta
-                avatar={<Avatar icon={<ScheduleOutlined />} />}
-                title="Samuel Viegas"
-              />
-            </Card>
-            <Divider />
             <Card title="Coordenação técnico">
               <Meta
                 avatar={<Avatar icon={<ToolOutlined />} />}
@@ -57,6 +50,13 @@ const Institutional = () => {
             </Card>
           </TabPane>
           <TabPane tab="Administração" key="3">
+            <Card title="Chefe de Pauta">
+              <Meta
+                avatar={<Avatar icon={<ScheduleOutlined />} />}
+                title="Samuel Viegas"
+              />
+            </Card>
+            <Divider />
             <Card title="Chefe de Bilheteria">
               <Meta
                 avatar={<Avatar icon={<DollarCircleOutlined />} />}
@@ -70,19 +70,19 @@ const Institutional = () => {
                 title="Joás Coelho"
               />
             </Card>
-          </TabPane>
-          <TabPane tab="Outros" key="4">
-            <Card title="Coordenação do NAE">
-              <Meta
-                avatar={<Avatar icon={<BookOutlined />} />}
-                title="Ione Coelho"
-              />
-            </Card>
-            <Divider />
+            <Divider/>
             <Card title="Chefe de serviços gerais">
               <Meta
                 avatar={<Avatar icon={<UserAddOutlined />} />}
                 title="Maria Francisca Moraes"
+              />
+            </Card>
+          </TabPane>
+          <TabPane tab="Núcleo Arte Educação" key="4">
+            <Card title="Coordenação do NAE">
+              <Meta
+                avatar={<Avatar icon={<BookOutlined />} />}
+                title="Ione Coelho"
               />
             </Card>
           </TabPane>
