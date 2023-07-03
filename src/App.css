@@ -39,7 +39,7 @@
 }
 
 h1 {
-  font-family: 'Noto Serif Ottoman Siyaq', serif;
+  font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
 }
 
 h2 {
@@ -50,7 +50,8 @@ h3 {
   font-family: 'Noto Serif Ottoman Siyaq', serif;
 }
 p {
-  font-family: 'Noto Serif Ottoman Siyaq', serif;
+  font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
+  
 }
 
 .menu-right {

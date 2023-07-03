@@ -7,28 +7,28 @@ function Bilheteria() {
     return (
         <>
             <div>
-                <h2>Horário de funcionamento</h2>
-                <p style={{ textAlign: 'center' }}>
+                <h2  style={{ textAlign: 'center', fontSize:'36px' }}>Horário de funcionamento</h2>
+                <p style={{ textAlign: 'center', fontSize:'30px' }}>
                     <strong>Terça a domingo das 13h30 às 18h30</strong>
                 </p>
             </div>
 
             <div>
-                <h2>Informações de assentos</h2>
-                <p style={{ textAlign: 'center' }}>
+                <h2  style={{ textAlign: 'center', fontSize:'36px' }}>Informações de assentos</h2>
+                <p style={{ textAlign: 'center', fontSize:'30px'  }}>
                     Assentos disponíveis: {assentosDisponiveis}
                 </p>
             </div>
 
             <div>
-                <h2>Ingressos disponíveis</h2>
-                <p style={{ textAlign: 'center' }}>
+                <h2 style={{ textAlign: 'center', fontSize:'36px' }}>Ingressos disponíveis</h2>
+                <p style={{ textAlign: 'center', fontSize:'30px'  }}>
                     Quantidade disponível: {ingressosDisponiveis}
                 </p>
             </div>
 
             <div>
-                <h2 style={{ textAlign: 'center' }}>Como chegar</h2>
+                <h2 style={{ textAlign: 'center', fontSize:'36px' }}>Como chegar</h2>
                 <iframe
                     title="Mapa da bilheteria"
                     width="500"

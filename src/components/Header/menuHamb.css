@@ -25,7 +25,7 @@
 }
 
 .bm-menu {
-  font-size: 36px;
+  font-size: 30px;
   overflow: hidden;
   font-family: 'Noto Serif Ottoman Siyaq', serif;
   width: 500px;
@@ -33,7 +33,7 @@
 
 .bm-item {
   display: block;
-  margin-bottom: 10px;
+
   color: #fff
 }
 
@@ -80,4 +80,8 @@
 .menu-container {
   align-items: center;
   padding-top: 160px;
+}
+
+.bm-overlay {
+  
 }
