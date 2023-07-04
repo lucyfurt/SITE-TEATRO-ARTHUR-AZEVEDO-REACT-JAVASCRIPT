@@ -1,10 +1,10 @@
 import React from 'react';
 import { Layout, Typography, Tabs, Carousel } from 'antd';
+import './Historia.css'
 
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 const { TabPane } = Tabs;
-
 function Historia() {
 return (
 <Layout>
@@ -14,9 +14,9 @@ return (
 </Title>
 </Header>
 <Content style={{ padding: '50px' }}>
-<Title level={2}>História</Title>
+<Title style={{fontFamily: 'Noto Serif Ottoman Siyaq' }} level={2}>História</Title>
 <Tabs defaultActiveKey="1" type="card">
-<TabPane tab="Fundação" key="1">
+<TabPane tab="Fundação" key="1" style={{ fontSize:'24px' }}>
 <Title level={4}>Fundação</Title>
 <p>No ano de 1815, dois comerciantes portugueses desejavam ter um teatro em São Luís, no Maranhão, que fosse semelhante aos da Europa. Apesar das dificuldades enfrentadas, eles construíram o Teatro União, inaugurado em 1817. O teatro foi posteriormente renomeado para Teatro São Luiz e, mais tarde, recebeu o nome de Teatro Arthur Azevedo em homenagem a um importante teatrólogo maranhense. O local passou por crises, funcionou como cinema e foi restaurado várias vezes. Hoje, é considerado um dos principais teatros históricos do Brasil, sendo palco de diversas apresentações artísticas e eventos culturais. Sua arquitetura neoclássica e sua relevância cultural o tornam um símbolo da arte no Maranhão.</p>
 <Carousel autoplay>
