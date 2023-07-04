@@ -15,25 +15,25 @@
 }
 
 .bm-cross-button {
-  margin-top: 10px;
-  left: 500px
+  
+
 }
 
 .bm-cross {
   background: #fff;
-  left: 500px
+  
 }
 
 .bm-menu {
   font-size: 30px;
   overflow: hidden;
-  font-family: 'Noto Serif Ottoman Siyaq', serif;
+  font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
   width: 500px;
+  margin: 0 0 0 400px;
 }
 
 .bm-item {
   display: block;
-
   color: #fff
 }
 
@@ -83,5 +83,15 @@
 }
 
 .bm-overlay {
+  margin: -50px 0 0 0;
+}
+
+.bm-menu-wrap{
+  width: 900px !important;
+}
+
+.bm-item-list {
+  padding: 20px;
+  margin: -20px;
   
 }
