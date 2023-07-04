@@ -70,7 +70,7 @@ const Institutional = () => {
                 title="Joás Coelho"
               />
             </Card>
-            <Divider/>
+            <Divider />
             <Card title="Chefe de serviços gerais">
               <Meta
                 avatar={<Avatar icon={<UserAddOutlined />} />}
@@ -86,6 +86,15 @@ const Institutional = () => {
               />
             </Card>
           </TabPane>
+          <TabPane tab="Núcleo de Memória e Pesquisa" key="5">
+            <Card title="Coordenação do Núcleo de Memória e Pesquisa">
+              <Meta
+                avatar={<Avatar icon={<BookOutlined />} />}
+                title="Julio da Hora"
+              />
+            </Card>
+          </TabPane>
+
         </Tabs>
       </Content>
       <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
