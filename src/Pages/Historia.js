@@ -13,8 +13,8 @@ return (
 <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
 </Title>
 </Header>
-<Content style={{ padding: '50px' }}>
-<Title style={{fontFamily: 'Noto Serif Ottoman Siyaq' }} level={2}>História</Title>
+<Content style={{ padding: '50px'}}>
+<Title level={2}>História</Title>
 <Tabs defaultActiveKey="1" type="card">
 <TabPane tab="Fundação" key="1" style={{ fontSize:'24px' }}>
 <Title level={4}>Fundação</Title>
@@ -25,7 +25,7 @@ return (
 </div>
 </Carousel>
 </TabPane>
-<TabPane tab="Apolônia Pinto" key="2">
+<TabPane tab="Apolônia Pinto" key="2" style={{ fontSize:'24px' }}>
 <Title level={4}>Apolônia Pinto</Title>
 <p>Apolônia Pinto foi uma atriz maranhense que se destacou como uma das maiores intérpretes do teatro brasileiro. Nascida em 1854, ela nasceu nos bastidores do Teatro Arthur Azevedo, então chamado de Teatro União e Teatro São Luiz. Desde cedo, demonstrou talento e aos doze anos de idade já encantava plateias com sua atuação na peça "A Cigana de Paris". Ao longo de sua carreira, que durou 83 anos, Apolônia se tornou conhecida como a maior atriz do país, emocionando o público com suas interpretações das paixões humanas. É lembrada como uma artista que trabalhava por amor à arte, em uma época em que os artistas dependiam de doações para sobreviver. Seu legado é reverenciado no camarim nº 1 do Teatro Arthur Azevedo, onde placas e homenagens perpetuam sua memória.</p>
 <Carousel autoplay>
@@ -34,7 +34,7 @@ return (
 </div>
 </Carousel>
 </TabPane>
-<TabPane tab="Arthur Azevedo" key="3">
+<TabPane tab="Arthur Azevedo" key="3" style={{ fontSize:'24px' }}>
 <Title level={4}>Arthur Azevedo</Title>
 <p>Arthur Azevedo foi um renomado comediógrafo brasileiro do século XIX, conhecido por sua habilidade como autor teatral, poeta e crítico. Nascido em São Luís, Maranhão, ele se destacou como um dos principais escritores da belle époque no Rio de Janeiro, retratando a vida cotidiana e as peculiaridades da sociedade da época. Suas peças teatrais, contos e poesias abordavam principalmente o cenário carioca, revelando as fraquezas, alegrias e medos da geração da época. Além disso, Azevedo foi um defensor da vida e promoveu uma campanha contra o suicídio. Embora algumas de suas obras originais tenham se perdido, seu legado perdura na história do teatro e da literatura brasileira.</p>
 <Carousel autoplay>
@@ -43,8 +43,8 @@ return (
 </div>
 </Carousel>
 </TabPane>
-<TabPane tab="Atualidade" key="4">
-<Title level={4}>Atualidade</Title>
+<TabPane tab="Atualidades" key="4" style={{ fontSize:'24px' }}>
+<Title level={4}>Atualidades</Title>
 <p>O trabalho de Arthur Azevedo foi marcado pelo estímulo ao surgimento de novos talentos e pela colaboração com outros comediógrafos, como Moreira Sampaio. Ele valorizava a solidariedade humana e dedicou-se a ajudar artistas envelhecidos e suas famílias, alimentando crianças órfãs e enteados. Embora tenham sido preservados apenas alguns de seus manuscritos, seu impacto na cultura brasileira é inegável, deixando um legado duradouro na história do teatro e na produção literária do país.</p>
 <Carousel autoplay>
 <div>
