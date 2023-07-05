@@ -29,12 +29,13 @@
   overflow: hidden;
   font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
   width: 500px;
-  margin: 0 0 0 400px;
+  margin: 0 0 0 300px;
 }
 
 .bm-item {
   display: block;
-  color: #fff
+  color: #fff;
+  height: 80px;
 }
 
 .bm-item a {
@@ -87,7 +88,7 @@
 }
 
 .bm-menu-wrap{
-  width: 900px !important;
+  width: 700px !important;
 }
 
 .bm-item-list {
