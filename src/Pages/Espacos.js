@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Typography, Tabs, Carousel } from 'antd';
+import { Layout, Typography, Tabs, Carousel, Divider, Button } from 'antd';
 import rider_medidas from '../assets/Rider_Tecnico_-_Medidas_e_material_cenico.pdf'
 import rider_luz from '../assets/Rider_Tecnico_de_Luz.pdf'
 import rider_som from '../assets/Rider_Tecnico_de_Som.pdf'
@@ -17,8 +17,17 @@ function Historia() {
             </Header>
             <Content style={{ padding: '50px' }}>
                 <Title level={2}>Informações Técnicas</Title>
+                <Divider />
+                <h1 style={{ textAlign: 'center' }}>Rider Técnico</h1>
+                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+                    <Button href={rider_medidas} style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Rider Técnico Medidas e Material Cênico</Button>
+                    <Button href={rider_luz} style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Rider Técnico de Luz</Button>
+                    <Button href={rider_som} style={{ backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Rider Técnico de Som</Button>
+                </div>
+                <Divider />
+                <Title level={2}>Espaços</Title>
                 <Tabs defaultActiveKey="1" type="card">
-                    <TabPane tab="Foyer" key="1" style={{ fontSize:'24px' }}>
+                    <TabPane tab="Foyer" key="1" style={{ fontSize: '24px' }}>
                         <Title level={4}>Foyer</Title>
                         <p> Este grande salão tem a função de receber e acomodar o público nos momentos que antecedem
                             o início do espetáculo. É neste salão que se encontra
@@ -31,7 +40,7 @@ function Historia() {
                             </div>
                         </Carousel>
                     </TabPane>
-                    <TabPane tab="Plateia" key="2" style={{ fontSize:'24px' }}>
+                    <TabPane tab="Plateia" key="2" style={{ fontSize: '24px' }}>
                         <Title level={4}>Plateia</Title>
                         <p> Dedicada ao conforto e visibilidade do espetáculo,
                             a plateia tem o clássico formato de ferradura, poltronas acolchoadas. Constituída de um espaço central,
@@ -44,7 +53,7 @@ function Historia() {
                             </div>
                         </Carousel>
                     </TabPane>
-                    <TabPane tab="Palco" key="3"style={{ fontSize:'24px' }}>
+                    <TabPane tab="Palco" key="3" style={{ fontSize: '24px' }}>
                         <Title level={4}>Palco</Title>
                         <p> O espaço mais importante mede, 324m² com 15m de profundidade por 12m de boca de cena,
                             dispondo de um fosso e elevador de orquestra.
@@ -58,7 +67,7 @@ function Historia() {
                             </div>
                         </Carousel>
                     </TabPane>
-                    <TabPane tab="Salão Nobre" key="4"style={{ fontSize:'24px' }}>
+                    <TabPane tab="Salão Nobre" key="4" style={{ fontSize: '24px' }}>
                         <Title level={4}>Salão Nobre</Title>
                         <p> Localizado sobre o salão de entrada no nível dos camarotes e do camarote oficial do governador (a), tem suas amplas janelas voltadas para a Rua do Sol, ornadas com delicadas cortinas.
 
@@ -69,7 +78,7 @@ function Historia() {
                             </div>
                         </Carousel>
                     </TabPane>
-                    <TabPane tab="Salão Versátil" key="5"style={{ fontSize:'24px' }}>
+                    <TabPane tab="Salão Versátil" key="5" style={{ fontSize: '24px' }}>
                         <Title level={4}>Salão Versátil</Title>
                         <p>Um amplo e bem equipado salão climatizado com 230 m², situado na parte frontal do prédio, no terceiro piso, com janelas que se abrem para Rua do Sol. Com uma parede espelhada, barras de apoio para dança, um piano para uso profissional, piso em madeira de lei, permite sua utilização para pequenas audições ao piano, de canto lírico, coro, música popular e erudita; além de aulas de dança e ainda para ensaios de teatro e música, justificando, assim, a denominação "versátil" desse espaço
                         </p>
@@ -79,7 +88,7 @@ function Historia() {
                             </div>
                         </Carousel>
                     </TabPane>
-                    <TabPane tab="Sala de Dança" key="6"style={{ fontSize:'24px' }}>
+                    <TabPane tab="Sala de Dança" key="6" style={{ fontSize: '24px' }}>
                         <Title level={4}>Sala de Dança</Title>
                         <p>O salão de dança, com climatização exclusiva, mede 154 m² localizado no terceiro piso, no anexo do TAA. Equipado com duas paredes contendo espelhos de 3,5 m de altura, piso de madeira adequado para dança, barras fixas e móveis, iluminação especial para aulas e ensaios e sistema de som e vídeo. Dispõe, também, de uma sala mezanino para observação dos coreógrafos e dos responsáveis, com tv e vídeo. Poderá ser alugada ou permutada por um tempo limitado para cada grupo.
 
@@ -90,7 +99,7 @@ function Historia() {
                             </div>
                         </Carousel>
                     </TabPane>
-                    <TabPane tab="Sala de Coro" key="7"style={{ fontSize:'24px' }}>
+                    <TabPane tab="Sala de Coro" key="7" style={{ fontSize: '24px' }}>
                         <Title level={4}>Sala de Coro</Title>
                         <p>
                             A sala de ensaios do coro, com 63 m², é climatizada e localizada no terceiro piso do anexo administrativo. Dispõe de um piano de gabinete, uma parede espelhada do teto ao piso e barras móveis. Voltada para ensaios de corais e pequenos grupos teatrais e de dança. Eventualmente, poderá ser utilizada como estúdio de gravação, pois a mesma está equipada com mesa de 20 canais soundcraft. Vale ressaltar aqui que todos os materiais referentes à gravação ficarão por conta do usuário.
@@ -102,7 +111,7 @@ function Historia() {
                             </div>
                         </Carousel>
                     </TabPane>
-                    <TabPane tab="Bar" key="8"style={{ fontSize:'24px' }}>
+                    <TabPane tab="Bar" key="8" style={{ fontSize: '24px' }}>
                         <Title level={4}>Bar</Title>
                         <p>
                             Localizado à direita do palco, dispõe de um monitor de vídeo que reproduz a ação do palco. Atende ao público antes e nos intervalos dos espetáculos, servindo refrigerantes, águas, cervejas e bebidas quentes. É vedada a entrada de bebidas alcoólicas, refrigerantes e líquidos em geral na plateia.
