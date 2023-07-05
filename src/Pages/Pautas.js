@@ -22,7 +22,7 @@ const Pautas = () => {
       <Content style={{ padding: '50px' }}>
         <Title level={2}>Pedido de Pautas</Title>
         <div>
-          <p>
+          <p style={{ fontSize:'24px' }}>
             Agradecemos pelo seu interesse em reservar pautas em nosso teatro. Para obter todas as informações detalhadas e requisitos necessários, solicitamos que você baixe o edital para pedidos de pautas no botão a seguir:
           </p>
           <div className="button-container">
@@ -32,15 +32,15 @@ const Pautas = () => {
           </div>
           <div className="button-container">
             <Button type="primary" shape="round">
-              Informações
+              Cartilha...
             </Button>
           </div>
           <div className="button-container">
-            <Button type="primary" shape="round" href='/inscricoes'>
+            <Button type="primary" shape="round" href='/inscricoes' disabled>
               Inscrições
             </Button>
           </div>
-          <p>
+          <p style={{ fontSize:'24px' }}>
             Fique atento(a) ao prazo estabelecido no edital para a entrega do formulário completo. Qualquer dúvida ou esclarecimento adicional, por favor, entre em contato conosco pelo email: pauta.taa@gmail.com
             Após ler atentamente o edital e se familiarizar com os termos e condições, preencha o formulário abaixo com as informações solicitadas:
           </p>
