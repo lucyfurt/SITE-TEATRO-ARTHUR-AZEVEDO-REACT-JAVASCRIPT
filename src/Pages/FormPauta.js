@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from '@formspree/react';
-import { Layout, Typography, Button, Form, Input, DatePicker } from 'antd';
+import { Layout, Typography, Button, Form, Input, DatePicker, Divider } from 'antd';
 import './ContactForm.css';
 
 const { Content, Header, Footer } = Layout;
@@ -20,9 +20,16 @@ const FormPauta = () => {
           <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
         </Title>
       </Header>
-      <Content style={{ padding: '50px' }}>
-
-      <Form className="contact-form" onSubmit={handleSubmit}>
+      <Content style={{ padding: '10px' }}>
+        <Title level={2}>Pedido de pautas</Title>
+        <Divider />
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+          <Button style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Edital</Button>
+          <Button style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Normas </Button>
+        </div>
+        <Divider />
+        <h1>Formulário de inscrição:</h1>
+        <Form className="contact-form" onSubmit={handleSubmit}>
           <Form.Item label="Nome" name="nome" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
@@ -64,7 +71,7 @@ const FormPauta = () => {
       <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
         Teatro Arthur Azevedo © Todos os direitos reservados 2023
       </Footer>
-      </Layout>
+    </Layout>
   )
 }
 export default FormPauta;
