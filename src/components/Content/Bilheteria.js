@@ -11,22 +11,9 @@ function Bilheteria() {
                     <strong>Terça a domingo das 13h30 às 18h30</strong>
                 </p>
             </div>
-
-            <div>
-                <h2 style={{ textAlign: 'center', fontSize: '36px' }}>Informações de assentos</h2>
-                <p style={{ textAlign: 'center', fontSize: '30px' }}>
-                    O Teatro tem a lotação de 750 lugares
-                    222 lugares na Plateia;
-                    132 lugares nas Frisas;
-                    120 lugares nos Camarotes;
-                    132 lugares nos Balcões;
-                    132 lugares nas Galerias;
-                    12 lugares no Camarote Oficial.
-                </p>
-            </div>
             <div>
                 <h2 style={{ textAlign: 'center', fontSize: '36px' }}>Mapa de assentos</h2>
-                <Image src="https://i.ibb.co/f2ysCHK/teatroMP.png" alt="assentos" style={{ width: '500px', height: '50%', margin:'auto' }} />
+                <Image src="https://i.ibb.co/f2ysCHK/teatroMP.png" alt="assentos" style={{ width: '500px', height: '50%', margin: 'auto' }} />
             </div>
             <div>
                 <h2 style={{ textAlign: 'center', fontSize: '36px' }}>Como chegar</h2>
@@ -39,7 +26,7 @@ function Bilheteria() {
                     allowFullScreen
                 ></iframe>
             </div>
-          
+
         </>
     );
 }

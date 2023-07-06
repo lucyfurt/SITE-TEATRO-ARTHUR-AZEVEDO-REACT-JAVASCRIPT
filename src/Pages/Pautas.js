@@ -1,17 +1,10 @@
 import React from 'react';
-import { useForm } from '@formspree/react';
 import { Layout, Typography, Button } from 'antd';
-import './ContactForm.css';
 
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 
 const Pautas = () => {
-  const [state, handleSubmit] = useForm("moqoaddy");
-
-  if (state.succeeded) {
-    return <p>Formulário enviado com sucesso!</p>;
-  }
   return (
     <Layout>
       <Header style={{ background: '#6d0202', padding: '20px' }}>
@@ -20,29 +13,28 @@ const Pautas = () => {
         </Title>
       </Header>
       <Content style={{ padding: '50px' }}>
-        <Title level={2}>Pedido de Pautas</Title>
+        <Title level={2}>Pedidos de Pautas</Title>
         <div>
-          <p style={{ fontSize:'24px' }}>
-            Agradecemos pelo seu interesse em reservar pautas em nosso teatro. Para obter todas as informações detalhadas e requisitos necessários, solicitamos que você baixe o edital para pedidos de pautas no botão a seguir:
+          <p style={{ fontSize: '24px' }}>
+            Agradecemos pelo seu interesse em reservar pautas em nosso teatro. Abaixo, você encontrará os três tipos de pautas disponíveis:
           </p>
           <div className="button-container">
-            <Button type="primary" shape="round" disabled>
-              Edital
+            <Button type="primary" shape="round" href='/shows'>
+              Shows / Espetáculos
             </Button>
           </div>
           <div className="button-container">
-            <Button type="primary" shape="round">
-              Cartilha...
+            <Button type="primary" shape="round" href='/fotografias'>
+              Fotografias
             </Button>
           </div>
           <div className="button-container">
-            <Button type="primary" shape="round" href='/inscricoes' disabled>
-              Inscrições
+            <Button type="primary" shape="round" href='/salas-de-danca'>
+              Salas de Dança
             </Button>
           </div>
-          <p style={{ fontSize:'24px' }}>
-            Fique atento(a) ao prazo estabelecido no edital para a entrega do formulário completo. Qualquer dúvida ou esclarecimento adicional, por favor, entre em contato conosco pelo email: pauta.taa@gmail.com
-            Após ler atentamente o edital e se familiarizar com os termos e condições, preencha o formulário abaixo com as informações solicitadas:
+          <p style={{ fontSize: '24px' }}>
+            Selecione o tipo de pauta que deseja solicitar e siga as instruções específicas para cada tipo. Caso tenha alguma dúvida ou precise de esclarecimentos adicionais, entre em contato conosco pelo email: pauta.taa@gmail.com
           </p>
         </div>
       </Content>
