@@ -14,94 +14,89 @@ const Pautas = () => {
       </Header>
       <Content style={{ padding: '10px' }}>
         <Title level={2}>Pedidos de Pautas</Title>
-      
+
         <div style={{ textAlign: 'center' }}>
-        <Row gutter={[16, 16]} justify="center">
-          <Col xs={24} sm={12} md={8} lg={6}>
-            <Card
-              style={{ width: '100%', height: '100%' }}
-              cover={
-                <img
-                  alt="example"
-                  src="https://i.ibb.co/yqz8DqH/0001.png"
-                />
-              }
-              actions={[
-                <Button type="primary" href='inscricoes' target="_blank"
-                  style={{
-                     justifyContent: 'center',  width: '50%',
-                    color: '#fff',
-                    border: '1px'
-                  }}>
+          <Row gutter={[16, 16]} justify="center">
+            <Col xs={24} sm={12} md={8} lg={6}>
+              <Card
+                style={{ width: '100%', height: '100%' }}
+                cover={
+                  <img
+                    alt="example"
+                    src="https://i.ibb.co/8Ppnk0Q/Teatro-Arthur-Azevedo.jpg"
+                  />
+                }
+                actions={[
+                  <Button type="primary" href='inscricoes' target="_blank"
+                    style={{
+                      justifyContent: 'center', width: '50%',
+                      color: '#fff',
+                      border: '1px'
+                    }}>
 
-                Inscrições
-                </Button>
-                
-              ]}
-            >
-              <Meta title="Shows/Espetáculos" description="Teatro, Danças, Shows, Musicais" />
+                    Inscrições
+                  </Button>
 
-            </Card>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6}>
-            <Card
-              style={{ width: '100%' }}
-              cover={
-                <img
-                  alt="fotografias"
-                  src="https://i.ibb.co/zhds82X/formatura.jpg"
-                />
-              }
-              actions={[
-                <Button type="primary" href='inscricoes' target="_blank"
-                  style={{
-                     justifyContent: 'center',  width: '50%',
-                    color: '#fff',
-                    border: '1px'
-                  }}>
+                ]}
+              >
+                <Meta title="Shows/Espetáculos" description="Teatro, Danças, Shows, Musicais" />
 
-                Inscrições
-                </Button>
-              ]}
-            >
-              <Meta title="Fotografias" description="Formaturas" />
+              </Card>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={6}>
+              <Card
+                style={{ width: '100%' }}
+                cover={
+                  <img
+                    alt="fotografias"
+                    src="https://i.ibb.co/c8ZrWSw/formatura-TAA.png"
+                  />
+                }
+                actions={[
+                  <Button type="primary" href='inscricoes' target="_blank"
+                    style={{
+                      justifyContent: 'center', width: '50%',
+                      color: '#fff',
+                      border: '1px'
+                    }}>
 
-            </Card>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6}>
-            <Card
-              style={{ width: '100%' }}
-              cover={
-                <img
-                  alt="espacos"
-                  src="https://i.ibb.co/2SFmgzf/41-Sal-o-de-Dan-a.jpg"
-                />
-              }
-              actions={[
-                <Button type="primary" href='inscricoes' target="_blank"
-                  style={{
-                     justifyContent: 'center',  width: '50%',
-                    color: '#fff',
-                    border: '1px'
-                  }}>
+                    Inscrições
+                  </Button>
+                ]}
+              >
+                <Meta title="Fotografias" description="Formaturas" />
 
-                Inscrições
-                </Button>
-              ]}
-            >
-              <Meta title="Espaços" description="Sala de dança, Sala de coro, Salão Versátil" />
+              </Card>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={6}>
+              <Card
+                style={{ width: '100%' }}
+                cover={
+                  <img
+                    alt="espacos"
+                    src="https://i.ibb.co/2SFmgzf/41-Sal-o-de-Dan-a.jpg"
+                  />
+                }
+                actions={[
+                  <Button type="primary" href='inscricoes' target="_blank"
+                    style={{
+                      justifyContent: 'center', width: '50%',
+                      color: '#fff',
+                      border: '1px'
+                    }}>
 
-            </Card>
-          </Col>
+                    Inscrições
+                  </Button>
+                ]}
+              >
+                <Meta title="Espaços" description="Sala de dança, Sala de coro, Salão Versátil" />
 
-        </Row>
-      </div>
-      <div>
-                
-          <p style={{ fontSize: '24px' }}>
-            Selecione o tipo de pauta que deseja solicitar e siga as instruções específicas para cada tipo. Caso tenha alguma dúvida ou precise de esclarecimentos adicionais, entre em contato conosco pelo email: pauta.taa@gmail.com
-          </p>
+              </Card>
+            </Col>
+
+          </Row>
         </div>
+
       </Content>
       <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
         Teatro Arthur Azevedo © Todos os direitos reservados 2023
