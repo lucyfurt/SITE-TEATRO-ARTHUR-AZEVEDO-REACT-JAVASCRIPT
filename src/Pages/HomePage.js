@@ -5,10 +5,10 @@ import CardNews from '../components/Content/CardNews.js';
 import Programacao from '../components/Content/Programacao.js';
 import Visitacao from '../components/Content/Visitacao.js';
 import Bilheteria from '../components/Content/Bilheteria.js';
-import Frame from '../components/Content/Frame.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
 import HistoriaHome from '../components/Content/HistoriaHome';
 import MenuHamg from '../components/Header/MenuHamg';
+import Pautas from './Pautas';
 
 const { Header, Footer, Content } = Layout;
 
@@ -49,6 +49,10 @@ const HomePage = () => {
           <h1 style={{ color: 'black', fontSize: '36px' }}>Notícias</h1>
         </Divider>
         <CardNews />
+        <Divider orientation="left">
+          <h1 style={{ color: 'black', fontSize: '36px' }}>Pautas</h1>
+        </Divider>
+        <Pautas/>
         <Divider orientation="left">
           <h1 style={{ color: 'black', fontSize: '36px' }}>Visitação</h1>
         </Divider>

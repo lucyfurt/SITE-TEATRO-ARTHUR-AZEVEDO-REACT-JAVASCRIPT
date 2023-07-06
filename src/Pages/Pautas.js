@@ -1,20 +1,13 @@
 import React from 'react';
-import { Layout, Typography, Button, Card, Row, Col } from 'antd';
+import { Layout, Button, Card, Row, Col } from 'antd';
 
-const { Content, Header, Footer } = Layout;
-const { Title } = Typography;
+const { Content } = Layout;
 const { Meta } = Card;
 const Pautas = () => {
   return (
     <Layout>
-      <Header style={{ background: '#6d0202', padding: '20px' }}>
-        <Title level={3} style={{ color: '#fff', margin: 0 }}>
-          <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
-        </Title>
-      </Header>
-      <Content style={{ padding: '10px' }}>
-        <Title level={2}>Pedidos de Pautas</Title>
-
+     
+      <Content style={{ padding: '10px' }}>     
         <div style={{ textAlign: 'center' }}>
           <Row gutter={[16, 16]} justify="center">
             <Col xs={24} sm={12} md={8} lg={6}>
@@ -98,9 +91,7 @@ const Pautas = () => {
         </div>
 
       </Content>
-      <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
-        Teatro Arthur Azevedo © Todos os direitos reservados 2023
-      </Footer>
+     
     </Layout>
   );
 }
