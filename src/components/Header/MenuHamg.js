@@ -18,9 +18,6 @@ const Header = () => {
           <a className="menu-item" href="/institucional">
             Institucional
           </a>
-          <a className="menu-item" href="/pautas">
-            Pautas
-          </a>
           <a className="menu-item" href="/tecnico">
             Informações Técnicas
           </a>
