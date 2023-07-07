@@ -1,13 +1,18 @@
 import React from 'react';
-import { Layout, Typography, Tabs, Carousel, Divider, Button } from 'antd';
+import { Layout, Typography, Tabs, Carousel, Divider, Button, Form, Input, DatePicker } from 'antd';
 import rider_medidas from '../assets/Rider_Tecnico_-_Medidas_e_material_cenico.pdf'
 import rider_luz from '../assets/Rider_Tecnico_de_Luz.pdf'
 import rider_som from '../assets/Rider_Tecnico_de_Som.pdf'
+import { useForm } from '@formspree/react';
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 const { TabPane } = Tabs;
-
 function Historia() {
+    const [state, handleSubmit] = useForm("moqoaddy");
+
+    if (state.succeeded) {
+      return <p>Formulário enviado com sucesso!</p>;
+    }
     return (
         <Layout>
             <Header style={{ background: '#6d0202', padding: '20px' }}>
@@ -16,6 +21,52 @@ function Historia() {
                 </Title>
             </Header>
             <Content style={{ padding: '50px' }}>
+            <Title level={2}>Pedido de pautas</Title>
+        <Divider />
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+          <Button style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Edital</Button>
+          <Button style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Normas </Button>
+        </div>
+        <Divider />
+        <h1>Formulário de inscrição:</h1>
+        <Form className="contact-form" onSubmit={handleSubmit}>
+          <Form.Item label="Nome" name="nome" rules={[{ required: true }]}>
+            <Input />
+          </Form.Item>
+          <Form.Item label="Email" name="email" rules={[{ required: true, type: 'email' }]}>
+            <Input />
+          </Form.Item>
+          <Form.Item label="Celular com DDD" name="celular" rules={[{ required: true }]}>
+            <Input />
+          </Form.Item>
+          <Form.Item label="Data início" name="data_inicio" rules={[{ required: true }]}>
+            <DatePicker style={{ width: '100%' }} />
+          </Form.Item>
+          <Form.Item label="Data fim" name="data_fim" rules={[{ required: true }]}>
+            <DatePicker style={{ width: '100%' }} />
+          </Form.Item>
+          <Form.Item label="Nome do evento" name="nome_evento" rules={[{ required: true }]}>
+            <Input />
+          </Form.Item>
+          <Form.Item label="Ficha técnica e sinopse" name="ficha_sinopse" rules={[{ required: true }]}>
+            <Input.TextArea rows={4} />
+          </Form.Item>
+          <Form.Item label="Empresa/Produtora" name="empresa" rules={[{ required: true }]}>
+            <Input />
+          </Form.Item>
+          <Form.Item>
+            <Button className="submit-button" type="primary" htmlType="submit" disabled={state.submitting}>
+              Enviar
+            </Button>
+          </Form.Item>
+          {state.errors.length > 0 && (
+            <div className="error-message">
+              {state.errors.map((error, index) => (
+                <p key={index}>{error}</p>
+              ))}
+            </div>
+          )}
+        </Form>
                 <Title level={2}>Informações Técnicas</Title>
                 <Divider />
                 <h1 style={{ textAlign: 'center' }}>Rider Técnico</h1>
