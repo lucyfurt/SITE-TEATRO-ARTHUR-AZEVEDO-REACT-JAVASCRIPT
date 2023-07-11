@@ -13,17 +13,15 @@ function HistoriaHome() {
                     </Col>
                     <Col span={12} style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', paddingLeft: '30px' }}>
                         <div>
-                            <h1 style={{ color: "#fff", marginBottom: '30px', fontSize: "40px" }}>
+                            <h1 style={{ color: "#fff", marginBottom: '80px', fontSize: "40px" }}>
                                 O Teatro
 
                             </h1>
-                            <p style={{ color: "#fff", marginBottom: '30px' , fontSize:'24px'}}>
-                                Com mais de 200 anos de história, o Teatro Arthur Azevedo é hoje o segundo
-                                teatro mais antigo do Brasil e um dos mais bem equipados palcos do Estado do Maranhão.
-                            </p>
+                            <p style={{ color: "#fff", marginBottom: '20px', fontSize: '20px' }}>
+                                O Teatro Arthur Azevedo é atualmente o segundo teatro mais antigo do Brasil e um dos espaços culturais mais importantes de São Luís, no Maranhão. Com mais de 200 anos de história, esse teatro possui um estilo arquitetônico único e já recebeu inúmeros artistas nacionais e internacionais. Confira a programação, agende sua visita e mergulhe na cultura maranhense.     </p>
                             <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <span style={{ alignSelf: 'center', marginRight: '8px', color: '#fff' }}>
-                                    <p style={{fontSize: '24px'}}>Saiba mais</p>
+                                <span style={{ alignSelf: 'center', marginRight: '10px', color: '#fff' , marginLeft:'10px'}}>
+                                    <p style={{ fontSize: '24px' }}>Saiba mais</p>
                                 </span>
                                 <Button type="primary"
                                     href='/teatro'

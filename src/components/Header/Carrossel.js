@@ -13,6 +13,7 @@ function Carrossel() {
           src=' https://i.ibb.co/LCkKg7M/0004.png'
           style={{ width: '100%', height: isSmallScreen ? 'auto' : '700px' }}
         />
+       
       </div>
 
       {/* Slide 2 */}

@@ -6,8 +6,8 @@ const { Meta } = Card;
 const Pautas = () => {
   return (
     <Layout>
-     
-      <Content style={{ padding: '10px' }}>     
+
+      <Content style={{ padding: '10px' }}>
         <div style={{ textAlign: 'center' }}>
           <Row gutter={[16, 16]} justify="center">
             <Col xs={24} sm={12} md={8} lg={6}>
@@ -20,14 +20,14 @@ const Pautas = () => {
                   />
                 }
                 actions={[
-                  <Button type="primary" href='inscricoes' target="_blank"
+                  <Button type="primary" href='tecnico' target="_blank"
                     style={{
                       justifyContent: 'center', width: '50%',
                       color: '#fff',
                       border: '1px'
                     }}>
 
-                    Inscrições
+                    Inscrever-se
                   </Button>
 
                 ]}
@@ -46,14 +46,14 @@ const Pautas = () => {
                   />
                 }
                 actions={[
-                  <Button type="primary" href='inscricoes' target="_blank"
+                  <Button type="primary" href='tecnico' target="_blank"
                     style={{
                       justifyContent: 'center', width: '50%',
                       color: '#fff',
                       border: '1px'
                     }}>
 
-                    Inscrições
+                    Inscrever-se
                   </Button>
                 ]}
               >
@@ -71,18 +71,18 @@ const Pautas = () => {
                   />
                 }
                 actions={[
-                  <Button type="primary" href='inscricoes' target="_blank"
+                  <Button type="primary" href='tecnico' target="_blank"
                     style={{
                       justifyContent: 'center', width: '50%',
                       color: '#fff',
                       border: '1px'
                     }}>
 
-                    Inscrições
+                    Saiba mais
                   </Button>
                 ]}
               >
-                <Meta title="Espaços" description="Sala de dança, Sala de coro, Salão Versátil" />
+                <Meta title="Informações Técnicas" description="Espaços, Rider Técnico..." />
 
               </Card>
             </Col>
@@ -91,7 +91,7 @@ const Pautas = () => {
         </div>
 
       </Content>
-     
+
     </Layout>
   );
 }
