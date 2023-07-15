@@ -9,37 +9,17 @@ import FooterComponent from '../components/Footer/FooterComponent.js';
 import HistoriaHome from '../components/Content/HistoriaHome.js';
 import MenuHome from '../components/Header/MenuHome.js';
 import Pautas from '../components/Content/PautaHome.js';
-
+import './css/HomePage.css'
 const { Header, Footer, Content } = Layout;
 
-const contentStyle = {
-  minHeight: 'calc(100vh - 160px)',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  padding: '20px',
-};
-
-const footerStyle = {
-  textAlign: 'center',
-  color: 'black',
-  backgroundColor: '#861A16',
-};
-
-const headerStyle = {
-  backgroundColor: '#861A16',
-  lineHeight: '100px',
-};
-
-const HomePage = () => {
+function HomePage() {
   return (
     <Layout>
-      <Header style={headerStyle}>
+      <Header className='headerStyle'>
         <MenuHome />
       </Header>
       <Carrossel />
-      <Content style={contentStyle}>
+      <Content className='contentStyle'>
         <Divider orientation="left">
           <h1>Próximos Eventos</h1>
         </Divider>
@@ -62,7 +42,7 @@ const HomePage = () => {
         </Divider>
         <Bilheteria />
       </Content>
-      <Footer style={footerStyle}>
+      <Footer className='footerStyle'>
         <FooterComponent />
       </Footer>
     </Layout>
