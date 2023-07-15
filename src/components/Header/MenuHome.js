@@ -1,9 +1,9 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import './menuHamb.css';
+import './css/menu.css';
 import logo from '../../assets/logo.png';
 
-const Header = () => {
+function MenuHome() {
   return (
     <div className="header">
       <div className="logo-container">
@@ -19,7 +19,7 @@ const Header = () => {
             Institucional
           </a>
           <a className="menu-item" href="/tecnico">
-            Informações Técnicas
+            Pautas/Editais
           </a>
           <a className="menu-item" href="/nmp">
             Núcleo de Memória e Pesquisa
@@ -31,6 +31,5 @@ const Header = () => {
       </div>
     </div>
   );
-};
-
-export default Header;
+}
+export default MenuHome;

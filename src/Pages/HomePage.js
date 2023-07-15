@@ -1,14 +1,14 @@
 import React from 'react';
 import { Divider, Layout } from 'antd';
-import Carrossel from '../components/Header/Carrossel';
+import Carrossel from '../components/Header/Carrossel.js';
 import CardNews from '../components/Content/CardNews.js';
-import Programacao from '../components/Content/Programacao.js';
+import Programacao from '../components/Content/ProgramacaoHome.js';
 import Visitacao from '../components/Content/Visitacao.js';
 import Bilheteria from '../components/Content/Bilheteria.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
-import HistoriaHome from '../components/Content/HistoriaHome';
-import MenuHamg from '../components/Header/MenuHamg';
-import Pautas from './Pautas';
+import HistoriaHome from '../components/Content/HistoriaHome.js';
+import MenuHome from '../components/Header/MenuHome.js';
+import Pautas from '../components/Content/PautaHome.js';
 
 const { Header, Footer, Content } = Layout;
 
@@ -36,45 +36,36 @@ const HomePage = () => {
   return (
     <Layout>
       <Header style={headerStyle}>
-        <MenuHamg />
+        <MenuHome />
       </Header>
       <Carrossel />
       <Content style={contentStyle}>
         <Divider orientation="left">
-          <h1 style={{ color: 'black', fontSize: '36px' }}>Próximos Eventos</h1>
+          <h1>Próximos Eventos</h1>
         </Divider>
         <Programacao />
         <HistoriaHome />
         <Divider orientation="left">
-          <h1 style={{ color: 'black', fontSize: '36px' }}>Notícias</h1>
+          <h1>Notícias</h1>
         </Divider>
         <CardNews />
         <Divider orientation="left">
-          <h1 style={{ color: 'black', fontSize: '36px' }}>Pautas</h1>
+          <h1>Pautas</h1>
         </Divider>
-        <Pautas/>
+        <Pautas />
         <Divider orientation="left">
-          <h1 style={{ color: 'black', fontSize: '36px' }}>Visitação</h1>
+          <h1>Visitação</h1>
         </Divider>
         <Visitacao />
         <Divider orientation="left">
-          <h1 style={{ color: 'black', fontSize: '36px' }}>Bilheteria</h1>
+          <h1>Bilheteria</h1>
         </Divider>
-        <Bilheteria />      
+        <Bilheteria />
       </Content>
       <Footer style={footerStyle}>
         <FooterComponent />
       </Footer>
-      <style jsx>{`
-        @media (max-width: 768px) {
-          /* Styles for mobile devices */
-          .content {
-            padding: 10px;
-          }
-        }
-      `}</style>
     </Layout>
-  );
-};
-
+  )
+}
 export default HomePage;

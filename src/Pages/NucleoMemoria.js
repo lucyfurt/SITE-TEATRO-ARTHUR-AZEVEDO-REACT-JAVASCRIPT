@@ -3,12 +3,12 @@ import { Card, Row, Col, Typography, Image, Layout } from 'antd';
 const { Content, Header, Footer } = Layout;
 const { Title, Text } = Typography;
 
-const Nucleo = () => {
+const NucleoMemoria = () => {
     return (
         <Layout>
-            <Header style={{ background: '#6d0202', padding: '20px' }}>
-                <Title level={3} style={{ color: '#fff', margin: 0 }}>
-                    <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
+            <Header>
+                <Title level={3}>
+                    <a href='/'>Teatro Arthur Azevedo</a>
                 </Title>
             </Header>
             <Content>
@@ -27,25 +27,24 @@ const Nucleo = () => {
                             <Card>
                                 <Title level={2}>Biblioteca Arão Paranaguá</Title>
                                 <Title level={3}>Missão e Valores</Title>
-                                <Text strong style={{ fontSize: '24px' }}>Missão:</Text>
-                                <Text style={{ fontSize: '24px' }}>
+                                <Text strong>Missão:</Text>
+                                <Text>
                                     Descrição da missão do Núcleo de Memória ou da biblioteca em relação à preservação e
                                     disseminação da informação.
                                 </Text>
                                 <br />
-                                <Text strong style={{ fontSize: '24px' }}>Valores:</Text>
-                                <Text style={{ fontSize: '24px' }}>
+                                <Text strong>Valores:</Text>
+                                <Text>
                                     Descrição dos valores que norteiam o trabalho do Núcleo de Memória, como integridade,
                                     acessibilidade, colaboração, etc.
                                 </Text>
                             </Card>
                         </Col>
                     </Row>
-
                     <Title level={2}>Acervo</Title>
 
                     <Card>
-                        <Text style={{ fontSize: '24px' }}>
+                        <Text>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate eu tortor et sodales. Maecenas mauris sapien, hendrerit ac turpis maximus, luctus cursus lorem. Quisque aliquet ut sapien vehicula elementum. Maecenas placerat lectus at augue commodo blandit. Suspendisse aliquam tellus a metus sodales sollicitudin. Integer vehicula erat sed nisl euismod luctus. Donec felis lorem, fermentum non lorem eu, efficitur scelerisque diam. Nam in pellentesque mi. Phasellus ut commodo dolor, eget tempor tellus. Integer ipsum arcu, euismod a nibh in, volutpat fermentum sem. Sed sed finibus nisl, et scelerisque diam. Donec tempor tempus metus, ut hendrerit urna blandit a. Sed purus mauris, volutpat at euismod nec, ullamcorper a lorem. Fusce a est eget tortor placerat congue eget non ex.
 
                             Mauris consequat mi quis leo mattis, sit amet viverra dolor blandit. Fusce sit amet justo eget nunc cursus laoreet vitae sit amet mi. Sed placerat lobortis purus. Donec egestas sem sit amet lectus tincidunt sodales. Vestibulum eget imperdiet ligula. Suspendisse iaculis sit amet justo eget egestas. Fusce quis quam volutpat, venenatis orci in, lobortis mauris. Aenean nisl lectus, egestas a lacus quis, sodales tristique metus. Sed auctor leo et dignissim dapibus. Fusce tortor nunc, venenatis et massa eget, accumsan fringilla ipsum. Ut vitae cursus erat, vitae porttitor leo. Proin purus lorem, aliquet et dictum ut, pulvinar in sem. Etiam lacus nunc, pulvinar eget diam ac, bibendum lacinia sem. Praesent dignissim dolor sed ligula aliquam egestas. Nulla sed neque ut turpis laoreet accumsan. Ut posuere turpis nec eleifend pretium.
@@ -55,11 +54,10 @@ const Nucleo = () => {
                     </Card>
                 </div>
             </Content>
-            <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
+            <Footer>
                 Teatro Arthur Azevedo  © Todos os direitos reservados 2023
             </Footer>
         </Layout>
     );
-};
-
-export default Nucleo;
+}
+export default NucleoMemoria;

@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Layout, Typography } from 'antd';
-import './Historia.css'
 
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
@@ -10,22 +9,20 @@ const { Title } = Typography;
 function Historia() {
     return (
         <Layout>
-            <Header style={{ background: '#6d0202', padding: '20px' }}>
-                <Title level={3} style={{ color: '#fff', margin: 0 }}>
-                    <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
+            <Header>
+                <Title level={3}>
+                    <a href='/'>Teatro Arthur Azevedo</a>
                 </Title>
             </Header>
-            <Content style={{ padding: '50px' }}>
+            <Content>
                 <h1>História</h1>
-
-                <div style={{ display: 'block', width: 700, padding: 30 }}>
-
+                <div>
                     <Carousel >
-                    <Carousel.Item >
+                        <Carousel.Item >
                             <img
                                 className="d-block w-100"
                                 src="https://i.ibb.co/8Ppnk0Q/Teatro-Arthur-Azevedo.jpg"
-                                alt="Image Two"
+                                alt='1'
                             />
                             <Carousel.Caption>
                                 <h3>Fundação</h3>
@@ -36,28 +33,24 @@ function Historia() {
                             <img
                                 className="d-block w-100"
                                 src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
-                                alt="Image One"
+                                alt='2'
                             />
                             <Carousel.Caption>
                                 <h3>Label for first slide</h3>
                                 <p>Sample Text for Image One</p>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        
                     </Carousel>
                 </div>
                 <h1>TAA 206 Anos</h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-lxloupKM4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </Content>
-            <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
-                <Title level={5} style={{ color: '#fff', margin: 0 }}>
+            <Footer>
+                <Title level={5}>
                     Teatro Arthur Azevedo © Todos os direitos reservados {new Date().getFullYear()}
                 </Title>
             </Footer>
         </Layout>
-
-
     );
 }
-
 export default Historia;

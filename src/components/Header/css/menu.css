@@ -1,4 +1,3 @@
-/* Menu styles */
 .bm-burger-button {
   position: absolute;
   width: 25px;
@@ -14,14 +13,9 @@
   background: #a90000;
 }
 
-.bm-cross-button {
-  
-
-}
-
 .bm-cross {
   background: #fff;
-  
+
 }
 
 .bm-menu {
@@ -42,14 +36,12 @@
   display: block;
   color: #fff;
   text-decoration: none;
-
 }
 
 .bm-item:hover {
   color: red;
 }
 
-/* Header styles */
 .header {
   display: flex;
   align-items: center;
@@ -87,12 +79,11 @@
   margin: -50px 0 0 0;
 }
 
-.bm-menu-wrap{
+.bm-menu-wrap {
   width: 700px !important;
 }
 
 .bm-item-list {
   padding: 20px;
   margin: -20px;
-  
 }

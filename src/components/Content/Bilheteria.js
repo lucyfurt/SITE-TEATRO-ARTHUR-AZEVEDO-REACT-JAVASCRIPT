@@ -1,22 +1,22 @@
 import React from 'react';
 import { Image } from 'antd';
-
+import './css/bilheteria.css'
 
 function Bilheteria() {
     return (
         <>
             <div>
-                <h2 style={{ textAlign: 'center', fontSize: '36px' }}>Horário de funcionamento</h2>
-                <p style={{ textAlign: 'center', fontSize: '30px' }}>
+                <h2>Horário de funcionamento</h2>
+                <p>
                     <strong>Terça a domingo das 13h30 às 18h30</strong>
                 </p>
             </div>
             <div>
-                <h2 style={{ textAlign: 'center', fontSize: '36px' }}>Mapa de assentos</h2>
-                <Image src="https://i.ibb.co/f2ysCHK/teatroMP.png" alt="assentos" style={{ width: '500px', height: '50%', margin: 'auto' }} />
+                <h2>Mapa de assentos</h2>
+                <Image  className='image' src="https://i.ibb.co/f2ysCHK/teatroMP.png" alt="assentos" />
             </div>
             <div>
-                <h2 style={{ textAlign: 'center', fontSize: '36px' }}>Como chegar</h2>
+                <h2>Como chegar</h2>
                 <iframe
                     title="Mapa da bilheteria"
                     width="500"
@@ -30,5 +30,4 @@ function Bilheteria() {
         </>
     );
 }
-
 export default Bilheteria;

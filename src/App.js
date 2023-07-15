@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import Historia from './Pages/Historia';
 import AllEvents from './Pages/AllEvents'
-import Pautas from './Pages/Pautas';
-import Nucleo from './Pages/Nucleo';
+import Pautas from './components/Content/PautaHome';
+import Nucleo from './Pages/NucleoMemoria';
 import Institucional from './Pages/Institucional';
-import Espacos from './Pages/Espacos';
-import NewsPage from './Pages/newsPage';
+import Espacos from './Pages/InformacaoTecnica';
+import NewsPage from './Pages/AllNews';
 import FaleConosco from './Pages/FaleConosco';
 import FormPauta from './Pages/FormPauta';
 import Nae from './Pages/Nae';
@@ -26,11 +26,9 @@ function App() {
         <Route path="/allNews" element={<NewsPage/>} />
         <Route path="/faleconosco" element={<FaleConosco/>} />
         <Route path="/inscricoes" element={<FormPauta/>} />
-        <Route path="/nae" element={<Nae/>} />
-     
+        <Route path="/nae" element={<Nae/>} />  
       </Routes>
     </Router>
   );
 }
-
 export default App;

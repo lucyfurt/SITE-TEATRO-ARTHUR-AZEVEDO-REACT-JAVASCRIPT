@@ -59,18 +59,17 @@ textarea {
   border-color: #007bff;
 }
 
-.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon {
+.ant-steps-item-process .ant-steps-item-icon>.ant-steps-icon {
   background-color: #fff;
 }
 
-.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+.ant-steps-item-wait .ant-steps-item-icon>.ant-steps-icon {
   background-color: #ccc;
 }
 
 .ant-steps-item-title::after {
   content: none;
 }
-
 
 .button-container {
   display: flex;

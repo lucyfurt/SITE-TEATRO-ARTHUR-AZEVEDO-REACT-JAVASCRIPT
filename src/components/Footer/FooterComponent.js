@@ -1,17 +1,15 @@
 import React from 'react';
 import { Row, Col, BackTop, FloatButton } from 'antd';
 import { InstagramOutlined, FacebookOutlined, YoutubeOutlined, QuestionCircleOutlined } from '@ant-design/icons';
-import './FooterComponent.css';
+import './css/FooterComponent.css';
 
 const FooterComponent = () => {
   const isSmallScreen = () => {
     return window.innerWidth <= 768;
   };
-
   const getSocialLinksClassName = () => {
     return isSmallScreen() ? 'social-links small-screen' : 'social-links';
   };
-
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -22,10 +20,8 @@ const FooterComponent = () => {
           <Col xs={24} sm={12} md={6}>
             <img src="https://i.ibb.co/pQyyTs6/Asset-1-2x.png" alt="SECMA" className="secma-logo" />
           </Col>
-
         </Row>
         <br /><br />
-
         <div className="copyright" >
           Todos os direitos reservados - Teatro Arthur Azevedo {new Date().getFullYear()}
         </div>
@@ -54,5 +50,4 @@ const FooterComponent = () => {
     </footer>
   );
 };
-
 export default FooterComponent;

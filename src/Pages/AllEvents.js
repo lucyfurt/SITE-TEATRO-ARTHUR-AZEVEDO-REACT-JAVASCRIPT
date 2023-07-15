@@ -4,23 +4,21 @@ const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 const { TabPane } = Tabs;
 
-const App = () => {
+const AllEvents = () => {
   return (
     <Layout>
-      <Header style={{ background: '#6d0202', padding: '20px' }}>
-        <Title level={3} style={{ color: '#fff', margin: 0 }}>
-          <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
+      <Header>
+        <Title level={3}>
+          <a href='/'>Teatro Arthur Azevedo</a>
         </Title>
       </Header>
-      <Content style={{ padding: '50px' }}>
+      <Content>
         <h1>Eventos</h1>
-        <Tabs defaultActiveKey="july" centered style={{ marginBottom: '40px' }}>
+        <Tabs defaultActiveKey="july" centered>
           <TabPane tab="Julho" key="july">
             <Row gutter={[16, 16]} justify="center">
-             
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%', height: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -29,13 +27,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="16.06 Stand-up" description="Emerson Ceará" />
@@ -43,7 +37,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -52,13 +45,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="17.06 Show" description="This is the description" />
@@ -70,7 +59,6 @@ const App = () => {
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%', height: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -79,13 +67,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="17.06 Show" description="This is the description" />
@@ -93,7 +77,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -102,13 +85,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="18.06" description="This is the description" />
@@ -121,7 +100,6 @@ const App = () => {
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%', height: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -130,13 +108,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="16.06 Stand-up" description="Emerson Ceará" />
@@ -144,7 +118,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -153,13 +126,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="17.06 Show" description="This is the description" />
@@ -172,7 +141,6 @@ const App = () => {
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%', height: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -181,13 +149,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="16.06 Stand-up" description="Emerson Ceará" />
@@ -195,7 +159,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -204,26 +167,20 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="17.06 Show" description="This is the description" />
                 </Card>
               </Col>
-              
             </Row>
           </TabPane>
           <TabPane tab="Novembro" key="november">
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%', height: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -232,13 +189,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="16.06 Stand-up" description="Emerson Ceará" />
@@ -246,7 +199,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -255,13 +207,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="17.06 Show" description="This is the description" />
@@ -269,7 +217,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%', height: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -278,13 +225,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="16.06 Stand-up" description="Emerson Ceará" />
@@ -292,7 +235,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -301,13 +243,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="17.06 Show" description="This is the description" />
@@ -319,7 +257,6 @@ const App = () => {
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%', height: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -328,13 +265,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="16.06 Stand-up" description="Emerson Ceará" />
@@ -342,7 +275,6 @@ const App = () => {
               </Col>
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  style={{ width: '100%' }}
                   cover={
                     <img
                       alt="example"
@@ -351,13 +283,9 @@ const App = () => {
                   }
                   actions={[
                     <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                  style={{
-                    display: 'flex', justifyContent: 'center', marginTop: '20px', width: '100%',
-                    backgroundColor: 'transparent', color: '#1890ff', borde: '1px'
-                  }}>
-
-                  Compre aqui
-                </Button>
+                    >
+                      Compre aqui
+                    </Button>
                   ]}
                 >
                   <Meta title="17.06 Show" description="This is the description" />
@@ -368,11 +296,10 @@ const App = () => {
           </TabPane>
         </Tabs>
       </Content>
-      <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
+      <Footer>
         Teatro Arthur Azevedo © Todos os direitos reservados 2023
       </Footer>
     </Layout>
   );
 };
-
-export default App;
+export default AllEvents;

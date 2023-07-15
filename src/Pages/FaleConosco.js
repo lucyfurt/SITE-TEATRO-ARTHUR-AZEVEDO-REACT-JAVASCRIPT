@@ -1,31 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { Layout, Typography, Button } from 'antd';
+import { Layout, Typography } from 'antd';
 
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 
-function ContactUsForm() {
+function FaleConosco() {
   const [state, handleSubmit] = useForm("moqoaddy");
-
   if (state.succeeded) {
     return <p>Obrigado por nos contatar! Nós retornaremos para você em breve.</p>;
   }
-
   return (
     <Layout>
-      <Header style={{ background: '#6d0202', padding: '20px' }}>
-        <Title level={3} style={{ color: '#fff', margin: 0 }}>
-          <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
+      <Header>
+        <Title level={3}>
+          <a href='/'>Teatro Arthur Azevedo</a>
         </Title>
       </Header>
-      <Content style={{ padding: '50px' }}>
+      <Content>
         <Title level={2}>Fale Conosco</Title>
         <div>
           <p>
-          Obrigado por seu interesse em nos contactar. Por favor, preencha o formulário abaixo com seus dados e mensagem, que retornaremos o mais breve possível.          </p>
+            Obrigado por seu interesse em nos contactar. Por favor, preencha o formulário abaixo com seus dados e mensagem, que retornaremos o mais breve possível.          </p>
         </div>
-    
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Nome:</label>
@@ -42,17 +39,15 @@ function ContactUsForm() {
             <textarea id="message" name="message" />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
           </div>
-          
           <button className="submit-button" type="submit" disabled={state.submitting}>
             Enviar
           </button>
         </form>
       </Content>
-      <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
+      <Footer>
         Teatro Arthur Azevedo © All rights reserved 2023
       </Footer>
     </Layout>
   );
 }
-
-export default ContactUsForm;
+export default FaleConosco;

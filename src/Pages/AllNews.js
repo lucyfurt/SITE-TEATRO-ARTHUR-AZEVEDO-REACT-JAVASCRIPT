@@ -5,7 +5,6 @@ import { Layout, Typography } from 'antd';
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 
-
 const data = [
   {
     title: 'Ciclo de Formação em Artes Cênicas no Teatro Arthur Azevedo: Uma experiência inesquecível!',
@@ -24,7 +23,7 @@ const data = [
   },
 ];
 
-const App = () => (
+const AllNews = () => (
   <Layout>
     <Header style={{ background: '#6d0202', padding: '20px' }}>
       <Title level={3} style={{ color: '#fff', margin: 0 }}>
@@ -33,7 +32,6 @@ const App = () => (
     </Header>
     <Content style={{ padding: '50px' }}>
       <Title level={2}>Notícias</Title>
-
       <List
         itemLayout="vertical"
         size="large"
@@ -44,7 +42,6 @@ const App = () => (
         }}
         dataSource={data}
         renderItem={(item) => (
-
           <List.Item
             key={item.title}
             extra={
@@ -60,7 +57,6 @@ const App = () => (
               description={item.description}
             />
           </List.Item>
-
         )}
       />
     </Content>
@@ -68,6 +64,5 @@ const App = () => (
       Teatro Arthur Azevedo  © Todos os direitos reservados 2023
     </Footer>
   </Layout>
-);
-
-export default App;
+)
+export default AllNews;

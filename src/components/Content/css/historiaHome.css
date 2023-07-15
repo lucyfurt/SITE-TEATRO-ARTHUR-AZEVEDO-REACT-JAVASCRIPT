@@ -1,0 +1,48 @@
+p {
+    font-family: 'Noto Serif Ottoman Siyaq', serif;
+    color: "#fff";
+    margin-bottom: '20px';
+    font-size: '20px';
+}
+
+span {
+    align-self: 'center';
+    margin-right: '10px';
+    color: '#fff';
+    margin-left: '10px'
+}
+
+div {
+    display: 'flex';
+    align-items: 'center';
+}
+
+.history {
+    background: "#E76A53";
+    display: 'flex';
+    justify-content: 'center';
+    align-items: 'center'
+}
+
+.image {
+    max-width: '100%';
+    height: 'auto'
+}
+
+Col {
+    display: 'flex';
+    justify-content: 'flex-start';
+    align-items: 'center';
+    padding-left: '30px'
+}
+
+h1 {
+    color: "#fff";
+    margin-bottom: '80px';
+    font-size: "40px"
+}
+
+.btn {
+    background-color: '#67A4FB';
+    color: "#fff";
+}

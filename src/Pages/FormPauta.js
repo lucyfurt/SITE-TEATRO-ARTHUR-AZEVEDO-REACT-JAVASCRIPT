@@ -1,31 +1,29 @@
 import React from 'react';
 import { useForm } from '@formspree/react';
 import { Layout, Typography, Button, Form, Input, DatePicker, Divider } from 'antd';
-import './ContactForm.css';
+import './css/FormPauta.css';
 
 const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 
 const FormPauta = () => {
   const [state, handleSubmit] = useForm("moqoaddy");
-
   if (state.succeeded) {
     return <p>Formulário enviado com sucesso!</p>;
   }
-
   return (
     <Layout>
-      <Header style={{ background: '#6d0202', padding: '20px' }}>
-        <Title level={3} style={{ color: '#fff', margin: 0 }}>
-          <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
+      <Header>
+        <Title level={3}>
+          <a href='/'>Teatro Arthur Azevedo</a>
         </Title>
       </Header>
-      <Content style={{ padding: '10px' }}>
+      <Content>
         <Title level={2}>Pedido de pautas</Title>
         <Divider />
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
-          <Button style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Edital</Button>
-          <Button style={{ marginRight: '8px', backgroundColor: '#67A4FB', borderColor: '#67A4FB', color: 'white' }}>Normas </Button>
+        <div>
+          <Button>Edital</Button>
+          <Button>Normas </Button>
         </div>
         <Divider />
         <h1>Formulário de inscrição:</h1>
@@ -40,10 +38,10 @@ const FormPauta = () => {
             <Input />
           </Form.Item>
           <Form.Item label="Data início" name="data_inicio" rules={[{ required: true }]}>
-            <DatePicker style={{ width: '100%' }} />
+            <DatePicker />
           </Form.Item>
           <Form.Item label="Data fim" name="data_fim" rules={[{ required: true }]}>
-            <DatePicker style={{ width: '100%' }} />
+            <DatePicker />
           </Form.Item>
           <Form.Item label="Nome do evento" name="nome_evento" rules={[{ required: true }]}>
             <Input />
@@ -68,7 +66,7 @@ const FormPauta = () => {
           )}
         </Form>
       </Content>
-      <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
+      <Footer>
         Teatro Arthur Azevedo © Todos os direitos reservados 2023
       </Footer>
     </Layout>
