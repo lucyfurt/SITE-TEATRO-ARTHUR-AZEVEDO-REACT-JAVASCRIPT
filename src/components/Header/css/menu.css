@@ -87,3 +87,7 @@
   padding: 20px;
   margin: -20px;
 }
+
+.ant-layout-header {
+  background: #861A16;
+}

@@ -1,7 +1,7 @@
 import { RightOutlined } from '@ant-design/icons';
 import { Card, Row, Col, Button } from 'antd';
+import '../Content/css/ProgramacaoHome.css'
 const { Meta } = Card;
-
 const ProgramacaoHome = () => {
   return (
     <>
@@ -60,19 +60,8 @@ const ProgramacaoHome = () => {
           </Col>
         </Row>
       </div>
-      <div>
-        <span>
-          <h1>Veja a programação completa</h1>
-        </span>
-        <div>
-          <Button
-            type="primary"
-            shape="round"
-            icon={<RightOutlined />}
-            size="large"
-            href='/allevents'
-          />
-        </div>
+      <div className='programacao'>
+        <a href='/allevents'> Veja a programação completa</a>
       </div>
     </>
   );
