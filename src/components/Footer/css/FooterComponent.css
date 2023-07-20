@@ -52,3 +52,12 @@
   background-color: #861A16;
   color: #861A16
 }
+
+.ant-layout-footer{
+  background-color: #861A16;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 16px;
+}

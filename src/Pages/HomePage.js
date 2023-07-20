@@ -24,6 +24,9 @@ function HomePage() {
           <h1>Próximos Eventos</h1>
         </Divider>
         <Programacao />
+        <Divider orientation="left">
+          <h1>Especial 206 anos</h1>
+        </Divider>
         <HistoriaHome />
         <Divider orientation="left">
           <h1>Notícias</h1>

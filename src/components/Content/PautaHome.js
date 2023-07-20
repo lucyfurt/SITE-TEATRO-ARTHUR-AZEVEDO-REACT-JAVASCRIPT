@@ -24,7 +24,7 @@ const PautaHome = () => {
                   </Button>
                 ]}
               >
-                <Meta title="Shows/Espetáculos" description="Teatro, Danças, Shows, Musicais" />
+                <Meta title="Shows/Espetáculos" description="Teatro, Danças, Shows" />
               </Card>
             </Col>
             <Col xs={24} sm={12} md={8} lg={6}>

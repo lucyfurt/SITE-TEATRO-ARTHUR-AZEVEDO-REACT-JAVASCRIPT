@@ -1,5 +1,5 @@
-import { Card, Row, Col, Button } from 'antd';
-import { RightOutlined } from '@ant-design/icons';
+import { Card, Row, Col } from 'antd';
+import '../Content/css/CardNews.css'
 const { Meta } = Card;
 
 const CardNews = () => {
@@ -27,6 +27,7 @@ const CardNews = () => {
   ];
 
   return (
+    <>
     <div>
       <Row gutter={[16, 16]} justify="center">
         {newsData.map((news, index) => (
@@ -40,23 +41,12 @@ const CardNews = () => {
             </Card>
           </Col>
         ))}
-      </Row>
-      <div>
-        <span>
-          <h1>Mais notícias</h1>
-        </span>
-        <div style={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
-          <Button
-            type="primary"
-            shape="round"
-            icon={<RightOutlined />}
-            size="large"
-            style={{ backgroundColor: '#67A4FB' }}
-            href='/allNews'
-          />
-        </div>
-      </div>
+      </Row>        
     </div>
+    <div className='link'>
+      <a href='/allNews'>Mais Notícias</a>
+    </div>
+    </>
   );
 }
 export default CardNews;

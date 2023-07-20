@@ -5,13 +5,14 @@ import {
   BankTwoTone,
   MessageTwoTone,
 } from '@ant-design/icons';
+import '../Content/css/visitacao.css'
 const { TabPane } = Tabs;
 
 function Visitacao() {
 
   return (
     <div>
-      <div className="container">
+      <div>
         <Tabs defaultActiveKey="1" centered>
           <TabPane
             tab={
