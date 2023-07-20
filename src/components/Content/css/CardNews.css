@@ -27,8 +27,8 @@ a {
   margin-bottom: 10px;
 }
 
-.card-description {
-  font-size: 14px;
+.ant-card-meta-description{
+  font-size: 16px;
 }
 
 .card-actions {
