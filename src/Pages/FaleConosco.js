@@ -1,8 +1,10 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Layout, Typography } from 'antd';
+import MenuHome from '../components/Header/MenuHome';
+import FooterComponent from '../components/Footer/FooterComponent';
 
-const { Content, Header, Footer } = Layout;
+const { Content } = Layout;
 const { Title } = Typography;
 
 function FaleConosco() {
@@ -12,11 +14,7 @@ function FaleConosco() {
   }
   return (
     <Layout>
-      <Header>
-        <Title level={3}>
-          <a href='/'>Teatro Arthur Azevedo</a>
-        </Title>
-      </Header>
+      <MenuHome />      
       <Content>
         <Title level={2}>Fale Conosco</Title>
         <div>
@@ -43,10 +41,8 @@ function FaleConosco() {
             Enviar
           </button>
         </form>
-      </Content>
-      <Footer>
-        Teatro Arthur Azevedo © All rights reserved 2023
-      </Footer>
+      </Content>   
+      <FooterComponent />
     </Layout>
   );
 }

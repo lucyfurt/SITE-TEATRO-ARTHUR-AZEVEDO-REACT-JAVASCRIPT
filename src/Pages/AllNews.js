@@ -1,8 +1,9 @@
 import { List } from 'antd';
 import React from 'react';
 import { Layout, Typography } from 'antd';
-
-const { Content, Header, Footer } = Layout;
+import HomeMenu from '../components/Header/MenuHome';
+import FooterComponent from '../components/Footer/FooterComponent';
+const { Content } = Layout;
 const { Title } = Typography;
 
 const data = [
@@ -25,11 +26,7 @@ const data = [
 
 const AllNews = () => (
   <Layout>
-    <Header style={{ background: '#6d0202', padding: '20px' }}>
-      <Title level={3} style={{ color: '#fff', margin: 0 }}>
-        <a style={{ color: '#fff' }} href='/'>Teatro Arthur Azevedo</a>
-      </Title>
-    </Header>
+    <HomeMenu />
     <Content style={{ padding: '50px' }}>
       <Title level={2}>Notícias</Title>
       <List
@@ -60,9 +57,7 @@ const AllNews = () => (
         )}
       />
     </Content>
-    <Footer style={{ background: '#6d0202', padding: '20px', textAlign: 'center', color: '#fff' }}>
-      Teatro Arthur Azevedo  © Todos os direitos reservados 2023
-    </Footer>
+   <FooterComponent />
   </Layout>
 )
 export default AllNews;

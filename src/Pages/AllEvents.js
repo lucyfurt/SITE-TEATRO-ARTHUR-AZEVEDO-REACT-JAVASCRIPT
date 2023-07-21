@@ -1,17 +1,15 @@
-import { Card, Col, Layout, Row, Tabs, Typography, Button } from 'antd';
+import { Card, Col, Layout, Row, Tabs,  Button } from 'antd';
+import MenuHome from '../components/Header/MenuHome';
+import FooterComponent from '../components/Footer/FooterComponent';
 const { Meta } = Card;
-const { Content, Header, Footer } = Layout;
-const { Title } = Typography;
+const { Content } = Layout;
+
 const { TabPane } = Tabs;
 
 const AllEvents = () => {
   return (
     <Layout>
-      <Header>
-        <Title level={3}>
-          <a href='/'>Teatro Arthur Azevedo</a>
-        </Title>
-      </Header>
+  <MenuHome />
       <Content>
         <h1>Eventos</h1>
         <Tabs defaultActiveKey="july" centered>
@@ -296,9 +294,7 @@ const AllEvents = () => {
           </TabPane>
         </Tabs>
       </Content>
-      <Footer>
-        Teatro Arthur Azevedo © Todos os direitos reservados 2023
-      </Footer>
+     <FooterComponent />
     </Layout>
   );
 };
