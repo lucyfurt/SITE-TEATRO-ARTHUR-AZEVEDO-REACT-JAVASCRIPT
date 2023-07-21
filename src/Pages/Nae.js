@@ -1,18 +1,16 @@
 import React from 'react';
 import { Layout, Typography, Tabs, Carousel } from 'antd';
+import MenuHome from '../components/Header/MenuHome';
+import FooterComponent from '../components/Footer/FooterComponent';
 
-const { Content, Header, Footer } = Layout;
+const { Content } = Layout;
 const { Title } = Typography;
 const { TabPane } = Tabs;
 
 function Nae() {
   return (
     <Layout>
-      <Header>
-        <Title level={3}>
-          <a href='/'>Teatro Arthur Azevedo</a>
-        </Title>
-      </Header>
+      <MenuHome />
       <Content>
         <Tabs defaultActiveKey="1" type="card">
           <TabPane tab="Núcleo Arte Educação" key='1'>
@@ -62,11 +60,7 @@ function Nae() {
           </TabPane>
         </Tabs>
       </Content>
-      <Footer>
-        <Title level={5}>
-          Teatro Arthur Azevedo © Todos os direitos reservados {new Date().getFullYear()}
-        </Title>
-      </Footer>
+      <FooterComponent />
     </Layout>
   );
 }

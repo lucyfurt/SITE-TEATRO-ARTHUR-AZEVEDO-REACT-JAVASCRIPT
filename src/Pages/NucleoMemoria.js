@@ -1,20 +1,15 @@
 import React from 'react';
 import { Card, Row, Col, Typography, Image, Layout } from 'antd';
-const { Content, Header, Footer } = Layout;
+import MenuHome from '../components/Header/MenuHome';
+import FooterComponent from '../components/Footer/FooterComponent';
+const { Content } = Layout;
 const { Title, Text } = Typography;
-
 const NucleoMemoria = () => {
     return (
         <Layout>
-            <Header>
-                <Title level={3}>
-                    <a href='/'>Teatro Arthur Azevedo</a>
-                </Title>
-            </Header>
+            <MenuHome />
             <Content>
                 <div>
-                    <Title level={2}>Núcleo de Memória e Pesquisa</Title>
-
                     <Row gutter={[16, 16]}>
                         <Col span={12}>
                             <Card>
@@ -54,9 +49,7 @@ const NucleoMemoria = () => {
                     </Card>
                 </div>
             </Content>
-            <Footer>
-                Teatro Arthur Azevedo  © Todos os direitos reservados 2023
-            </Footer>
+            <FooterComponent />
         </Layout>
     );
 }

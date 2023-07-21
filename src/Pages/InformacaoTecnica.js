@@ -1,24 +1,22 @@
 
 import React from 'react';
 import { Layout, Typography, Divider, Button, Card, Col, Row } from 'antd';
+import MenuHome from '../components/Header/MenuHome';
+import FooterComponent from '../components/Footer/FooterComponent';
 import rider_medidas from '../assets/Rider_Tecnico_-_Medidas_e_material_cenico.pdf'
 import rider_luz from '../assets/Rider_Tecnico_de_Luz.pdf'
 import rider_som from '../assets/Rider_Tecnico_de_Som.pdf'
 
-const { Content, Header, Footer } = Layout;
+const { Content, } = Layout;
 const { Title } = Typography;
 const { Meta } = Card;
 
 function InformacaoTecnica() {
     return (
         <Layout>
-            <Header>
-                <Title level={3}>
-                    <a href='/'>Teatro Arthur Azevedo</a>
-                </Title>
-            </Header>
+            <MenuHome />
             <Content>
-                <Title level={2}>Espaços</Title>
+            
                 <div>
                     <Row gutter={[16, 16]} justify="center">
                         <Col xs={24} sm={12} md={8} lg={6}>
@@ -251,11 +249,7 @@ ainda 2 baterias de banheiros, masculino e feminino no ultimo piso
                 </div>
                 <Divider />
             </Content>
-            <Footer>
-                <Title level={5}>
-                    Teatro Arthur Azevedo © Todos os direitos reservados {new Date().getFullYear()}
-                </Title>
-            </Footer>
+          <FooterComponent />
         </Layout>
     );
 }

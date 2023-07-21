@@ -1,5 +1,7 @@
 import React from 'react';
-import { Layout, Typography, Tabs, Card, Avatar, Divider } from 'antd';
+import { Layout,  Tabs, Card, Avatar, Divider } from 'antd';
+import MenuHome from '../components/Header/MenuHome';
+import FooterComponent  from '../components/Footer/FooterComponent';
 import {
   UserOutlined,
   TeamOutlined,
@@ -11,19 +13,14 @@ import {
   UserAddOutlined,
 } from '@ant-design/icons';
 
-const { Content, Header, Footer } = Layout;
-const { Title } = Typography;
+const { Content } = Layout;
 const { TabPane } = Tabs;
 const { Meta } = Card;
 
 const Institutional = () => {
   return (
     <Layout>
-      <Header>
-        <Title level={3}>
-          <a href='/'>Teatro Arthur Azevedo</a>
-        </Title>
-      </Header>
+    <MenuHome />
       <Content>
         <Tabs tabPosition="left">
           <TabPane tab="Diretores" key="1">
@@ -96,9 +93,7 @@ const Institutional = () => {
           </TabPane>
         </Tabs>
       </Content>
-      <Footer>
-        Teatro Arthur Azevedo © Todos os direitos reservados {new Date().getFullYear()}
-      </Footer>
+ <FooterComponent />
     </Layout>
   );
 }
