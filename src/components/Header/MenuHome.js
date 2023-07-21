@@ -12,6 +12,9 @@ function MenuHome() {
       <span className="menu-title">Menu</span>
       <div className="menu-container">
         <Menu>
+          <a className="menu-item" href="/">
+            Home
+          </a>
           <a className="menu-item" href="/teatro">
             O Teatro
           </a>
