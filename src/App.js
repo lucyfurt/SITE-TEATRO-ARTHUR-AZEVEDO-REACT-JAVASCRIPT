@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import Historia from './Pages/Historia';
 import AllEvents from './Pages/AllEvents'
-import Pautas from './components/Content/PautaHome';
+import Pautas from './Pages/Pautas';
 import Nucleo from './Pages/NucleoMemoria';
 import Institucional from './Pages/Institucional';
 import Espacos from './Pages/InformacaoTecnica';

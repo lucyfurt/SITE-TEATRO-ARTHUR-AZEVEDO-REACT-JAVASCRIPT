@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Typography, Divider, Col, Row } from 'antd';
+import { Layout, Typography, Divider, Col, Row,Button } from 'antd';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -17,6 +17,9 @@ const { Title } = Typography;
 export default () => (
     <Layout>
         <MenuHome />
+        <Divider orientation="left">
+          <h1>Informações técnicas </h1>
+        </Divider>
         <Content>
             <Row gutter={[16, 16]}>
                 <Col xs={24} md={12}>
@@ -180,9 +183,16 @@ export default () => (
                                 />
                             </Carousel.Item>
                         </Carousel>
-                    </Col>
- 
+                    </Col> 
                     </Row>
+                    <Divider orientation="left">
+          <h1>Manuais técnicos </h1>
+        </Divider>
+        <div>
+                    <Button href={rider_medidas}>Rider Técnico Medidas e Material Cênico</Button>
+                    <Button href={rider_luz}>Rider Técnico de Luz</Button>
+                    <Button href={rider_som}>Rider Técnico de Som</Button>
+                </div>
                     </Content>
                     <FooterComponent />
                     </Layout>
