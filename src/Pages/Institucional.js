@@ -21,6 +21,7 @@ const Institutional = () => {
   return (
     <Layout>
     <MenuHome />
+    <h1>Equipe Teatro Arthur Azevedo</h1>
       <Content>
         <Tabs tabPosition="left">
           <TabPane tab="Diretores" key="1">
