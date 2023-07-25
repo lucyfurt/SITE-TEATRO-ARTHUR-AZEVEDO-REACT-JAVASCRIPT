@@ -20,9 +20,15 @@ const FormPauta = () => {
           <h2>Proposta de pauta</h2>
         </Divider>
         <div>
-          <Button>Edital</Button>
-          <Button>Normas </Button>
-          <Button>Informação Técnica </Button>
+        
+                <button className="big-rectangle-button">
+                  Informações Técnicas
+                </button>
+            
+                <button className="big-rectangle-button">
+                  Edital/Normas
+                </button>
+              
         </div>
         <Divider orientation='left'>
           <h2>Formulário</h2>

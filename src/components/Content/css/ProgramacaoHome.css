@@ -2,11 +2,13 @@
     text-align: center;
     font-size: 30px;
     padding: 30px;
+    color: azure;
     
 }
 
 a{
     text-align: center;
     text-decoration: none !important;
+    color: bisque;
 }
 

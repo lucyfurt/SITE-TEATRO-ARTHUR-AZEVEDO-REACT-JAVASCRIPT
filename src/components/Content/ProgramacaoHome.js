@@ -1,4 +1,3 @@
-import { RightOutlined } from '@ant-design/icons';
 import { Card, Row, Col, Button } from 'antd';
 import '../Content/css/ProgramacaoHome.css'
 const { Meta } = Card;

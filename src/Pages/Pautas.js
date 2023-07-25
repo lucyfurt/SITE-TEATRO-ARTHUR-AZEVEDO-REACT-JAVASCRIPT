@@ -25,24 +25,17 @@ function Historia() {
             /></Col>
               <Col>
                 <button className="big-rectangle-button">
-                  Solicitação de pauta Espetáculos/Shows
+                    <a href='/inscricoes'>
+                    Solicitação de pauta Espetáculos/Shows
+                    </a>
+                 
                 </button>
               </Col>
               <Col>
                 <button className="big-rectangle-button">
                   Solicitação de pauta Fotografias
                 </button>
-              </Col>
-              <Col>
-                <button className="big-rectangle-button">
-                  Informações Técnicas
-                </button>
-              </Col>
-              <Col>
-                <button className="big-rectangle-button">
-                  Edital/Normas
-                </button>
-              </Col>
+              </Col>            
             </Row>
 
           
