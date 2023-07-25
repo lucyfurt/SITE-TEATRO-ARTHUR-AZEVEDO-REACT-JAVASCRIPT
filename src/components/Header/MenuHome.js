@@ -21,8 +21,11 @@ function MenuHome() {
           <a className="menu-item" href="/institucional">
             Institucional
           </a>
-          <a className="menu-item" href="/tecnico">
+          <a className="menu-item" href="/pautas">
             Pautas/Editais
+          </a>
+          <a className="menu-item" href="/tecnico">
+           Informação Técnica
           </a>
           <a className="menu-item" href="/nmp">
             Núcleo de Memória e Pesquisa

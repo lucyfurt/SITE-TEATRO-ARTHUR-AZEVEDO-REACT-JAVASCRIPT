@@ -1,0 +1,12 @@
+.big-rectangle-button {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

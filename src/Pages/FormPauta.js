@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm } from '@formspree/react';
-import { Layout, Typography, Button, Form, Input, DatePicker, Divider } from 'antd';
+import { Layout, Button, Form, Input, DatePicker, Divider } from 'antd';
+import MenuHome from '../components/Header/MenuHome';
+import FooterComponent from '../components/Footer/FooterComponent';
 import './css/FormPauta.css';
 
-const { Content, Header, Footer } = Layout;
-const { Title } = Typography;
+const { Content } = Layout;
 
 const FormPauta = () => {
   const [state, handleSubmit] = useForm("moqoaddy");
@@ -13,20 +14,19 @@ const FormPauta = () => {
   }
   return (
     <Layout>
-      <Header>
-        <Title level={3}>
-          <a href='/'>Teatro Arthur Azevedo</a>
-        </Title>
-      </Header>
+      <MenuHome />
       <Content>
-        <Title level={2}>Pedido de pautas</Title>
-        <Divider />
+        <Divider orientation='left'>
+          <h2>Proposta de pauta</h2>
+        </Divider>
         <div>
           <Button>Edital</Button>
           <Button>Normas </Button>
+          <Button>Informação Técnica </Button>
         </div>
-        <Divider />
-        <h1>Formulário de inscrição:</h1>
+        <Divider orientation='left'>
+          <h2>Formulário</h2>
+        </Divider>
         <Form className="contact-form" onSubmit={handleSubmit}>
           <Form.Item label="Nome" name="nome" rules={[{ required: true }]}>
             <Input />
@@ -66,9 +66,7 @@ const FormPauta = () => {
           )}
         </Form>
       </Content>
-      <Footer>
-        Teatro Arthur Azevedo © Todos os direitos reservados 2023
-      </Footer>
+      <FooterComponent />
     </Layout>
   )
 }
