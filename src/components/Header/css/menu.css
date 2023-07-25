@@ -28,18 +28,19 @@
 
 .bm-item {
   display: block;
-  color: #fff;
+  color: #fff !important;
   height: 80px;
+  font-size: 30px;
 }
 
 .bm-item a {
   display: block;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
 .bm-item:hover {
-  color: red;
+  color: red !important;
 }
 
 .header {
