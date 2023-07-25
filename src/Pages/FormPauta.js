@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import MenuHome from '../components/Header/MenuHome';
 import FooterComponent from '../components/Footer/FooterComponent';
 import { useForm } from '@formspree/react';
@@ -26,7 +25,7 @@ function FormPauta() {
           <Row gutter={[16, 16]} justify={'center'}>
             <Col>
               <button className="big-rectangle-button">
-                Informações Técnicas
+                <a href='/tecnico'>Informações Técnicas</a>
               </button>
             </Col>
             <Col>
