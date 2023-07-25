@@ -1,4 +1,5 @@
 import { Card, Row, Col, Button } from 'antd';
+import {RightCircleOutlined} from '@ant-design/icons'
 import '../Content/css/ProgramacaoHome.css'
 const { Meta } = Card;
 const ProgramacaoHome = () => {
@@ -60,7 +61,7 @@ const ProgramacaoHome = () => {
         </Row>
       </div>
       <div className='programacao'>
-        <a href='/allevents'> Veja a programação completa</a>
+        <a href='/allevents'> Veja a programação completa <RightCircleOutlined /></a>
       </div>
     </>
   );

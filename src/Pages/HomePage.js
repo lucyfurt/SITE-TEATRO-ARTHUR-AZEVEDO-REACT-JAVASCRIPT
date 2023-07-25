@@ -9,7 +9,7 @@ import FooterComponent from '../components/Footer/FooterComponent.js';
 import HistoriaHome from '../components/Content/HistoriaHome.js';
 import MenuHome from '../components/Header/MenuHome.js';
 import Pautas from '../components/Content/PautaHome.js';
-import './css/HomePage.css'
+
 const { Header, Footer, Content } = Layout;
 
 function HomePage() {
