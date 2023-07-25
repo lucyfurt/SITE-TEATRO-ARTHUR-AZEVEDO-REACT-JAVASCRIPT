@@ -14,15 +14,15 @@ function Historia() {
           <h1>Pautas</h1>
         </Divider>
         <Content>
-          <div className="image-container">
-            <img
+       
+        
+            <Row gutter={[16, 16]} justify={'center'}>
+                <Col>
+                <img
               src="https://i.ibb.co/gDx0FSh/ballerinas-1376250-1280.jpg"
               width={'400px'}
               alt="Ballerinas"
-            />
-          </div>
-          <div className="buttons-container">
-            <Row gutter={[16, 16]}>
+            /></Col>
               <Col>
                 <button className="big-rectangle-button">
                   Solicitação de pauta Espetáculos/Shows
@@ -33,9 +33,6 @@ function Historia() {
                   Solicitação de pauta Fotografias
                 </button>
               </Col>
-            </Row>
-
-            <Row gutter={[16, 16]}>
               <Col>
                 <button className="big-rectangle-button">
                   Informações Técnicas
@@ -47,7 +44,8 @@ function Historia() {
                 </button>
               </Col>
             </Row>
-          </div>
+
+          
         </Content>
         <FooterComponent />
       </Layout>
