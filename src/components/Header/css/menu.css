@@ -18,12 +18,10 @@
 
 }
 
-.bm-menu {
-  font-size: 30px;
-  overflow: hidden;
-  font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
-  width: 500px;
-  margin: 0 0 0 300px;
+.bm-menu { 
+  font-family: 'Georama', sans-serif;
+  
+  margin: 0 0 0 250px;
 }
 
 .bm-item {
@@ -78,6 +76,8 @@
 
 .bm-overlay {
   margin: -50px 0 0 0;
+ width: 70%;
+ 
 }
 
 .bm-menu-wrap {
@@ -86,7 +86,7 @@
 
 .bm-item-list {
   padding: 20px;
-  margin: -20px;
+  margin: -40px;
 }
 
 .ant-layout-header {
