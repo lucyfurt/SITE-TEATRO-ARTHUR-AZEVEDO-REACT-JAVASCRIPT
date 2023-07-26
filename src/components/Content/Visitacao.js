@@ -24,7 +24,7 @@ function Visitacao() {
             key="1"
           >
             <Card >
-              <p><strong>Terça das 14h às 17h</strong></p>
+              <p><strong>Terça das 14h às 18h</strong></p>
               <p>
                 Não é necessário agendamento, basta chegar à bilheteria e receber as instruções.
                 Dependendo da quantidade de visitantes, a visita poderá ser dividida em grupos
@@ -42,7 +42,7 @@ function Visitacao() {
             key="2"
           >
             <Card >
-              <p><strong>Terça das 14h às 17h</strong></p>
+              <p><strong>Terça das 14h às 18h</strong></p>
               <p>
                 Agendamento por meio de ofício contendo as seguintes informações: dia,
                 quantidade de visitantes e faixa etária, deverá ser enviado para o email:

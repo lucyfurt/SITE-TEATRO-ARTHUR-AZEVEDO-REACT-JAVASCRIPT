@@ -12,7 +12,7 @@ const ProgramacaoHome = () => {
               cover={
                 <img
                   alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  src="https://i.ibb.co/QPqp4P0/soon.jpg"
                 />
               }
               actions={[
@@ -21,7 +21,7 @@ const ProgramacaoHome = () => {
                 </Button>
               ]}
             >
-              <Meta title="16.06 Stand-up" description="Emerson Ceará" />
+              <Meta title="Agosto" description="Em construção..." />
             </Card>
           </Col>
           <Col xs={24} sm={12} md={8} lg={6}>
@@ -29,7 +29,7 @@ const ProgramacaoHome = () => {
               cover={
                 <img
                   alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  src="https://i.ibb.co/QPqp4P0/soon.jpg"
                 />
               }
               actions={[
@@ -38,7 +38,7 @@ const ProgramacaoHome = () => {
                 </Button>
               ]}
             >
-              <Meta title="17.06 Show" description="This is the description" />
+              <Meta title="Agosto" description="Em construção..." />
             </Card>
           </Col>
           <Col xs={24} sm={12} md={8} lg={6}>
@@ -46,7 +46,7 @@ const ProgramacaoHome = () => {
               cover={
                 <img
                   alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  src="https://i.ibb.co/QPqp4P0/soon.jpg"
                 />
               }
               actions={[
@@ -55,7 +55,7 @@ const ProgramacaoHome = () => {
                 </Button>
               ]}
             >
-              <Meta title="18.06" description="This is the description" />
+              <Meta title="Agosto" description="Em construção..." />
             </Card>
           </Col>
         </Row>
