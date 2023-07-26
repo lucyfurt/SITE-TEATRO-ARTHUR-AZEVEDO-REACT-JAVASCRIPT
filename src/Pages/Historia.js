@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Layout, Tabs, Card, Divider, Col, Row } from 'antd';
 import MenuHome from '../components/Header/MenuHome';
 import FooterComponent from '../components/Footer/FooterComponent';
+import '../Pages/css/historia.css'
 const { TabPane } = Tabs;
 const { Meta } = Card;
 const { Content } = Layout;
@@ -29,7 +30,7 @@ function Historia() {
                                         />
                                     </Card>
                                 </TabPane>
-                                <TabPane tab="Apolônio Pinto" key="2">
+                                <TabPane tab="Apolônia Pinto" key="2">
                                     <Card>
                                         <Meta
                                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur dolor sit amet tellus lobortis, eget hendrerit libero accumsan. Curabitur sed interdum metus. Donec pellentesque vitae purus a sollicitudin. Fusce eleifend sem eu massa vulputate, vitae dapibus urna efficitur. Nam maximus neque id augue faucibus, sed pellentesque lacus maximus. Phasellus dignissim vitae diam vel efficitur. Vestibulum dictum, neque in vulputate vehicula, dolor mi interdum augue, et fermentum nibh nulla sed massa. Nulla sit amet auctor eros, id placerat nibh. Maecenas quis volutpat dolor. Praesent ultricies odio non purus rutrum, at ultrices dui congue. Cras bibendum auctor cursus."
