@@ -1,7 +1,28 @@
-.container {
-    text-align: center;
-}
+/* bilheteria.css */
 
-p {
-    font-size: 24px;
-}
+.container {
+    /* Add your general styles for the container here */
+  
+    /* Example of styles for mobile devices */
+    padding: 10px;
+  }
+  
+  .map-container {
+    /* Add your styles for the map container here */
+  
+    /* Example of styles for mobile devices */
+    padding-top: 56.25%; /* 16:9 aspect ratio (height / width) for the map iframe */
+    position: relative;
+  }
+  
+  .map-container iframe {
+    /* Add your styles for the map iframe here */
+  
+    /* Example of styles for mobile devices */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
