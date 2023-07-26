@@ -1,5 +1,6 @@
 import React from 'react';
-import './css/historiaHome.css'
+
+import '../Content/css/historia.css';
 
 function HistoriaHome() {
     return (

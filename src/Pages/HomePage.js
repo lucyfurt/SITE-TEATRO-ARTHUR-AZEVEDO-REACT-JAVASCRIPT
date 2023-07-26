@@ -15,11 +15,11 @@ const { Header, Footer, Content } = Layout;
 function HomePage() {
   return (
     <Layout>
-      <Header className='headerStyle'>
+      <Header>
         <MenuHome />
       </Header>
       <Carrossel />
-      <Content className='contentStyle'>
+      <Content>
         <Divider orientation="left">
           <h1>Próximos Eventos</h1>
         </Divider>
@@ -45,7 +45,7 @@ function HomePage() {
         </Divider>
         <Bilheteria />
       </Content>
-      <Footer className='footerStyle'>
+      <Footer>
         <FooterComponent />
       </Footer>
     </Layout>
