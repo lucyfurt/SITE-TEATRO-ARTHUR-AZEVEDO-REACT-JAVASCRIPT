@@ -6,28 +6,22 @@ import Programacao from '../components/Content/ProgramacaoHome.js';
 import Visitacao from '../components/Content/Visitacao.js';
 import Bilheteria from '../components/Content/Bilheteria.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
-import HistoriaHome from '../components/Content/HistoriaHome.js';
-import MenuHome from '../components/Header/MenuHome.js';
 import Pautas from '../components/Content/PautaHome.js';
-
+import './App.css'
+import MenuHome from '../components/Header/MenuBurguer.js';
 const { Header, Footer, Content } = Layout;
 
 function HomePage() {
   return (
     <Layout>
-      <Header>
-        <MenuHome />
-      </Header>
+      <MenuHome />
       <Carrossel />
       <Content>
         <Divider orientation="left">
-          <h1>Próximos Eventos</h1>
+          <h1>Programação</h1>
         </Divider>
         <Programacao />
-        <Divider orientation="left">
-          <h1>Especial 206 anos</h1>
-        </Divider>
-        <HistoriaHome />
+
         <Divider orientation="left">
           <h1>Notícias</h1>
         </Divider>

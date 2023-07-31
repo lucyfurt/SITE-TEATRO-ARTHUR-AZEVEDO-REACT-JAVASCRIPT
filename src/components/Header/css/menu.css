@@ -115,21 +115,23 @@
   }
   
   .bm-menu { 
-    font-family: 'Georama', sans-serif;  
-    margin: 1px 0 0 0;
+    font-family: 'Georama', sans-serif; 
+    right: 4%; 
+   
   }
   
   .bm-item {
-    display: block;
+   
     color: #fff !important;
-    height: 80px;
-    font-size: 30px;
+    right: 4%;
+   
   }
   
   .bm-item a {
     display: block;
     color: #fff !important;
     text-decoration: none;
+    right: 4%;
   }
   
   .bm-item:hover {
@@ -138,10 +140,9 @@
   
   .header {
     display: flex;
-    align-items: center;
+   
     background-color: #861A16;
-    padding-right: 5px;
-    height: 70px;
+ 
   }
   
   .logo-container {
@@ -165,23 +166,20 @@
   }
   
   .menu-container {
-    align-items: center;
-    padding-top: 160px;
+    right: 4%;
   }
   
   .bm-overlay {
-    margin: -50px 0 0 0;
-   width: 70% !important;
-   
+    right: 4%;
+  
   }
   
   .bm-menu-wrap {
-    width: 700px !important;
+   padding: auto;
   }
   
   .bm-item-list {
-    padding: 20px;
-    margin: -40px;
+   
   }
   
   .ant-layout-header {
