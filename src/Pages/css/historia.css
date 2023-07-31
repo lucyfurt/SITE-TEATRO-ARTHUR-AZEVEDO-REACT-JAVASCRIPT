@@ -1,3 +1,4 @@
+/* Base styles for all screen sizes */
 .Content {
   display: flex;
   justify-content: center;
@@ -17,13 +18,24 @@
 
 .text {
   text-align: justify;
-  padding: 20px; /* Opcional: Adiciona espaço entre a imagem e o texto */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Adiciona alinhamento vertical ao centro */
+  align-items: center;
 }
 
-/* Estilos adicionais para o iframe */
 .text iframe {
-  margin-top: 20px; /* Adicione margem superior para criar espaço entre o texto e o iframe */
+  margin-top: 20px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .image {
+    width: 100%; /* Make the image take the full width of the screen */
+    border-radius: 0; /* Remove border radius for a regular rectangular shape */
+  }
+
+  .text {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
 }
