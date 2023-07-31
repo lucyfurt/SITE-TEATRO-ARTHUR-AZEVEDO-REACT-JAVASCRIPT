@@ -38,4 +38,8 @@
   .text {
     padding: 10px; /* Reduce padding for smaller screens */
   }
+
+  .text iframe {
+    width: 100%; /* Make the embedded video take the full width of the screen */
+  }
 }

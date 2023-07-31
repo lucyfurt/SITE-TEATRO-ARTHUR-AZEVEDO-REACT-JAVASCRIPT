@@ -40,9 +40,7 @@ function Historia() {
                                 sendo um dos principais representantes do teatro de costumes do Brasil. Suas obras retratavam a sociedade brasileira da época, satirizando comportamentos e questões sociais. O Teatro Arthur Azevedo, localizado em São Luís, foi nomeado em sua homenagem, como reconhecimento à sua contribuição para a cultura maranhense e brasileira."
                             </p>
                         </div>
-                        
                     </div>
-
                 </Content>
                 <FooterComponent />
             </Layout>
