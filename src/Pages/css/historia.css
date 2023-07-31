@@ -1,4 +1,29 @@
-.ant-tabs-tab-btn {
-    font-size: 24px !important;
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 700px;
+  border-radius: 30px;
+}
+
+.text {
+  text-align: justify;
+  padding: 20px; /* Opcional: Adiciona espaço entre a imagem e o texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Adiciona alinhamento vertical ao centro */
+}
+
+/* Estilos adicionais para o iframe */
+.text iframe {
+  margin-top: 20px; /* Adicione margem superior para criar espaço entre o texto e o iframe */
+}
