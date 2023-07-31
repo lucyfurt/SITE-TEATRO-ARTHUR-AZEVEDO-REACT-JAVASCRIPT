@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Layout, Typography } from 'antd';
-import MenuHome from '../components/Header/MenuHome';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 
 const { Content } = Layout;
@@ -14,7 +14,7 @@ function FaleConosco() {
   }
   return (
     <Layout>
-      <MenuHome />      
+      <MenuBurguer />
       <Content>
         <Title level={2}>Fale Conosco</Title>
         <div>
@@ -41,7 +41,7 @@ function FaleConosco() {
             Enviar
           </button>
         </form>
-      </Content>   
+      </Content>
       <FooterComponent />
     </Layout>
   );

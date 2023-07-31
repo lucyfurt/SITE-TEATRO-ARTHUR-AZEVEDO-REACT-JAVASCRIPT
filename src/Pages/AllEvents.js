@@ -1,6 +1,6 @@
-import { Card, Col, Layout, Row, Tabs,  Button } from 'antd';
-import MenuHome from '../components/Header/MenuHome';
+import { Card, Col, Layout, Row, Tabs, Button } from 'antd';
 import FooterComponent from '../components/Footer/FooterComponent';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 const { Meta } = Card;
 const { Content } = Layout;
 
@@ -9,7 +9,7 @@ const { TabPane } = Tabs;
 const AllEvents = () => {
   return (
     <Layout>
-  <MenuHome />
+      <MenuBurguer />
       <Content>
         <h1>Eventos</h1>
         <Tabs defaultActiveKey="july" centered>
@@ -294,7 +294,7 @@ const AllEvents = () => {
           </TabPane>
         </Tabs>
       </Content>
-     <FooterComponent />
+      <FooterComponent />
     </Layout>
   );
 };

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Layout, Divider, Col, Row, Button } from 'antd';
+import { Layout, Divider, Col, Row } from 'antd';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
-import MenuHome from '../components/Header/MenuHome';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 import rider_taa from '../assets/rider_taa.pdf'
 
@@ -12,7 +12,7 @@ const { Content } = Layout;
 
 export default () => (
     <Layout>
-        <MenuHome />
+        <MenuBurguer />
         <Divider orientation="left">
             <h1>Informações técnicas </h1>
         </Divider>

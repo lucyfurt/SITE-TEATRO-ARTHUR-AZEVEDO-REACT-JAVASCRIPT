@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import './ResponsiveMenu.css'; // Import the CSS file
+import '../Header/css/ResponsiveMenu.css'; // Import the CSS file
 
 // Import the menu icon images (assuming they are stored in the 'assets' folder)
+import logoImage from '../../assets/logo.png'
 import menuIconOpen from '../../assets/img/close_white_36dp.svg';
 import menuIconClose from '../../assets/img/menu_white_36dp.svg';
 
@@ -16,7 +17,7 @@ const ResponsiveMenu = () => {
     <header>
       <nav className="nav-bar">
         <div className="logo">
-          <h1>Logo</h1>
+        <img src={logoImage} alt="Logo" style={{width:'80px'}}/>
         </div>
         <div className="nav-list">
           <ul>

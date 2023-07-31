@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Layout, Tabs, Card, Divider, Col, Row } from 'antd';
-import MenuHome from '../components/Header/MenuHome';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 const { TabPane } = Tabs;
 const { Meta } = Card;
@@ -11,7 +11,7 @@ const { Content } = Layout;
 function Nae() {
   return (
     <>
-      <MenuHome />
+      <MenuBurguer />
       <Layout>
         <Divider orientation="left">
           <h1>Núcleo Arte Educação</h1>

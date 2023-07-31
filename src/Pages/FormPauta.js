@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuHome from '../components/Header/MenuHome';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 import { useForm } from '@formspree/react';
 import { Layout, Button, Form, Input, Divider, Row, Col, Radio, Checkbox } from 'antd';
@@ -16,7 +16,7 @@ function FormPauta() {
 
   return (
     <Layout>
-      <MenuHome />
+      <MenuBurguer />
       <Content>
         <Divider orientation='left'>
           <h2>Proposta de pauta</h2>

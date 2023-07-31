@@ -1,13 +1,13 @@
 import React from 'react';
-import { Card, Row, Col, Typography, Image, Layout, Divider } from 'antd';
-import MenuHome from '../components/Header/MenuHome';
+import { Card, Row, Col, Typography, Layout, Divider } from 'antd';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 const { Content } = Layout;
 const { Title, Text } = Typography;
 const NucleoMemoria = () => {
     return (
         <Layout>
-            <MenuHome />
+            <MenuBurguer />
             <Divider orientation="left">
                 <h1>Núcleo de Memória e Pesquisa</h1>
             </Divider>

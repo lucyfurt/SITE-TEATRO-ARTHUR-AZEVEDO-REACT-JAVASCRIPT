@@ -7,9 +7,8 @@ import Visitacao from '../components/Content/Visitacao.js';
 import Bilheteria from '../components/Content/Bilheteria.js';
 import FooterComponent from '../components/Footer/FooterComponent.js';
 import Pautas from '../components/Content/PautaHome.js';
-import './App.css'
 import MenuHome from '../components/Header/MenuBurguer.js';
-const { Header, Footer, Content } = Layout;
+const { Footer, Content } = Layout;
 
 function HomePage() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Layout,  Tabs, Card, Avatar, Divider } from 'antd';
-import MenuHome from '../components/Header/MenuHome';
-import FooterComponent  from '../components/Footer/FooterComponent';
+import { Layout, Tabs, Card, Avatar, Divider } from 'antd';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
+import FooterComponent from '../components/Footer/FooterComponent';
 import {
   UserOutlined,
   TeamOutlined,
@@ -20,8 +20,7 @@ const { Meta } = Card;
 const Institutional = () => {
   return (
     <Layout>
-    <MenuHome />
-    <h1>Equipe Teatro Arthur Azevedo</h1>
+      <MenuBurguer />
       <Content>
         <Tabs tabPosition="left">
           <TabPane tab="Diretores" key="1">
@@ -94,7 +93,7 @@ const Institutional = () => {
           </TabPane>
         </Tabs>
       </Content>
- <FooterComponent />
+      <FooterComponent />
     </Layout>
   );
 }

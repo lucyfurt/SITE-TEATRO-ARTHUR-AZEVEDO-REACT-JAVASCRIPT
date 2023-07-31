@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Layout, Tabs, Card, Divider, Col, Row } from 'antd';
-import MenuHome from '../components/Header/MenuHome';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 import '../Pages/css/historia.css'
 const { TabPane } = Tabs;
@@ -12,7 +12,7 @@ const { Content } = Layout;
 function Historia() {
     return (
         <>
-            <MenuHome />
+            <MenuBurguer />
             <Layout>
                 <Divider orientation="left">
                     <h1>História</h1>

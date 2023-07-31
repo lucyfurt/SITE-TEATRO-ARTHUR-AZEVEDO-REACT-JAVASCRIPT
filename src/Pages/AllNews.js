@@ -1,7 +1,7 @@
 import { List } from 'antd';
 import React from 'react';
 import { Layout, Typography } from 'antd';
-import HomeMenu from '../components/Header/MenuHome';
+import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 const { Content } = Layout;
 const { Title } = Typography;
@@ -26,7 +26,7 @@ const data = [
 
 const AllNews = () => (
   <Layout>
-    <HomeMenu />
+    <MenuBurguer />
     <Content style={{ padding: '50px' }}>
       <Title level={2}>Notícias</Title>
       <List
@@ -57,7 +57,7 @@ const AllNews = () => (
         )}
       />
     </Content>
-   <FooterComponent />
+    <FooterComponent />
   </Layout>
 )
 export default AllNews;
