@@ -27,12 +27,12 @@ const ResponsiveMenu = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <a href="/teatro" className="nav-link">
                 O Teatro
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <a href="/institucional" className="nav-link">
                 Institucional
               </a>
             </li>
@@ -47,12 +47,12 @@ const ResponsiveMenu = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/tecnico" className="nav-link">
+              <a href="/nmp" className="nav-link">
                 Núcleo de Memória e Pesquisa
               </a>
             </li>
             <li className="nav-item">
-              <a href="/tecnico" className="nav-link">
+              <a href="/nae" className="nav-link">
                 Núcleo Arte Educação
               </a>
             </li>
