@@ -12,8 +12,8 @@ function Historia() {
         <>
             <MenuBurguer />
             <Layout>
-                <Divider orientation="center">
-                    <h1>Visite o Teatro Arthur Azevedo</h1>
+                <Divider orientation="left">
+                    <p>Visite o Teatro Arthur Azevedo</p>
                 </Divider>
                 <Content className="Content">
                     <div className="image-container">
