@@ -23,7 +23,7 @@ function Historia() {
                 alt="Bailarinas"
               /></Col>
             <Col>
-              <button className="big-rectangle-button">
+              <button className="big-rectangle-button" disabled='false'>
                 <a href='/inscricoes'>
                   Solicitação de pauta Espetáculos/Shows
                 </a>
