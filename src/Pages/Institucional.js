@@ -135,7 +135,7 @@ const Institucional = () => {
         <Image
           src="https://i.ibb.co/vmpv5sD/logo206.png"
           alt="taa"
-          width={400}
+          width={350}
           preview={false}
         />
         </Col>
