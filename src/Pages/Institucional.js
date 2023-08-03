@@ -1,100 +1,147 @@
 import React from 'react';
-import { Layout, Tabs, Card, Avatar, Divider } from 'antd';
-import MenuBurguer from '../components/Header/MenuBurguer.js';
-import FooterComponent from '../components/Footer/FooterComponent';
-import {
-  UserOutlined,
-  TeamOutlined,
-  ScheduleOutlined,
-  DollarCircleOutlined,
-  ToolOutlined,
-  LaptopOutlined,
-  BookOutlined,
-  UserAddOutlined,
-} from '@ant-design/icons';
+import { Avatar, Card, Row, Col, Image } from 'antd';
 
-const { Content } = Layout;
-const { TabPane } = Tabs;
+import MenuBurguer from '../components/Header/MenuBurguer.js'
+import FooterComponent from '../components/Footer/FooterComponent';
 const { Meta } = Card;
 
-const Institutional = () => {
+const Institucional = () => {
+
   return (
-    <Layout>
-      <MenuBurguer />
-      <Content>
-        <Tabs tabPosition="left">
-          <TabPane tab="Diretores" key="1">
-            <Card title="Diretor do Teatro">
-              <Meta
-                avatar={<Avatar icon={<UserOutlined />} />}
-                title="Victor Silper"
-              />
-            </Card>
-            <Divider />
-            <Card title="Diretora Administrativa">
-              <Meta
-                avatar={<Avatar icon={<TeamOutlined />} />}
-                title="Karla Brito"
-              />
-            </Card>
-          </TabPane>
-          <TabPane tab="Equipe Técnica" key="2">
-            <Card title="Coordenação técnico">
-              <Meta
-                avatar={<Avatar icon={<ToolOutlined />} />}
-                title="Abel Lopes"
-              />
-            </Card>
-          </TabPane>
-          <TabPane tab="Administração" key="3">
-            <Card title="Chefe de Pauta">
-              <Meta
-                avatar={<Avatar icon={<ScheduleOutlined />} />}
-                title="Samuel Viegas"
-              />
-            </Card>
-            <Divider />
-            <Card title="Chefe de Bilheteria">
-              <Meta
-                avatar={<Avatar icon={<DollarCircleOutlined />} />}
-                title="Larissa Ferreira"
-              />
-            </Card>
-            <Divider />
-            <Card title="Coordenação de produção">
-              <Meta
-                avatar={<Avatar icon={<LaptopOutlined />} />}
-                title="Joás Coelho"
-              />
-            </Card>
-            <Divider />
-            <Card title="Chefe de serviços gerais">
-              <Meta
-                avatar={<Avatar icon={<UserAddOutlined />} />}
-                title="Maria Francisca Moraes"
-              />
-            </Card>
-          </TabPane>
-          <TabPane tab="Núcleo Arte Educação" key="4">
-            <Card title="Coordenação do NAE">
-              <Meta
-                avatar={<Avatar icon={<BookOutlined />} />}
-                title="Ione Coelho"
-              />
-            </Card>
-          </TabPane>
-          <TabPane tab="Núcleo de Memória e Pesquisa" key="5">
-            <Card title="Coordenação do Núcleo de Memória e Pesquisa">
-              <Meta
-                avatar={<Avatar icon={<BookOutlined />} />}
-                title="Julio da Hora"
-              />
-            </Card>
-          </TabPane>
-        </Tabs>
-      </Content>
-      <FooterComponent />
-    </Layout>
+    <>
+    <MenuBurguer/>
+      <Row>
+        <Col>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>V</Avatar>}
+              title="Diretor do Teatro"
+              description="Victor Silper"
+            />
+          </Card>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>K</Avatar>}
+              title="Diretora Administrativa"
+              description="Karla Brito"
+            />
+          </Card>
+        </Col>
+        <Col>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>S</Avatar>}
+              title="Chefe de Pauta"
+              description="Samuel Viegas"
+            />
+          </Card>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>L</Avatar>}
+              title="Chefe de Bilheteria"
+              description="Larissa Ferreira"
+            />
+          </Card>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>M</Avatar>}
+              title="Chefe de Serviços Gerais"
+              description="Maria Francisca Moraes"
+            />
+          </Card>
+        </Col>
+        <Col>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>A</Avatar>}
+              title="Coordenação Técnica"
+              description="Abel Lopes"
+            />
+          </Card>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>J</Avatar>}
+              title="Coordenação de Produção"
+              description="Joás Coelho"
+            />
+          </Card>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>J</Avatar>}
+              title="Coordenação do Núcle de Memória e Pesquisa"
+              description="Julio da Hora"
+            />
+          </Card>
+          <Card
+            style={{
+              width: 300,
+              marginTop: 16,
+            }}
+
+          >
+            <Meta
+              avatar={<Avatar style={{ backgroundColor: '#f56a00' }}>I</Avatar>}
+              title="Coordenação do Nae"
+              description="Ione Coelho"
+            />
+          </Card>
+        </Col>
+        <Col>
+        <Image
+          src="https://i.ibb.co/vmpv5sD/logo206.png"
+          alt="taa"
+          width={400}
+          preview={false}
+        />
+        </Col>
+      </Row>
+<FooterComponent/>
+    </>
   );
-}
-export default Institutional;
+};
+export default Institucional;

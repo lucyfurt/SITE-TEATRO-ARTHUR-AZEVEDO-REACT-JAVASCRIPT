@@ -20,7 +20,6 @@ function HomePage() {
           <h1>Programação</h1>
         </Divider>
         <Programacao />
-
         <Divider orientation="left">
           <h1>Notícias</h1>
         </Divider>
