@@ -15,18 +15,18 @@ function Historia() {
         </Divider>
         <Content>
           <Row gutter={[16, 16]} justify={'center'}>
+            <p>As solicitações de pauta são feitas exclusivamente mediante o preenchimento do formulário, enquanto o mesmo estiver disponível.</p>
             <Col>
               <img
-                src="https://i.ibb.co/gDx0FSh/ballerinas-1376250-1280.jpg"
-                width={'400px'}
-                alt="Ballerinas"
+                className='image'
+                src="https://i.ibb.co/yqz8DqH/0001.png"
+                alt="Bailarinas"
               /></Col>
             <Col>
               <button className="big-rectangle-button">
                 <a href='/inscricoes'>
                   Solicitação de pauta Espetáculos/Shows
                 </a>
-
               </button>
             </Col>
             <Col>
@@ -35,13 +35,10 @@ function Historia() {
               </button>
             </Col>
           </Row>
-
-
         </Content>
         <FooterComponent />
       </Layout>
     </>
   );
 }
-
 export default Historia;

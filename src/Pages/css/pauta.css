@@ -1,19 +1,23 @@
 .big-rectangle-button {
-    width: 200px;
-    height: 100px;
-    background-color: #4096FF;
-    color: white;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
-  a{
-    font-size: 18px;
-    color: white;
-  }
-
+  width: 200px;
+  height: 100px;
+  background-color: #FAB236;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.image {
+  border-radius: 30px;
+  padding: 20px;
+}
+a {
+  font-size: 18px;
+  color: white;
+}
+p {
+  font-size: 16px;
+}
