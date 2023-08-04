@@ -10,11 +10,17 @@ function Bilheteria() {
         <p>
           <strong>Terça a domingo das 13h30 às 18h30</strong>
         </p>
+        <p>
+          <strong>Obs: Em dias de evento funcionamento até abertura das portas!</strong>
+        </p>
+        <p>
+          <strong>Em cada cabine, há espaço para 6 cadeiras, e o prenchimento é por ordem de chegada.</strong>
+        </p>
         <h2>Mapa de assentos</h2>
         <Image
           src="https://i.ibb.co/f2ysCHK/teatroMP.png"
           alt="assentos"
-          preview={false} // Disable image preview on click for better mobile experience
+          preview={false}
         />
         <h2>Como chegar</h2>
         <div className="map-container">
@@ -31,5 +37,4 @@ function Bilheteria() {
     </>
   );
 }
-
 export default Bilheteria;

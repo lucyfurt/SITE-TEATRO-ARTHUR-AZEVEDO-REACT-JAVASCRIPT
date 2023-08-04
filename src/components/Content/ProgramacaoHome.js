@@ -16,7 +16,7 @@ const ProgramacaoHome = () => {
                 />
               }
               actions={[
-                <Button type="primary" href="https://www.ingressodigital.com/" target="_blank">
+                <Button type="text" href="https://www.ingressodigital.com/" target="_blank">
                   Compre aqui
                 </Button>
               ]}
@@ -33,7 +33,7 @@ const ProgramacaoHome = () => {
                 />
               }
               actions={[
-                <Button type="primary" href="https://www.ingressodigital.com/" target="_blank">
+                <Button type="text" href="https://www.ingressodigital.com/" target="_blank">
                   Compre aqui
                 </Button>
               ]}
@@ -50,7 +50,7 @@ const ProgramacaoHome = () => {
                 />
               }
               actions={[
-                <Button type="primary" href="https://www.ingressodigital.com/" target="_blank">
+                <Button type="text" href="https://www.ingressodigital.com/" target="_blank">
                   Compre aqui
                 </Button>
               ]}
@@ -61,7 +61,7 @@ const ProgramacaoHome = () => {
         </Row>
       </div>
       <div className='programacao'>
-        <a href='/allevents'> Veja a programação completa <RightCircleOutlined /></a>
+        <Button href='/allevents' type='text'> Veja a programação completa</Button>
       </div>
     </>
   );

@@ -2,8 +2,7 @@ import React from 'react';
 import { Card, Tabs } from 'antd';
 import {
   EnvironmentTwoTone,
-  BankTwoTone,
-  MessageTwoTone,
+  BankTwoTone
 } from '@ant-design/icons';
 import '../Content/css/visitacao.css'
 const { TabPane } = Tabs;
@@ -18,7 +17,7 @@ function Visitacao() {
             tab={
               <span>
                 <EnvironmentTwoTone />
-                Turística
+                Instituições
               </span>
             }
             key="1"
@@ -26,28 +25,27 @@ function Visitacao() {
             <Card >
               <p><strong>Terça das 14h às 18h</strong></p>
               <p>
-                Não é necessário agendamento, basta chegar à bilheteria e receber as instruções.
-                Dependendo da quantidade de visitantes, a visita poderá ser dividida em grupos
-                para melhor aproveitamento e segurança de todos.
-              </p>
+                As visitas guiadas para as instituições, devem ser agendadas por meio de um
+                ofício contendo as seguintes informações: data da visita, número de visitantes e faixa etária do grupo.
+                O ofício deve ser encaminhado para o seguinte e-mail: pauta.taa@gmail.com </p>
             </Card>
           </TabPane>
           <TabPane
             tab={
               <span>
                 <BankTwoTone />
-                Instituições
+                Turística
               </span>
             }
             key="2"
           >
             <Card >
-              <p><strong>Terça das 14h às 18h</strong></p>
+              <p><strong>Quarta das 14h às 18h</strong></p>
               <p>
-                Agendamento por meio de ofício contendo as seguintes informações: dia,
-                quantidade de visitantes e faixa etária, deverá ser enviado para o email:
+                O Teatro Arthur Azevedo oferece Visitas Guiadas às quartas-feiras para o
+                público em geral, com opções de visita curta e de longa duração.
+                Ambas proporcionam um tour completo por todo o local.
               </p>
-              <p><MessageTwoTone /><strong>pauta.taa@gmail.com</strong></p>
             </Card>
           </TabPane>
         </Tabs>

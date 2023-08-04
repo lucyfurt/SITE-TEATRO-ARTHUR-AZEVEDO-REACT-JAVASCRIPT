@@ -18,9 +18,9 @@ const PautaHome = () => {
                   />
                 }
                 actions={[
-                  <Button type="primary" href='/pautas' target="_blank"
+                  <Button type="text" href='/pautas' target="_blank"
                   >
-                    Saiba mais
+                    Inscreva-se
                   </Button>
                 ]}
               >
@@ -36,9 +36,9 @@ const PautaHome = () => {
                   />
                 }
                 actions={[
-                  <Button type="primary" href='/pautas' target="_blank"
+                  <Button type="text" href='/pautas' target="_blank"
                   >
-                    Saiba mais
+                    Inscreva-se
                   </Button>
                 ]}
               >
@@ -54,7 +54,7 @@ const PautaHome = () => {
                   />
                 }
                 actions={[
-                  <Button type="primary" href='/tecnico' target="_blank"
+                  <Button type="text" href='/tecnico' target="_blank"
                   >
                     Saiba mais
                   </Button>
