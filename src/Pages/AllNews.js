@@ -1,10 +1,9 @@
 import { List } from 'antd';
 import React from 'react';
-import { Layout, Typography } from 'antd';
+import { Layout, Divider } from 'antd';
 import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 const { Content } = Layout;
-const { Title } = Typography;
 
 const data = [
   {
@@ -27,8 +26,10 @@ const data = [
 const AllNews = () => (
   <Layout>
     <MenuBurguer />
-    <Content style={{ padding: '50px' }}>
-      <Title level={2}>Notícias</Title>
+    <Divider orientation="left">
+      <h1>Notícias</h1>
+    </Divider>
+    <Content>
       <List
         itemLayout="vertical"
         size="large"
