@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Card, Row, Col, Image } from 'antd';
+import { Avatar, Card, Row, Col, Image, Divider } from 'antd';
 
 import MenuBurguer from '../components/Header/MenuBurguer.js'
 import FooterComponent from '../components/Footer/FooterComponent';
@@ -9,7 +9,10 @@ const Institucional = () => {
 
   return (
     <>
-    <MenuBurguer/>
+      <MenuBurguer />
+      <Divider orientation="left">
+        <h1>Equipe Institucional</h1>
+      </Divider>
       <Row>
         <Col>
           <Card
@@ -132,15 +135,15 @@ const Institucional = () => {
           </Card>
         </Col>
         <Col>
-        <Image
-          src="https://i.ibb.co/vmpv5sD/logo206.png"
-          alt="taa"
-          width={350}
-          preview={false}
-        />
+          <Image
+            src="https://i.ibb.co/vmpv5sD/logo206.png"
+            alt="taa"
+            width={350}
+            preview={false}
+          />
         </Col>
       </Row>
-<FooterComponent/>
+      <FooterComponent />
     </>
   );
 };
