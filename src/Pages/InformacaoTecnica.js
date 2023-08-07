@@ -149,7 +149,7 @@ function InformacoesTecnicas() {
             </TabPane>
           </Tabs>
                 <div>
-                    <Button type='text' style={{ marginTop: '30px', border: '50px' }}>
+                    <Button type='text' style={{ marginBottom: '30px'}}>
                         <a href={rider_taa}>Veja mais Informações Técnicas</a>
                     </Button>
                 </div>

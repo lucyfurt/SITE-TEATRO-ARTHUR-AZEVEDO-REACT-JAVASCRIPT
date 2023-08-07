@@ -8,13 +8,13 @@ const NucleoMemoria = () => {
         <Layout>
             <MenuBurguer />
             <Divider orientation="left">
-                <p>Núcleo de Memória e Pesquisa</p>
+                <h1>Núcleo de Memória e Pesquisa</h1>
             </Divider>
             <Content>
                 <div>
-                    <h1>
+                    <p>
                         Em construção...
-                    </h1>
+                    </p>
                 </div>
             </Content>
         </Layout>
