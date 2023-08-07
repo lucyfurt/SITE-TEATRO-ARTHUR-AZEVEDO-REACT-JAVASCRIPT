@@ -24,12 +24,12 @@ function Historia() {
               />
             </Col>
             <Col span={24} style={{ textAlign: 'center' }}>
-              <Button type='primary' disabled={true}>
+              <Button type='primary' disabled={false} href='/inscricoes'>
                 Solicitação de pauta para Espetáculos/Shows
               </Button>
             </Col>
-            <Col span={24} style={{ textAlign: 'center', padding:'20px' }}>
-              <Button type='primary' disabled={false} href='/inscricoes'>
+            <Col span={24} style={{ textAlign: 'center' }}>
+              <Button type='primary' disabled={true} >
                 Solicitação de pautas para Fotografias
               </Button>
             </Col>

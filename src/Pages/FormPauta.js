@@ -13,7 +13,6 @@ function FormPauta() {
   if (state.succeeded) {
     return <p>Formulário enviado com sucesso!</p>;
   }
-
   return (
     <Layout>
       <MenuBurguer />
@@ -24,15 +23,14 @@ function FormPauta() {
         <div>
           <Row gutter={[16, 16]} justify={'center'}>
             <Col>
-              <button className="big-rectangle-button">
-                <a href='/tecnico'>Informações Técnicas</a>
-              </button>
+              <Button type='primary' href='/tecnico'>
+                Informações Técnicas
+              </Button>
             </Col>
             <Col>
-
-              <button className="big-rectangle-button">
+              <Button type='primary' >
                 Edital/Normas
-              </button>
+              </Button>
             </Col>
           </Row>
         </div>
