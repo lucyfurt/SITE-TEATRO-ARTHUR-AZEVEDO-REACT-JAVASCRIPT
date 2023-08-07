@@ -1,58 +1,20 @@
-import { Card, Col, Layout, Row, Tabs, Button } from 'antd';
+import { Card, Col, Layout, Row, Tabs, Button, Divider } from 'antd';
 import FooterComponent from '../components/Footer/FooterComponent';
 import MenuBurguer from '../components/Header/MenuBurguer.js';
+
 const { Meta } = Card;
 const { Content } = Layout;
-
 const { TabPane } = Tabs;
 
 const AllEvents = () => {
   return (
     <Layout>
       <MenuBurguer />
+      <Divider orientation="left">
+        <h1>Programação</h1>
+      </Divider>
       <Content>
-        <h1>Eventos</h1>
-        <Tabs defaultActiveKey="july" centered>
-          <TabPane tab="Julho" key="july">
-            <Row gutter={[16, 16]} justify="center">
-              <Col xs={24} sm={12} md={8} lg={6}>
-                <Card
-                  cover={
-                    <img
-                      alt="example"
-                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                  }
-                  actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                    >
-                      Compre aqui
-                    </Button>
-                  ]}
-                >
-                  <Meta title="16.06 Stand-up" description="Emerson Ceará" />
-                </Card>
-              </Col>
-              <Col xs={24} sm={12} md={8} lg={6}>
-                <Card
-                  cover={
-                    <img
-                      alt="example"
-                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                  }
-                  actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                    >
-                      Compre aqui
-                    </Button>
-                  ]}
-                >
-                  <Meta title="17.06 Show" description="This is the description" />
-                </Card>
-              </Col>
-            </Row>
-          </TabPane>
+        <Tabs defaultActiveKey="Agosto" centered style={{marginBottom:'30px'}}> 
           <TabPane tab="Agosto" key="august">
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
@@ -64,7 +26,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -82,7 +44,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -91,10 +53,9 @@ const AllEvents = () => {
                   <Meta title="18.06" description="This is the description" />
                 </Card>
               </Col>
-              {/* More cards for August */}
             </Row>
           </TabPane>
-          <TabPane tab="Setembro" key="september">
+          <TabPane tab="Setembro" key="september" disabled='true'>
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
@@ -105,7 +66,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -123,48 +84,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                    >
-                      Compre aqui
-                    </Button>
-                  ]}
-                >
-                  <Meta title="17.06 Show" description="This is the description" />
-                </Card>
-              </Col>
-              {/* More cards for July */}
-            </Row>
-          </TabPane>
-          <TabPane tab="Outubro" key="october">
-            <Row gutter={[16, 16]} justify="center">
-              <Col xs={24} sm={12} md={8} lg={6}>
-                <Card
-                  cover={
-                    <img
-                      alt="example"
-                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                  }
-                  actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                    >
-                      Compre aqui
-                    </Button>
-                  ]}
-                >
-                  <Meta title="16.06 Stand-up" description="Emerson Ceará" />
-                </Card>
-              </Col>
-              <Col xs={24} sm={12} md={8} lg={6}>
-                <Card
-                  cover={
-                    <img
-                      alt="example"
-                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                  }
-                  actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -175,7 +95,7 @@ const AllEvents = () => {
               </Col>
             </Row>
           </TabPane>
-          <TabPane tab="Novembro" key="november">
+          <TabPane tab="Outubro" key="october" disabled='true'>
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
@@ -186,7 +106,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -204,43 +124,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                    >
-                      Compre aqui
-                    </Button>
-                  ]}
-                >
-                  <Meta title="17.06 Show" description="This is the description" />
-                </Card>
-              </Col>
-              <Col xs={24} sm={12} md={8} lg={6}>
-                <Card
-                  cover={
-                    <img
-                      alt="example"
-                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                  }
-                  actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
-                    >
-                      Compre aqui
-                    </Button>
-                  ]}
-                >
-                  <Meta title="16.06 Stand-up" description="Emerson Ceará" />
-                </Card>
-              </Col>
-              <Col xs={24} sm={12} md={8} lg={6}>
-                <Card
-                  cover={
-                    <img
-                      alt="example"
-                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                  }
-                  actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -251,7 +135,7 @@ const AllEvents = () => {
               </Col>
             </Row>
           </TabPane>
-          <TabPane tab="Dezembro" key="december">
+          <TabPane tab="Novembro" key="november" disabled='true'>
             <Row gutter={[16, 16]} justify="center">
               <Col xs={24} sm={12} md={8} lg={6}>
                 <Card
@@ -262,7 +146,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -280,7 +164,7 @@ const AllEvents = () => {
                     />
                   }
                   actions={[
-                    <Button type="primary" href="https://www.ingressodigital.com/" target="_blank"
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
                     >
                       Compre aqui
                     </Button>
@@ -289,7 +173,82 @@ const AllEvents = () => {
                   <Meta title="17.06 Show" description="This is the description" />
                 </Card>
               </Col>
-              {/* More cards for July */}
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Card
+                  cover={
+                    <img
+                      alt="example"
+                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                    />
+                  }
+                  actions={[
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
+                    >
+                      Compre aqui
+                    </Button>
+                  ]}
+                >
+                  <Meta title="16.06 Stand-up" description="Emerson Ceará" />
+                </Card>
+              </Col>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Card
+                  cover={
+                    <img
+                      alt="example"
+                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                    />
+                  }
+                  actions={[
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
+                    >
+                      Compre aqui
+                    </Button>
+                  ]}
+                >
+                  <Meta title="17.06 Show" description="This is the description" />
+                </Card>
+              </Col>
+            </Row>
+          </TabPane>
+          <TabPane tab="Dezembro" key="december" disabled='true'>
+            <Row gutter={[16, 16]} justify="center">
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Card
+                  cover={
+                    <img
+                      alt="example"
+                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                    />
+                  }
+                  actions={[
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
+                    >
+                      Compre aqui
+                    </Button>
+                  ]}
+                >
+                  <Meta title="16.06 Stand-up" description="Emerson Ceará" />
+                </Card>
+              </Col>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Card
+                  cover={
+                    <img
+                      alt="example"
+                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                    />
+                  }
+                  actions={[
+                    <Button type="text" href="https://www.ingressodigital.com/" target="_blank"
+                    >
+                      Compre aqui
+                    </Button>
+                  ]}
+                >
+                  <Meta title="17.06 Show" description="This is the description" />
+                </Card>
+              </Col>
             </Row>
           </TabPane>
         </Tabs>
