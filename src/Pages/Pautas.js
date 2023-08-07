@@ -13,7 +13,7 @@ function Historia() {
         <Divider orientation="left">
           <h1>Pautas</h1>
         </Divider>
-        <Content>
+        <Content style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
           <Row gutter={[16, 16]} justify={'center'}>
             <p>As solicitações de pauta são feitas exclusivamente mediante o preenchimento do formulário, enquanto o mesmo estiver disponível.</p>
             <Col span={24} style={{ textAlign: 'center' }}>
@@ -28,7 +28,7 @@ function Historia() {
                 Solicitação de pauta para Espetáculos/Shows
               </Button>
             </Col>
-            <Col span={24} style={{ textAlign: 'center' }}>
+            <Col span={24} style={{ textAlign: 'center', marginBottom:'30px'}}>
               <Button type='primary' disabled={true} >
                 Solicitação de pautas para Fotografias
               </Button>

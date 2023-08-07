@@ -30,25 +30,25 @@ function Nae() {
             <TabPane tab="Sobre" key="1">
               <Card>
                 <Meta
-                  description="O Núcleo de Arte Educação (NAE) foi fundado em [ano] com o objetivo de promover a educação artística e cultural por meio de atividades e cursos voltados para a comunidade. O NAE oferece aulas de dança, música e teatro para todas as idades, com foco no desenvolvimento criativo, expressão pessoal e formação de artistas. Ao longo dos anos, o NAE tem se destacado como um importante centro de formação artística, contribuindo para o enriquecimento cultural da região." />
+                  description="Em construção..." />
               </Card>
             </TabPane>
             <TabPane tab="Dança" key="2">
               <Card>
                 <Meta
-                  description="O NAE oferece uma variedade de cursos de dança para todas as idades e níveis de habilidade. Os estilos de dança incluem balé clássico, dança contemporânea, danças folclóricas e muito mais. Os alunos têm a oportunidade de participar de apresentações e espetáculos, mostrando o resultado do seu aprendizado e talento." />
+                  description="Em construção..." />
               </Card>
             </TabPane>
             <TabPane tab="Música" key="3">
               <Card>
                 <Meta
-                  description="O Núcleo de Arte Educação do Teatro Arthur Azevedo oferece aulas de música para diversos instrumentos, como piano, violão, violino, bateria e muito mais. Os alunos têm a oportunidade de aprender técnicas musicais, teoria e participar de grupos musicais, orquestras e corais. O NAE também promove recitais e concertos para os alunos mostrarem seu talento ao público." />
+                  description="Em construção..." />
               </Card>
             </TabPane>
             <TabPane tab="Teatro" key="4">
               <Card>
                 <Meta
-                  description="O NAE oferece aulas de interpretação, improvisação, técnicas de palco, voz e expressão corporal. Os alunos têm a oportunidade de participar de montagens teatrais, peças e espetáculos, explorando diferentes gêneros e estilos de atuação." />
+                  description="Em construção..." />
               </Card>
             </TabPane>
           </Tabs>
