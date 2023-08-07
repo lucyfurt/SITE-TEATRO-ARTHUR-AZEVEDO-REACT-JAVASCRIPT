@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Divider, Row, Col } from 'antd';
+import { Layout, Divider, Row, Col, Button } from 'antd';
 import MenuBurguer from '../components/Header/MenuBurguer.js';
 import FooterComponent from '../components/Footer/FooterComponent';
 import '../Pages/css/pauta.css';
@@ -16,23 +16,22 @@ function Historia() {
         <Content>
           <Row gutter={[16, 16]} justify={'center'}>
             <p>As solicitações de pauta são feitas exclusivamente mediante o preenchimento do formulário, enquanto o mesmo estiver disponível.</p>
-            <Col>
+            <Col span={24} style={{ textAlign: 'center' }}>
               <img
                 className='image'
                 src="https://i.ibb.co/yqz8DqH/0001.png"
                 alt="Bailarinas"
-              /></Col>
-            <Col>
-              <button className="big-rectangle-button" disabled='false'>
-                <a href='/inscricoes'>
-                  Solicitação de pauta Espetáculos/Shows
-                </a>
-              </button>
+              />
             </Col>
-            <Col>
-              <button className="big-rectangle-button">
-                Solicitação de pauta Fotografias
-              </button>
+            <Col span={24} style={{ textAlign: 'center' }}>
+              <Button type='primary' disabled={true}>
+                Solicitação de pauta para Espetáculos/Shows
+              </Button>
+            </Col>
+            <Col span={24} style={{ textAlign: 'center', padding:'20px' }}>
+              <Button type='primary' disabled={false} href='/inscricoes'>
+                Solicitação de pautas para Fotografias
+              </Button>
             </Col>
           </Row>
         </Content>
@@ -41,4 +40,5 @@ function Historia() {
     </>
   );
 }
+
 export default Historia;
