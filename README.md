@@ -1,7 +1,5 @@
 # Site Teatro Arthur Azevedo - MA
-
-projeto criado em react(https://github.com/facebook/create-react-app).
-
+hospedado na vercel https://teatroarthurazevedo.vercel.app/
 ## Estilização de componentes com Ant Design
 
 Menu, Divider, Button, FloatMenu, Layout, Icons, Images
